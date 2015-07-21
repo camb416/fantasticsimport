@@ -2,12 +2,9 @@
 /*
 Plugin Name: Fantasticsimport
 Version: 0.1-alpha
-Description: PLUGIN DESCRIPTION HERE
-Author: YOUR NAME HERE
-Author URI: YOUR SITE HERE
-Plugin URI: PLUGIN SITE HERE
-Text Domain: fantasticsimport
-Domain Path: /languages
+Description: Shim for manually entering fantasticsmag stories
+Author: Cameron Browning
+Author URI: http://cameronbrowning.com
 */
 add_action('admin_menu', 'fantasticsimport_setup_menu');
 
@@ -18,6 +15,7 @@ function fantasticsimport_setup_menu(){
 function test_init(){
   test_handle_post();
 ?>
+<!-- test from tutorial -->
     <!--h1>Hello World!</h1>
     <h2>Upload a File</h2>
     <!-- Form to handle the upload - The enctype value here is very important -->
