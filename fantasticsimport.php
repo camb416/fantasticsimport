@@ -20,10 +20,11 @@ function   get_data_from_file($_filename){
 global $nodes;
 echo "load the file: " . $_filename . ".inc";
 
-$file = file_get_contents('http://localhost/fmagwp/wp-content/plugins/fantasticsimport/5216_nc.inc');
-eval("\$nodes = $file;");
+     $file = file_get_contents('http://localhost/fmagwp/wp-content/plugins/fantasticsimport/exports/2007/'.$_filename.'.inc');
+
+    eval("\$nodes = $file;");
 //$b = serialize($myArr);
-var_dump($nodes[0]["nid"]);
+//var_dump($nodes[0]["nid"]);
 
 }
 
@@ -41,24 +42,52 @@ function render_second_form(){
   global $nodes;
   $node = $nodes[0];
     //var_dump($mydata[0]['nid']);
+
+    $pages_csv = "";
+
+    for($i=0;$i<count($node['field_page']);$i++){
+        $thispage = $node['field_page'][$i];
+        $prefix = "";
+        if(0!==$i){
+            $prefix = "\n";
+        }
+        $pages_csv .= $prefix. "http://fantasticsmag.com/" . $thispage['filepath'];
+        // echo("http://fantasticsmag.com/".$thispage['filepath'].",");
+    }
+
+    //featured fashions
+    $fashion_csv = $node['taxonomy']['tags']['1'];
+    $editorial_tags = $node['taxonomy']['tags']['4'];
+
+
+
   ?>
 
   <form class="fanimp"  method="post">
-    Story Post ID: <input type="Text" name="storyid" value="<?=$node['nid']?>"><br>
-    Story Title: <input type="Text" name="fileurl" value="<?=$node['title']?>"><br>
-    Image URLs: <input type="Text" name="imgs" value="<?=$node['nid']?>"><br>
-    Featured Fashions: <input type="Text" name="fashions" value="<?=$node['nid']?>"><br>
-    People: <input type="Text" name="people" value="<?=$node['nid']?>"><br>
-    Editorial Tags: <input type="Text" name="name" value="<?=$node['nid']?>"><br>
-    Body: <textarea name="body" rows="8" cols="50"><?=$node['body']?></textarea><br>
-    Description: <textarea name="description" rows="8" cols="50" ><?=$node['field_description'][0]['value']?></textarea><br>
-    Sidebar: <textarea rows="8" cols="50" name="sidebar" value=""><?=$node['field_sidebar'][0]['value']?></textarea><br>
-    Pages: <input type="Text" name="pages" value="<?=$node['nid']?>"><br>
-    alias:  <input type="Text" name="alias" value="<?=$node['path']?>"><br>
-    Publish Status: <input type="checkbox" name="ispublished" <?php if($node['status'] == '1') echo('checked'); ?>><br>
-    <?php submit_button('Submit Story'); ?>
+      <table>
+          <th></th>
+
+
+            <tr><td>Story Post ID: </td><td><input type="Text" name="storyid" value="<?=$node['nid']?>"></td></tr>
+            <tr><td>Story Title: </td><td><input type="Text" name="fileurl" value="<?=$node['title']?>"></td></tr>
+            <!--tr><td>Image URLs: </td><td><input type="Text" name="imgs" value="<?=$node['nid']?>"></td></tr-->
+            <tr><td>Featured Fashions: </td><td><input type="Text" name="fashions" value="<?=$fashion_csv?>"></td></tr>
+            <tr><td>People: </td><td><input type="Text" name="people" value="<?=$node['nid']?>"></td></tr>
+            <tr><td>Editorial Tags: </td><td><input type="Text" name="name" value="<?=$editorial_tags?>"></td></tr>
+            <tr><td>Body: </td><td><textarea name="body" rows="8" cols="64"><?=$node['body']?></textarea></td></tr>
+            <tr><td>Description: </td><td><textarea name="description" rows="8" cols="64" ><?=$node['field_description'][0]['value']?></textarea></td></tr>
+            <tr><td>Sidebar: </td><td><textarea rows="8" cols="64" name="sidebar" value=""><?=$node['field_sidebar'][0]['value']?></textarea></td></tr>
+            <tr><td>Pages: </td><td><textarea rows="8" cols="64" name="pages" value=""><?=$pages_csv?></textarea></td></tr>
+            <tr><td>alias:  </td><td><input type="Text" name="alias" value="<?=$node['path']?>"></td></tr>
+
+            <?php // TODO: dont think this is working... ?>
+            <tr><td>Publish Status: </td><td><input type="checkbox" name="ispublished" <?php if($node['status'] == '1') echo('checked'); ?></td></tr>
+
+          <tr><td><?php submit_button('Submit Story'); ?></td></tr>
+      </table>
   </form>
   <?php
+    echo "ok.";
 }
 
 function test_init(){
@@ -66,12 +95,20 @@ function test_init(){
 ?>
 <h1>Upload a Fantasticsmag Story</h1>
 <?php
+
+//////////////////////////////////////
+// just for testing...
+//////////////////////////////////////
+
+get_data_from_file("5198");
+render_second_form();
+
+/*
+//////////////////////////////////////
+// actual code below...
+//////////////////////////////////////
 //print_r($_GET);  // for all GET variables
 //print_r($_POST); // for all POST variables
-
-get_data_from_file("5216");
-render_second_form();
-/*
 $s = $_POST;
 if(empty($s['storyid'])){
   echo "it's empty... render the first form";
@@ -85,7 +122,9 @@ if(empty($s['storyid'])){
 
 
   test_handle_post();
-  */
+///////////////////
+*/
+
 ?>
 <!-- test from tutorial -->
     <!--h1>Hello World!</h1>

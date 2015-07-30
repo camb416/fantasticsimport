@@ -1,0 +1,295 @@
+array(
+  array(
+    'nid' => '897',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '0',
+    'created' => '1193976382',
+    'changed' => '1300828415',
+    'comment' => '2',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '897',
+    'revision_uid' => '1',
+    'title' => 'BOYS ON FILM',
+    'body' => '<p>
+	On the release of his third book ALL MY BOYS,<br />
+	photographer Lindsay Lozon talks to Fantasticsmag.<br />
+	With a portfolio of never-before-seen pics.<br />
+	Photography by <a href="http://www.lindsaylozon.com/" target="_blank">Lindsay Lozon</a>.<br />
+	Interview by James N.</p>
+',
+    'teaser' => '<p>
+	On the release of his third book ALL MY BOYS,<br />
+	photographer Lindsay Lozon talks to Fantasticsmag.<br />
+	With a portfolio of never-before-seen pics.<br />
+	Photography by <a href="http://www.lindsaylozon.com/" target="_blank">Lindsay Lozon</a>.<br />
+	Interview by James N.</p>
+',
+    'log' => '',
+    'revision_timestamp' => '1300828415',
+    'format' => '3',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	<a href="http://www.lindsaylozon.com/" target="_blank">Lindsay Lozon</a></p>
+<p>
+	INTERVIEW<br />
+	JAMES N</p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '1629',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'lozona_NOV07.jpg',
+        'filepath' => 'files/fmag_story/2007/Nov/lozona_NOV07.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '164650',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'lozona_NOV07.jpg',
+      ),
+      '1' => array(
+        'fid' => '1630',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'lozon2a_NOV07.jpg',
+        'filepath' => 'files/fmag_story/2007/Nov/lozon2a_NOV07.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '510931',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'lozon2a_NOV07.jpg',
+      ),
+      '2' => array(
+        'fid' => '1631',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'lozon3a_NOV07.jpg',
+        'filepath' => 'files/fmag_story/2007/Nov/lozon3a_NOV07.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '222583',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'lozon3a_NOV07.jpg',
+      ),
+      '3' => array(
+        'fid' => '1632',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'lozon5a_NOV07.jpg',
+        'filepath' => 'files/fmag_story/2007/Nov/lozon5a_NOV07.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '220202',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'lozon5a_NOV07.jpg',
+      ),
+      '4' => array(
+        'fid' => '1633',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'lozon6a_NOV07.jpg',
+        'filepath' => 'files/fmag_story/2007/Nov/lozon6a_NOV07.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '436758',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'lozon6a_NOV07.jpg',
+      ),
+      '5' => array(
+        'fid' => '1634',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'lozon7a_NOV07.jpg',
+        'filepath' => 'files/fmag_story/2007/Nov/lozon7a_NOV07.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '555948',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'lozon7a_NOV07.jpg',
+      ),
+      '6' => array(
+        'fid' => '1635',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'lozon8a_NOV07.jpg',
+        'filepath' => 'files/fmag_story/2007/Nov/lozon8a_NOV07.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '746883',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'lozon8a_NOV07.jpg',
+      ),
+      '7' => array(
+        'fid' => '1636',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'lozon9a_NOV07.jpg',
+        'filepath' => 'files/fmag_story/2007/Nov/lozon9a_NOV07.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '319969',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'lozon9a_NOV07.jpg',
+      ),
+      '8' => array(
+        'fid' => '1637',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'lozon10a_NOV07.jpg',
+        'filepath' => 'files/fmag_story/2007/Nov/lozon10a_NOV07.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '179792',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'lozon10a_NOV07.jpg',
+      ),
+      '9' => array(
+        'fid' => '1638',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'lozon11a_NOV07.jpg',
+        'filepath' => 'files/fmag_story/2007/Nov/lozon11a_NOV07.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '422886',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'lozon11a_NOV07.jpg',
+      ),
+      '10' => array(
+        'fid' => '1639',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'lozon12a_NOV07.jpg',
+        'filepath' => 'files/fmag_story/2007/Nov/lozon12a_NOV07.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '468386',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'lozon12a_NOV07.jpg',
+      ),
+      '11' => array(
+        'fid' => '1640',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'lozon13a_NOV07.jpg',
+        'filepath' => 'files/fmag_story/2007/Nov/lozon13a_NOV07.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '315115',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'lozon13a_NOV07.jpg',
+      ),
+    ),
+    'path' => 'stories/boys-film',
+    'tags' => array(
+      '5' => array(
+        '2406' => array(
+          'tid' => '2406',
+          'vid' => '5',
+          'name' => 'EDWARD S+GEORGE',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '5' => 'EDWARD S+GEORGE',
+      ),
+      '2' => array(
+        '2' => '2',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

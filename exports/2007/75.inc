@@ -1,0 +1,155 @@
+array(
+  array(
+    'nid' => '75',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '0',
+    'created' => '1181571081',
+    'changed' => '1256672355',
+    'comment' => '2',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '75',
+    'revision_uid' => '1',
+    'title' => 'Neck Line',
+    'body' => '<p>Jewellery maker <a target="_blank" href="http://www.etsy.com/shop.php?user_id=63603">Elizaveta online</a> goes for the throat.</p>
+<p>Exclusive photography by <a target="_blank" href="http://www.fordphoto.ca/">Mike Ford</a>.</p>
+<p>Interview by James N.</p>',
+    'teaser' => '<p>Jewellery maker <a target="_blank" href="http://www.etsy.com/shop.php?user_id=63603">Elizaveta online</a> goes for the throat.</p>
+<p>Exclusive photography by <a target="_blank" href="http://www.fordphoto.ca/">Mike Ford</a>.</p>
+<p>Interview by James N.</p>',
+    'log' => '',
+    'revision_timestamp' => '1256672355',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p><a target="_blank" href="http://www.etsy.com/shop.php?user_id=63603">Elizaveta online</a></p>
+<p>PHOTOGRAPHY<br /><a target="_blank" href="http://www.fordphoto.ca/">Mike Ford</a></p>',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '558',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'neck_OCT08.jpg',
+        'filepath' => 'files/fmag_story/2008/Oct/neck_OCT08.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '144379',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'neck_OCT08.jpg',
+      ),
+      '1' => array(
+        'fid' => '559',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'neck2_OCT08.jpg',
+        'filepath' => 'files/fmag_story/2008/Oct/neck2_OCT08.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '213755',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'neck2_OCT08.jpg',
+      ),
+      '2' => array(
+        'fid' => '560',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'neck3_OCT08.jpg',
+        'filepath' => 'files/fmag_story/2008/Oct/neck3_OCT08.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '284102',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'neck3_OCT08.jpg',
+      ),
+      '3' => array(
+        'fid' => '561',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'neck4_OCT08.jpg',
+        'filepath' => 'files/fmag_story/2008/Oct/neck4_OCT08.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '207565',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'neck4_OCT08.jpg',
+      ),
+    ),
+    'path' => 'stories/neck-line',
+    'tags' => array(
+      '5' => array(
+        '2419' => array(
+          'tid' => '2419',
+          'vid' => '5',
+          'name' => 'Tate Tullier',
+          'description' => 'http://www.tatetullier.com/',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      '2' => array(
+        '2' => '2',
+      ),
+      'tags' => array(
+        '5' => 'Tate Tullier',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)
