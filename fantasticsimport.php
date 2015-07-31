@@ -68,11 +68,11 @@ function render_second_form(){
           <th></th>
 
 
-            <tr><td>Story Post ID: </td><td><input type="Text" name="storyid" value="<?=$node['nid']?>"></td></tr>
-            <tr><td>Story Title: </td><td><input type="Text" name="fileurl" value="<?=$node['title']?>"></td></tr>
+            <tr><td>Story Post ID: </td><td><input type="Text" name="postid" value="<?=$node['nid']?>"></td></tr>
+            <tr><td>Story Title: </td><td><input type="Text" name="title" value="<?=$node['title']?>"></td></tr>
             <!--tr><td>Image URLs: </td><td><input type="Text" name="imgs" value="<?=$node['nid']?>"></td></tr-->
             <tr><td>Featured Fashions: </td><td><input type="Text" name="fashions" value="<?=$fashion_csv?>"></td></tr>
-            <tr><td>People: </td><td><input type="Text" name="people" value="<?=$node['nid']?>"></td></tr>
+            <tr><td>People: </td><td><input type="Text" name="people" value=""></td></tr>
             <tr><td>Editorial Tags: </td><td><input type="Text" name="name" value="<?=$editorial_tags?>"></td></tr>
             <tr><td>Body: </td><td><textarea name="body" rows="8" cols="64"><?=$node['body']?></textarea></td></tr>
             <tr><td>Description: </td><td><textarea name="description" rows="8" cols="64" ><?=$node['field_description'][0]['value']?></textarea></td></tr>
@@ -81,13 +81,43 @@ function render_second_form(){
             <tr><td>alias:  </td><td><input type="Text" name="alias" value="<?=$node['path']?>"></td></tr>
 
             <?php // TODO: dont think this is working... ?>
-            <tr><td>Publish Status: </td><td><input type="checkbox" name="ispublished" <?php if($node['status'] == '1') echo('checked'); ?></td></tr>
+            <tr><td>Publish Status: </td><td><input type="checkbox" name="ispublished" <?php if($node['status'] == '1') echo('checked'); ?>></td></tr>
 
           <tr><td><?php submit_button('Submit Story'); ?></td></tr>
       </table>
   </form>
   <?php
     echo "ok.";
+}
+
+
+function process_the_post($s){
+  //$s is the post variable
+  var_dump($s);
+
+$poststatus = 'private';
+if($s['ispublished'] === 'on'){
+  $poststatus = 'publish';
+}
+
+$post = array(
+
+  'post_content'   => $s['body'].'<!-- more -->'.$s['description'],
+  'post_name'      => $s['alias'],
+  'post_title'     => $s['title'],
+  'post_status'    => $poststatus,
+  'post_type'      => 'fmag_story',
+  'ping_status'    => 'closed',
+  'post_date'      => '2015-07-31 12:00:00',
+  'post_date_gmt'  => '2015-07-31 12:00:00',
+  'comment_status' => 'closed',
+  );  
+wp_insert_post($post,$wp_error);
+if($wp_error){
+  var_dump($wp_error);
+}
+
+
 }
 
 function test_init(){
@@ -100,21 +130,27 @@ function test_init(){
 // just for testing...
 //////////////////////////////////////
 
-get_data_from_file("5198");
-render_second_form();
+//get_data_from_file("5198");
+//render_second_form();
 
-/*
+
 //////////////////////////////////////
 // actual code below...
 //////////////////////////////////////
 //print_r($_GET);  // for all GET variables
 //print_r($_POST); // for all POST variables
 $s = $_POST;
-if(empty($s['storyid'])){
+echo "test";
+if(empty($s['storyid']) && empty($s['postid']) ){
   echo "it's empty... render the first form";
   render_first_form();
-} else {
-    echo "it's not empty... render the second form";
+} else if(!empty($s['postid'])){
+  process_the_post($s);
+
+echo "third form please";
+
+} else if(!empty($s['storyid'])){
+  echo "it's not empty... render the second form";
   get_data_from_file($s['storyid']);
   render_second_form();
 
@@ -123,43 +159,10 @@ if(empty($s['storyid'])){
 
   test_handle_post();
 ///////////////////
-*/
+
 
 ?>
-<!-- test from tutorial -->
-    <!--h1>Hello World!</h1>
-    <h2>Upload a File</h2>
-    <!-- Form to handle the upload - The enctype value here is very important -->
-    <!--form  method="post" enctype="multipart/form-data">
-            <input type='file' id='test_upload_pdf' name='test_upload_pdf'></input>
-            <?php submit_button('Upload') ?>
-    </form -->
 
-
-
-
-
-
-
-<!--
-
-    <form class="fanimp"  method="post">
-      Story Post ID: <input type="Text" name="storyid" value=""><br>
-      Story Title: <input type="Text" name="fileurl" value=""><br>
-      Image URLs: <input type="Text" name="imgs" value=""><br>
-      Featured Fashions: <input type="Text" name="fashions" value=""><br>
-      People: <input type="Text" name="people" value=""><br>
-      Editorial Tags: <input type="Text" name="name" value=""><br>
-      Body: <textarea name="body" rows="8" cols="50"></textarea><br>
-      Description: <textarea name="description" rows="8" cols="50" ></textarea><br>
-      Sidebar: <input type="Text" name="sidebar" value=""><br>
-      Pages: <input type="Text" name="pages" value=""><br>
-      alias:  <input type="Text" name="alias" value=""><br>
-      Publish Status: <input type="checkbox" name="ispublished" value=""><br>
-
-      <?php submit_button('Submit Story'); ?>
-    </form>
-  -->
 
 <?php
 }
@@ -212,5 +215,227 @@ echo  $s['storyid'] .
       echo "well i guess its not set";
     }
 }
+
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+  register_post_type( 'fmag_story',
+array(
+  'labels' => array(
+    'name' => __( 'Stories' ),
+    'singular_name' => __( 'Story' )
+    ),
+    'public' => true,
+    'has_archive' => true,
+    'rewrite' => array('slug' => 'stories'),
+    )
+  );
+}
+function people_init(){
+
+// Add new taxonomy, NOT hierarchical (like tags)
+  $labels = array(
+    'name'                       => _x( 'People', 'taxonomy general name' ),
+    'singular_name'              => _x( 'Person', 'taxonomy singular name' ),
+    'search_items'               => __( 'Search People' ),
+    'popular_items'              => __( 'Popular People' ),
+    'all_items'                  => __( 'All People' ),
+    'parent_item'                => null,
+    'parent_item_colon'          => null,
+    'edit_item'                  => __( 'Edit Person' ),
+    'update_item'                => __( 'Update Person' ),
+    'add_new_item'               => __( 'Add New Person' ),
+    'new_item_name'              => __( 'New Person Name' ),
+    'separate_items_with_commas' => __( 'Separate people with commas' ),
+    'add_or_remove_items'        => __( 'Add or remove people' ),
+    'choose_from_most_used'      => __( 'Choose from the most used people' ),
+    'not_found'                  => __( 'No people found.' ),
+    'menu_name'                  => __( 'People' ),
+  );
+
+  $args = array(
+    'hierarchival' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => 'update_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'people' ),
+    );
+
+  register_taxonomy('person', 'fmag_story', $args);
+}
+add_action( 'init', 'people_init');
+
+function fashions_init(){
+
+// Add new taxonomy, NOT hierarchical (like tags)
+  $labels = array(
+    'name'                       => _x( 'Fashions', 'taxonomy general name' ),
+    'singular_name'              => _x( 'Fashion Brand', 'taxonomy singular name' ),
+    'search_items'               => __( 'Search Fashion Brands' ),
+    'popular_items'              => __( 'Popular Fashion Brands' ),
+    'all_items'                  => __( 'All Fashion Brands' ),
+    'parent_item'                => null,
+    'parent_item_colon'          => null,
+    'edit_item'                  => __( 'Edit Fashion Brand' ),
+    'update_item'                => __( 'Update Fashion Brand' ),
+    'add_new_item'               => __( 'Add New Fashion Brand' ),
+    'new_item_name'              => __( 'New Fashion Brand Name' ),
+    'separate_items_with_commas' => __( 'Separate brands with commas' ),
+    'add_or_remove_items'        => __( 'Add or remove brands' ),
+    'choose_from_most_used'      => __( 'Choose from the most used fashions' ),
+    'not_found'                  => __( 'No fashions found.' ),
+    'menu_name'                  => __( 'Fashions' ),
+  );
+
+  $args = array(
+    'hierarchival' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => 'update_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'fashions' ),
+    );
+
+  register_taxonomy('fashion', 'fmag_story', $args);
+}
+add_action( 'init', 'fashions_init');
+
+function editorial_terms_init(){
+
+// Add new taxonomy, NOT hierarchical (like tags)
+  $labels = array(
+    'name'                       => _x( 'Editorial Terms', 'taxonomy general name' ),
+    'singular_name'              => _x( 'Editorial Term', 'taxonomy singular name' ),
+    'search_items'               => __( 'Search Editorial Terms' ),
+    'popular_items'              => __( 'Popular Editorial Terms' ),
+    'all_items'                  => __( 'All Editorial Terms' ),
+    'parent_item'                => null,
+    'parent_item_colon'          => null,
+    'edit_item'                  => __( 'Edit Editorial Term' ),
+    'update_item'                => __( 'Update Editorial Term' ),
+    'add_new_item'               => __( 'Add New Editorial Term' ),
+    'new_item_name'              => __( 'New Editorial Term' ),
+    'separate_items_with_commas' => __( 'Separate terms with commas' ),
+    'add_or_remove_items'        => __( 'Add or remove terms' ),
+    'choose_from_most_used'      => __( 'Choose from the most used terms' ),
+    'not_found'                  => __( 'No terms found.' ),
+    'menu_name'                  => __( 'Editorial Terms' ),
+  );
+
+  $args = array(
+    'hierarchival' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => 'update_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'terms' ),
+    );
+
+  register_taxonomy('term', 'fmag_story', $args);
+}
+add_action( 'init', 'editorial_terms_init');
+
+
+
+// custom credits field
+/**
+ * Adds a box to the main column on the Post and Page edit screens.
+ */
+function fantasticsimport_add_meta_box() {
+
+  $screens = array( 'fmag_story' );
+
+  foreach ( $screens as $screen ) {
+
+    add_meta_box(
+      'fantasticsimport_sectionid',
+      __( 'Story Section Title', 'fantasticsimport_textdomain' ),
+      'fantasticsimport_meta_box_callback',
+      $screen
+    );
+  }
+}
+add_action( 'add_meta_boxes', 'fantasticsimport_add_meta_box' );
+
+/**
+ * Prints the box content.
+ * 
+ * @param WP_Post $post The object for the current post/page.
+ */
+function fantasticsimport_meta_box_callback( $post ) {
+
+  // Add a nonce field so we can check for it later.
+  wp_nonce_field( 'fantasticsimport_save_meta_box_data', 'fantasticsimport_meta_box_nonce' );
+
+  /*
+   * Use get_post_meta() to retrieve an existing value
+   * from the database and use the value for the form.
+   */
+  $value = get_post_meta( $post->ID, '_my_meta_value_key', true );
+
+  echo '<label for="fantasticsimport_new_field">';
+  _e( 'Credits Block', 'fantasticsimport_textdomain' );
+  echo '</label> ';
+  echo '<textarea id="fantasticsimport_new_field" name="fantasticsimport_new_field" rows="16" cols="64">' . esc_attr( $value ) . '</textarea>';
+}
+
+/**
+ * When the post is saved, saves our custom data.
+ *
+ * @param int $post_id The ID of the post being saved.
+ */
+function fantasticsimport_save_meta_box_data( $post_id ) {
+
+  /*
+   * We need to verify this came from our screen and with proper authorization,
+   * because the save_post action can be triggered at other times.
+   */
+
+  // Check if our nonce is set.
+  if ( ! isset( $_POST['fantasticsimport_meta_box_nonce'] ) ) {
+    return;
+  }
+
+  // Verify that the nonce is valid.
+  if ( ! wp_verify_nonce( $_POST['fantasticsimport_meta_box_nonce'], 'fantasticsimport_save_meta_box_data' ) ) {
+    return;
+  }
+
+  // If this is an autosave, our form has not been submitted, so we don't want to do anything.
+  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+    return;
+  }
+
+  // Check the user's permissions.
+  if ( isset( $_POST['post_type'] ) && 'page' == $_POST['post_type'] ) {
+
+    if ( ! current_user_can( 'edit_page', $post_id ) ) {
+      return;
+    }
+
+  } else {
+
+    if ( ! current_user_can( 'edit_post', $post_id ) ) {
+      return;
+    }
+  }
+
+  /* OK, it's safe for us to save the data now. */
+  
+  // Make sure that it is set.
+  if ( ! isset( $_POST['fantasticsimport_new_field'] ) ) {
+    return;
+  }
+
+  // Sanitize user input.
+  $my_data = sanitize_text_field( $_POST['fantasticsimport_new_field'] );
+
+  // Update the meta field in the database.
+  update_post_meta( $post_id, '_my_meta_value_key', $my_data );
+}
+add_action( 'save_post', 'fantasticsimport_save_meta_box_data' );
 
 ?>
