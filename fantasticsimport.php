@@ -70,6 +70,7 @@ function render_second_form(){
 
             <tr><td>Story Post ID: </td><td><input type="Text" name="postid" value="<?=$node['nid']?>"></td></tr>
             <tr><td>Story Title: </td><td><input type="Text" name="title" value="<?=$node['title']?>"></td></tr>
+          <tr><td>Post Date: </td><td><input type="Text" name="created" value="<?=$node['created']?>"></td></tr>
             <!--tr><td>Image URLs: </td><td><input type="Text" name="imgs" value="<?=$node['nid']?>"></td></tr-->
             <tr><td>Featured Fashions: </td><td><input type="Text" name="fashions" value="<?=$fashion_csv?>"></td></tr>
             <tr><td>People: </td><td><input type="Text" name="people" value=""></td></tr>
@@ -108,18 +109,109 @@ $post = array(
   'post_status'    => $poststatus,
   'post_type'      => 'fmag_story',
   'ping_status'    => 'closed',
-  'post_date'      => '2015-07-31 12:00:00',
-  'post_date_gmt'  => '2015-07-31 12:00:00',
+  'post_date'      => date( "Y-m-d H:i:s" ,intval($s['created'])),
   'comment_status' => 'closed',
-  );  
-wp_insert_post($post,$wp_error);
-if($wp_error){
-  var_dump($wp_error);
+  );
+
+
+
+ $err = wp_insert_post($post,true);
+if($err){
+  var_dump($err);
+}
+    if(is_int($err)){
+        if($err>0){
+
+
+            //// lets do the attachments now
+            // The ID of the post this attachment is for.
+            $parent_post_id = $err;
+
+
+            $pagesArray = explode("\n",$s['pages']);
+
+            for($i = 0; $i<count($pagesArray);$i++){
+          $url =  $snip = str_replace("\r", '', $pagesArray[$i]); // remove carriage returns;
+echo "URL: ".$url;
+
+            // let's sideload it...
+
+            $tmp = download_url( $url );
+            if( is_wp_error( $tmp ) ){
+                // download failed, handle error
+                var_dump($tmp);
+            }
+            $post_id = $parent_post_id;
+            $desc = "";
+            $file_array = array();
+
+            // Set variables for storage
+            // fix file filename for query strings
+            preg_match('/[^\?]+\.(jpg|jpe|jpeg|gif|png)/i', $url, $matches);
+            $file_array['name'] = basename($matches[0]);
+            $file_array['tmp_name'] = $tmp;
+
+            // If error storing temporarily, unlink
+            if ( is_wp_error( $tmp ) ) {
+                @unlink($file_array['tmp_name']);
+                $file_array['tmp_name'] = '';
+            }
+
+            // do the validation and storage stuff
+            $id = media_handle_sideload( $file_array, $post_id, $desc );
+
+            // If error storing permanently, unlink
+            if ( is_wp_error($id) ) {
+                @unlink($file_array['tmp_name']);
+                return $id;
+            }
+
+            $src = wp_get_attachment_url( $id );
+
+            }
+
+
+
+        }
+    }
+
+
+
+
 }
 
-
+/**
+ * Use Gallery Metabox
+ */
+function be_gallery_metabox_page_and_rotator( $post_types ) {
+    return array( 'fmag_story' );
 }
+add_action( 'be_gallery_metabox_post_types', 'be_gallery_metabox_page_and_rotator' );
 
+
+/**
+ * Meta box for edit Fmag Story
+
+add_action( 'add_meta_boxes', 'attached_images_meta' );
+
+function attached_images_meta() {
+    $screens = array( 'fmag_story', 'post', 'page' ); //add more in here as you see fit
+    foreach ($screens as $screen) {
+        add_meta_box(
+            'attached_images_meta_box', //this is the id of the box
+            'Attached Images', //this is the title
+            'attached_images_meta_box', //the callback
+            $screen, //the post type
+            'side' //the placement
+        );
+    }
+}
+function attached_images_meta_box($post){
+    $args = array('post_type'=>'attachment','post_parent'=>$post->ID);
+    $count = count(get_children($args));
+    echo '<a href="#" class="button insert-media add_media" data-editor="content">'.$count.' Images</a>';
+}
+*/
 function test_init(){
 
 ?>
@@ -352,7 +444,7 @@ function fantasticsimport_add_meta_box() {
 
     add_meta_box(
       'fantasticsimport_sectionid',
-      __( 'Story Section Title', 'fantasticsimport_textdomain' ),
+      __( 'Credits Block', 'fantasticsimport_textdomain' ),
       'fantasticsimport_meta_box_callback',
       $screen
     );
@@ -362,7 +454,7 @@ add_action( 'add_meta_boxes', 'fantasticsimport_add_meta_box' );
 
 /**
  * Prints the box content.
- * 
+ *
  * @param WP_Post $post The object for the current post/page.
  */
 function fantasticsimport_meta_box_callback( $post ) {
@@ -376,11 +468,26 @@ function fantasticsimport_meta_box_callback( $post ) {
    */
   $value = get_post_meta( $post->ID, '_my_meta_value_key', true );
 
-  echo '<label for="fantasticsimport_new_field">';
+  /*echo '<label for="fantasticsimport_new_field">';
   _e( 'Credits Block', 'fantasticsimport_textdomain' );
-  echo '</label> ';
+  echo '</label><br />';
   echo '<textarea id="fantasticsimport_new_field" name="fantasticsimport_new_field" rows="16" cols="64">' . esc_attr( $value ) . '</textarea>';
+*/
+  //so, dont ned to use esc_attr in front of get_post_meta
+      $valueeee2=  get_post_meta($_GET['post'], 'fmag_credits_block' , true ) ;
+      wp_editor( htmlspecialchars_decode($valueeee2), 'mettaabox_ID_stylee', $settings = array('textarea_name'=>'fmag_credits_block') );
+
+
 }
+function save_my_postdata( $post_id )
+{
+    if (!empty($_POST['fmag_credits_block']))
+        {
+        $datta=htmlspecialchars($_POST['fmag_credits_block']);
+        update_post_meta($post_id, 'fmag_credits_block', $datta );
+        }
+}
+add_action( 'save_post', 'save_my_postdata' );
 
 /**
  * When the post is saved, saves our custom data.
@@ -424,7 +531,7 @@ function fantasticsimport_save_meta_box_data( $post_id ) {
   }
 
   /* OK, it's safe for us to save the data now. */
-  
+
   // Make sure that it is set.
   if ( ! isset( $_POST['fantasticsimport_new_field'] ) ) {
     return;
@@ -436,6 +543,74 @@ function fantasticsimport_save_meta_box_data( $post_id ) {
   // Update the meta field in the database.
   update_post_meta( $post_id, '_my_meta_value_key', $my_data );
 }
-add_action( 'save_post', 'fantasticsimport_save_meta_box_data' );
 
+add_action( 'save_post', 'fantasticsimport_save_meta_box_data' );
+/*
+// attachments stuff
+add_filter( 'attachments_settings_screen', '__return_false' ); // disable the Settings screen for Attachments
+add_filter( 'attachments_default_instance', '__return_false' ); // disable the default instance
+
+function my_attachments( $attachments )
+{
+  $fields         = array(
+    array(
+      'name'      => 'title',                         // unique field name
+      'type'      => 'text',                          // registered field type
+      'label'     => __( 'Title', 'attachments' ),    // label to display
+      'default'   => 'title',                         // default value upon selection
+    ),
+    array(
+      'name'      => 'caption',                       // unique field name
+      'type'      => 'textarea',                      // registered field type
+      'label'     => __( 'Caption', 'attachments' ),  // label to display
+      'default'   => 'caption',                       // default value upon selection
+    ),
+  );
+
+  $args = array(
+
+    // title of the meta box (string)
+    'label'         => 'My Attachments',
+
+    // all post types to utilize (string|array)
+    'post_type'     => array( 'fmag_story' ),
+
+    // meta box position (string) (normal, side or advanced)
+    'position'      => 'normal',
+
+    // meta box priority (string) (high, default, low, core)
+    'priority'      => 'high',
+
+    // allowed file type(s) (array) (image|video|text|audio|application)
+    'filetype'      => null,  // no filetype limit
+
+    // include a note within the meta box (string)
+    'note'          => 'Attach files here!',
+
+    // by default new Attachments will be appended to the list
+    // but you can have then prepend if you set this to false
+    'append'        => true,
+
+    // text for 'Attach' button in meta box (string)
+    'button_text'   => __( 'Attach Files', 'attachments' ),
+
+    // text for modal 'Attach' button (string)
+    'modal_text'    => __( 'Attach', 'attachments' ),
+
+    // which tab should be the default in the modal (string) (browse|upload)
+    'router'        => 'browse',
+
+    // whether Attachments should set 'Uploaded to' (if not already set)
+    'post_parent'   => false,
+
+    // fields array
+    'fields'        => $fields,
+
+  );
+
+  $attachments->register( 'my_attachments', $args ); // unique instance name
+}
+
+add_action( 'attachments_register', 'my_attachments' );
+*/
 ?>
