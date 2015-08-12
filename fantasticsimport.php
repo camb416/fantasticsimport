@@ -72,8 +72,8 @@ function render_second_form(){
             <tr><td>Story Title: </td><td><input type="Text" name="title" value="<?=$node['title']?>"></td></tr>
           <tr><td>Post Date: </td><td><input type="Text" name="created" value="<?=$node['created']?>"></td></tr>
             <!--tr><td>Image URLs: </td><td><input type="Text" name="imgs" value="<?=$node['nid']?>"></td></tr-->
-            <tr><td>Featured Fashions: </td><td><input type="Text" name="fashions" value="<?=$fashion_csv?>"></td></tr>
-            <tr><td>People: </td><td><input type="Text" name="people" value=""></td></tr>
+            <tr><td>Featured Fashions: </td><td><input type="Text" name="fashions_csv" value="<?=$fashion_csv?>"></td></tr>
+            <tr><td>People: </td><td><input type="Text" name="people_csv" value=""></td></tr>
             <tr><td>Editorial Tags: </td><td><input type="Text" name="tags_csv" value="<?=$editorial_tags?>"></td></tr>
             <tr><td>Body: </td><td><textarea name="body" rows="8" cols="64"><?=$node['body']?></textarea></td></tr>
             <tr><td>Description: </td><td><textarea name="description" rows="8" cols="64" ><?=$node['field_description'][0]['value']?></textarea></td></tr>
@@ -127,7 +127,12 @@ if($err){
             // The ID of the post this attachment is for.
             $parent_post_id = $err;
             
-         $returnVal =  wp_set_object_terms( $err, str_getcsv ($s['fashions'],',' ), "fashion" );
+         $returnVal =  wp_set_object_terms( $err, str_getcsv ($s['fashions_csv'],',' ), "fashion" );
+        $returnVal2 =  wp_set_object_terms( $err, str_getcsv ($s['people_csv'],',' ), "person" );
+        $returnVal3 =  wp_set_object_terms( $err, str_getcsv ($s['tags_csv'],',' ), "term" );
+         
+         
+         
 $thisPost = get_post($err);
  $taxonomy_names = get_object_taxonomies( 'fmag_story' );
    print_r( $taxonomy_names);
