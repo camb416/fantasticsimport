@@ -20,8 +20,8 @@ function   get_data_from_file($_filename){
 global $nodes;
 echo "load the file: " . $_filename . ".inc";
 
-     $file = file_get_contents('http://localhost/fmagwp/wp-content/plugins/fantasticsimport/exports/2007/'.$_filename.'.inc');
-
+     $file = file_get_contents('http://fmagwp.dev/wp-content/plugins/fantasticsimport/exports/2007/'.$_filename.'.inc');
+//var_dump($file);
     eval("\$nodes = $file;");
 //$b = serialize($myArr);
 //var_dump($nodes[0]["nid"]);
@@ -74,7 +74,7 @@ function render_second_form(){
             <!--tr><td>Image URLs: </td><td><input type="Text" name="imgs" value="<?=$node['nid']?>"></td></tr-->
             <tr><td>Featured Fashions: </td><td><input type="Text" name="fashions" value="<?=$fashion_csv?>"></td></tr>
             <tr><td>People: </td><td><input type="Text" name="people" value=""></td></tr>
-            <tr><td>Editorial Tags: </td><td><input type="Text" name="name" value="<?=$editorial_tags?>"></td></tr>
+            <tr><td>Editorial Tags: </td><td><input type="Text" name="tags_csv" value="<?=$editorial_tags?>"></td></tr>
             <tr><td>Body: </td><td><textarea name="body" rows="8" cols="64"><?=$node['body']?></textarea></td></tr>
             <tr><td>Description: </td><td><textarea name="description" rows="8" cols="64" ><?=$node['field_description'][0]['value']?></textarea></td></tr>
             <tr><td>Sidebar: </td><td><textarea rows="8" cols="64" name="sidebar" value=""><?=$node['field_sidebar'][0]['value']?></textarea></td></tr>
@@ -126,8 +126,13 @@ if($err){
             //// lets do the attachments now
             // The ID of the post this attachment is for.
             $parent_post_id = $err;
-
-
+            
+         $returnVal =  wp_set_object_terms( $err, str_getcsv ($s['fashions'],',' ), "fashion" );
+$thisPost = get_post($err);
+ $taxonomy_names = get_object_taxonomies( 'fmag_story' );
+   print_r( $taxonomy_names);
+var_dump($returnVal);
+         
             $pagesArray = explode("\n",$s['pages']);
 
             for($i = 0; $i<count($pagesArray);$i++){
@@ -318,10 +323,13 @@ array(
     ),
     'public' => true,
     'has_archive' => true,
-    'rewrite' => array('slug' => 'stories'),
+    'rewrite' => array('slug' => 'stories',
+        'with_front' => false),
     )
   );
 }
+
+ 
 function people_init(){
 
 // Add new taxonomy, NOT hierarchical (like tags)
@@ -613,4 +621,17 @@ function my_attachments( $attachments )
 
 add_action( 'attachments_register', 'my_attachments' );
 */
+
+function my_rewrite_flush() {
+    // First, we "add" the custom post type via the above written function.
+    // Note: "add" is written with quotes, as CPTs don't get added to the DB,
+    // They are only referenced in the post_type column with a post entry, 
+    // when you add a post of this CPT.
+    create_post_type();
+
+    // ATTENTION: This is *only* done during plugin activation hook in this example!
+    // You should *NEVER EVER* do this on every page load!!
+    flush_rewrite_rules();
+}
+register_activation_hook( __FILE__, 'my_rewrite_flush' );
 ?>
