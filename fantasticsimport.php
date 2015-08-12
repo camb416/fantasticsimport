@@ -6,9 +6,20 @@ Description: Shim for manually entering fantasticsmag stories
 Author: Cameron Browning
 Author URI: http://cameronbrowning.com
 */
+
+
+if ( defined( 'WP_CLI' ) && WP_CLI ) {
+    require_once( 'wp-cli.php' );
+}
+
 add_action('admin_menu', 'fantasticsimport_setup_menu');
 
 $nodes = array();
+
+
+function countTheNodes($ns){
+    return count($ns);
+}
 
 
 function fantasticsimport_setup_menu(){
@@ -20,7 +31,7 @@ function   get_data_from_file($_filename){
 global $nodes;
 echo "load the file: " . $_filename . ".inc";
 
-     $file = file_get_contents('http://fmagwp.dev/wp-content/plugins/fantasticsimport/exports/2007/'.$_filename.'.inc');
+     $file = file_get_contents('http://fmag.dev/wp-content/plugins/fantasticsimport/exports/2007/'.$_filename.'.inc');
 //var_dump($file);
     eval("\$nodes = $file;");
 //$b = serialize($myArr);
@@ -91,6 +102,47 @@ function render_second_form(){
     echo "ok.";
 }
 
+function createPostPost($nodeArray){
+    $node = $nodeArray[0];
+
+    $pages_csv = "";
+
+    for($i=0;$i<count($node['field_page']);$i++){
+
+        $thispage = $node['field_page'][$i];
+        print_r($thispage);
+        $prefix = "";
+        if(0!==$i){
+            $prefix = "\n";
+        }
+        $pages_csv .= $prefix. "http://fantasticsmag.com/" . $thispage['filepath'];
+        // echo("http://fantasticsmag.com/".$thispage['filepath'].",");
+    }
+
+    //featured fashions
+    $fashion_csv = $node['taxonomy']['tags']['1'];
+    $editorial_tags = $node['taxonomy']['tags']['4'];
+
+    $obj = array();
+    $obj['postid'] = $node['nid'];
+    $obj['title'] = $node['title'];
+    $obj['created'] = $node['created'];
+    $obj['fashions_csv'] = $fashion_csv;
+    $obj['people_csv'] = $node['people_csv'];
+    $obj['tags_csv'] = $editorial_tags;
+    $obj['body'] = $node['body'];
+    $obj['description'] = $node['field_description'][0]['value'];
+    $obj['sidebar'] = $node['field_sidebar'][0]['value'];
+    $obj['pages'] = $pages_csv;
+    $obj['alias'] = $node['path'];
+
+    if($node['status'] == '1'){
+        $obj['ispublished'] = '1';
+    }
+
+    print_r($obj);
+}
+
 
 function process_the_post($s){
   //$s is the post variable
@@ -141,6 +193,11 @@ var_dump($returnVal);
             $pagesArray = explode("\n",$s['pages']);
 
             for($i = 0; $i<count($pagesArray);$i++){
+
+
+                echo ("PAGE ".$i . " of " . count($pagesArray)."<br />");
+                flush();
+
           $url =  $snip = str_replace("\r", '', $pagesArray[$i]); // remove carriage returns;
 echo "URL: ".$url;
 
