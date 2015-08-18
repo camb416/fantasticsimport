@@ -23,15 +23,15 @@ function countTheNodes($ns){
 
 
 function fantasticsimport_setup_menu(){
-        add_menu_page( 'Test Plugin Page', 'Fantasticsimport', 'manage_options', 'fantasticsimport', 'test_init' );
+    add_menu_page( 'Test Plugin Page', 'Fantasticsimport', 'manage_options', 'fantasticsimport', 'test_init' );
 }
 
 
 function   get_data_from_file($_filename){
-global $nodes;
-echo "load the file: " . $_filename . ".inc";
+    global $nodes;
+    echo "load the file: " . $_filename . ".inc";
 
-     $file = file_get_contents('http://fmag.dev/wp-content/plugins/fantasticsimport/exports/2007/'.$_filename.'.inc');
+    $file = file_get_contents('http://fantasticsmag.com/wp-content/plugins/fantasticsimport/exports/2007/'.$_filename.'.inc');
 //var_dump($file);
     eval("\$nodes = $file;");
 //$b = serialize($myArr);
@@ -41,17 +41,17 @@ echo "load the file: " . $_filename . ".inc";
 
 
 function render_first_form(){
-?>
-<h1>First Form</h1>
-<form class="fanimp" method="post">
-  Post ID: <input type="Text" name="storyid" value=""><br>
-<?php submit_button('Submit Story'); ?>
-</form>
+    ?>
+    <h1>First Form</h1>
+    <form class="fanimp" method="post">
+        Post ID: <input type="Text" name="storyid" value=""><br>
+        <?php submit_button('Submit Story'); ?>
+    </form>
 <?php
 }
 function render_second_form(){
-  global $nodes;
-  $node = $nodes[0];
+    global $nodes;
+    $node = $nodes[0];
     //var_dump($mydata[0]['nid']);
 
     $pages_csv = "";
@@ -72,16 +72,16 @@ function render_second_form(){
 
 
 
-  ?>
+    ?>
 
-  <form class="fanimp"  method="post">
-      <table>
-          <th></th>
+    <form class="fanimp"  method="post">
+        <table>
+            <th></th>
 
 
             <tr><td>Story Post ID: </td><td><input type="Text" name="postid" value="<?=$node['nid']?>"></td></tr>
             <tr><td>Story Title: </td><td><input type="Text" name="title" value="<?=$node['title']?>"></td></tr>
-          <tr><td>Post Date: </td><td><input type="Text" name="created" value="<?=$node['created']?>"></td></tr>
+            <tr><td>Post Date: </td><td><input type="Text" name="created" value="<?=$node['created']?>"></td></tr>
             <!--tr><td>Image URLs: </td><td><input type="Text" name="imgs" value="<?=$node['nid']?>"></td></tr-->
             <tr><td>Featured Fashions: </td><td><input type="Text" name="fashions_csv" value="<?=$fashion_csv?>"></td></tr>
             <tr><td>People: </td><td><input type="Text" name="people_csv" value=""></td></tr>
@@ -95,10 +95,10 @@ function render_second_form(){
             <?php // TODO: dont think this is working... ?>
             <tr><td>Publish Status: </td><td><input type="checkbox" name="ispublished" <?php if($node['status'] == '1') echo('checked'); ?>></td></tr>
 
-          <tr><td><?php submit_button('Submit Story'); ?></td></tr>
-      </table>
-  </form>
-  <?php
+            <tr><td><?php submit_button('Submit Story'); ?></td></tr>
+        </table>
+    </form>
+    <?php
     echo "ok.";
 }
 
@@ -140,37 +140,39 @@ function createPostPost($nodeArray){
         $obj['ispublished'] = '1';
     }
 
-    print_r($obj);
+    process_the_post($obj);
+    //print_r($obj);
+    return "Hello, World.";
 }
 
 
 function process_the_post($s){
-  //$s is the post variable
-  var_dump($s);
+    //$s is the post variable
+    var_dump($s);
 
-$poststatus = 'private';
-if($s['ispublished'] === 'on'){
-  $poststatus = 'publish';
-}
+    $poststatus = 'private';
+    if($s['ispublished'] === 'on'){
+        $poststatus = 'publish';
+    }
 
-$post = array(
+    $post = array(
 
-  'post_content'   => $s['body'].'<!-- more -->'.$s['description'],
-  'post_name'      => $s['alias'],
-  'post_title'     => $s['title'],
-  'post_status'    => $poststatus,
-  'post_type'      => 'fmag_story',
-  'ping_status'    => 'closed',
-  'post_date'      => date( "Y-m-d H:i:s" ,intval($s['created'])),
-  'comment_status' => 'closed',
-  );
+        'post_content'   => $s['body'].'<!-- more -->'.$s['description'],
+        'post_name'      => $s['alias'],
+        'post_title'     => $s['title'],
+        'post_status'    => $poststatus,
+        'post_type'      => 'fmag_story',
+        'ping_status'    => 'closed',
+        'post_date'      => date( "Y-m-d H:i:s" ,intval($s['created'])),
+        'comment_status' => 'closed',
+    );
 
 
 
- $err = wp_insert_post($post,true);
-if($err){
-  var_dump($err);
-}
+    $err = wp_insert_post($post,true);
+    if($err){
+        var_dump($err);
+    }
     if(is_int($err)){
         if($err>0){
 
@@ -178,18 +180,18 @@ if($err){
             //// lets do the attachments now
             // The ID of the post this attachment is for.
             $parent_post_id = $err;
-            
-         $returnVal =  wp_set_object_terms( $err, str_getcsv ($s['fashions_csv'],',' ), "fashion" );
-        $returnVal2 =  wp_set_object_terms( $err, str_getcsv ($s['people_csv'],',' ), "person" );
-        $returnVal3 =  wp_set_object_terms( $err, str_getcsv ($s['tags_csv'],',' ), "term" );
-         
-         
-         
-$thisPost = get_post($err);
- $taxonomy_names = get_object_taxonomies( 'fmag_story' );
-   print_r( $taxonomy_names);
-var_dump($returnVal);
-         
+
+            $returnVal =  wp_set_object_terms( $err, str_getcsv ($s['fashions_csv'],',' ), "fashion" );
+            $returnVal2 =  wp_set_object_terms( $err, str_getcsv ($s['people_csv'],',' ), "person" );
+            $returnVal3 =  wp_set_object_terms( $err, str_getcsv ($s['tags_csv'],',' ), "term" );
+
+
+
+            $thisPost = get_post($err);
+            $taxonomy_names = get_object_taxonomies( 'fmag_story' );
+            print_r( $taxonomy_names);
+            var_dump($returnVal);
+
             $pagesArray = explode("\n",$s['pages']);
 
             for($i = 0; $i<count($pagesArray);$i++){
@@ -198,42 +200,45 @@ var_dump($returnVal);
                 echo ("PAGE ".$i . " of " . count($pagesArray)."<br />");
                 flush();
 
-          $url =  $snip = str_replace("\r", '', $pagesArray[$i]); // remove carriage returns;
-echo "URL: ".$url;
+                $url =  $snip = str_replace("\r", '', $pagesArray[$i]); // remove carriage returns;
+                echo "\nURL: ".$url;
 
-            // let's sideload it...
+                // let's sideload it...
 
-            $tmp = download_url( $url );
-            if( is_wp_error( $tmp ) ){
-                // download failed, handle error
-                var_dump($tmp);
-            }
-            $post_id = $parent_post_id;
-            $desc = "";
-            $file_array = array();
+                $tmp = download_url( $url );
+                if( is_wp_error( $tmp ) ){
+                    // download failed, handle error
+                    echo("error detected:");
+                    var_dump($tmp);
+                }
+                $post_id = $parent_post_id;
+                $desc = "";
+                $file_array = array();
 
-            // Set variables for storage
-            // fix file filename for query strings
-            preg_match('/[^\?]+\.(jpg|jpe|jpeg|gif|png)/i', $url, $matches);
-            $file_array['name'] = basename($matches[0]);
-            $file_array['tmp_name'] = $tmp;
+                // Set variables for storage
+                // fix file filename for query strings
+                preg_match('/[^\?]+\.(jpg|jpe|jpeg|gif|png)/i', $url, $matches);
+                $file_array['name'] = basename($matches[0]);
+                $file_array['tmp_name'] = $tmp;
 
-            // If error storing temporarily, unlink
-            if ( is_wp_error( $tmp ) ) {
-                @unlink($file_array['tmp_name']);
-                $file_array['tmp_name'] = '';
-            }
+                // If error storing temporarily, unlink
+                if ( is_wp_error( $tmp ) ) {
+                    echo("error 2");
+                    @unlink($file_array['tmp_name']);
+                    $file_array['tmp_name'] = '';
+                }
 
-            // do the validation and storage stuff
-            $id = media_handle_sideload( $file_array, $post_id, $desc );
+                // do the validation and storage stuff
+                $id = media_handle_sideload( $file_array, $post_id, $desc );
 
-            // If error storing permanently, unlink
-            if ( is_wp_error($id) ) {
-                @unlink($file_array['tmp_name']);
-                return $id;
-            }
+                // If error storing permanently, unlink
+                if ( is_wp_error($id) ) {
+                    echo("error 3");
+                    @unlink($file_array['tmp_name']);
+                    return $id;
+                }
 
-            $src = wp_get_attachment_url( $id );
+                $src = wp_get_attachment_url( $id );
 
             }
 
@@ -262,27 +267,27 @@ add_action( 'be_gallery_metabox_post_types', 'be_gallery_metabox_page_and_rotato
 add_action( 'add_meta_boxes', 'attached_images_meta' );
 
 function attached_images_meta() {
-    $screens = array( 'fmag_story', 'post', 'page' ); //add more in here as you see fit
-    foreach ($screens as $screen) {
-        add_meta_box(
-            'attached_images_meta_box', //this is the id of the box
-            'Attached Images', //this is the title
-            'attached_images_meta_box', //the callback
-            $screen, //the post type
-            'side' //the placement
-        );
-    }
+$screens = array( 'fmag_story', 'post', 'page' ); //add more in here as you see fit
+foreach ($screens as $screen) {
+add_meta_box(
+'attached_images_meta_box', //this is the id of the box
+'Attached Images', //this is the title
+'attached_images_meta_box', //the callback
+$screen, //the post type
+'side' //the placement
+);
+}
 }
 function attached_images_meta_box($post){
-    $args = array('post_type'=>'attachment','post_parent'=>$post->ID);
-    $count = count(get_children($args));
-    echo '<a href="#" class="button insert-media add_media" data-editor="content">'.$count.' Images</a>';
+$args = array('post_type'=>'attachment','post_parent'=>$post->ID);
+$count = count(get_children($args));
+echo '<a href="#" class="button insert-media add_media" data-editor="content">'.$count.' Images</a>';
 }
-*/
+ */
 function test_init(){
 
-?>
-<h1>Upload a Fantasticsmag Story</h1>
+    ?>
+    <h1>Upload a Fantasticsmag Story</h1>
 <?php
 
 //////////////////////////////////////
@@ -298,29 +303,29 @@ function test_init(){
 //////////////////////////////////////
 //print_r($_GET);  // for all GET variables
 //print_r($_POST); // for all POST variables
-$s = $_POST;
-echo "test";
-if(empty($s['storyid']) && empty($s['postid']) ){
-  echo "it's empty... render the first form";
-  render_first_form();
-} else if(!empty($s['postid'])){
-  process_the_post($s);
+    $s = $_POST;
+    echo "test";
+    if(empty($s['storyid']) && empty($s['postid']) ){
+        echo "it's empty... render the first form";
+        render_first_form();
+    } else if(!empty($s['postid'])){
+        process_the_post($s);
 
-echo "third form please";
+        echo "third form please";
 
-} else if(!empty($s['storyid'])){
-  echo "it's not empty... render the second form";
-  get_data_from_file($s['storyid']);
-  render_second_form();
+    } else if(!empty($s['storyid'])){
+        echo "it's not empty... render the second form";
+        get_data_from_file($s['storyid']);
+        render_second_form();
 
-}
+    }
 
 
-  test_handle_post();
+    test_handle_post();
 ///////////////////
 
 
-?>
+    ?>
 
 
 <?php
@@ -335,168 +340,168 @@ function test_handle_post(){
 //  echo "say something!";
 // lets list things out so we can see what's up
 // shorthand for the post var
-$s = $_POST;
-/*
-echo  $s['storyid'] .
-      $s['fileurl'].
-      $s['imgs'].
-      $s['fashions'].
-      $s['people'].
-      $s['name'].
-      $s['body'].
-      $s['description'].
-      $s['sidebar'].
-      $s['pages'].
-      $s['alias'];
-*/
-      // checkbox resturns empty string for checked
-      if (isset($s['ispublished'])){
-          echo "ITS PUBLISHED";
-      } else { // or doesn't show up if not checked.
+    $s = $_POST;
+    /*
+    echo  $s['storyid'] .
+          $s['fileurl'].
+          $s['imgs'].
+          $s['fashions'].
+          $s['people'].
+          $s['name'].
+          $s['body'].
+          $s['description'].
+          $s['sidebar'].
+          $s['pages'].
+          $s['alias'];
+    */
+    // checkbox resturns empty string for checked
+    if (isset($s['ispublished'])){
+        echo "ITS PUBLISHED";
+    } else { // or doesn't show up if not checked.
         echo "ITS REALLY NOT";
-      }
+    }
 
     // First check if the file appears on the _FILES array
     if(isset($_FILES['test_upload_pdf'])){
-            $pdf = $_FILES['test_upload_pdf'];
+        $pdf = $_FILES['test_upload_pdf'];
 
-            // Use the wordpress function to upload
-            // test_upload_pdf corresponds to the position in the $_FILES array
-            // 0 means the content is not associated with any other posts
-            $uploaded=media_handle_upload('test_upload_pdf', 0);
-            // Error checking using WP functions
-            if(is_wp_error($uploaded)){
-                    echo "Error uploading file: " . $uploaded->get_error_message();
-            }else{
-                    echo "File upload successful!";
-            }
+        // Use the wordpress function to upload
+        // test_upload_pdf corresponds to the position in the $_FILES array
+        // 0 means the content is not associated with any other posts
+        $uploaded=media_handle_upload('test_upload_pdf', 0);
+        // Error checking using WP functions
+        if(is_wp_error($uploaded)){
+            echo "Error uploading file: " . $uploaded->get_error_message();
+        }else{
+            echo "File upload successful!";
+        }
     } else {
-      echo "well i guess its not set";
+        echo "well i guess its not set";
     }
 }
 
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
-  register_post_type( 'fmag_story',
-array(
-  'labels' => array(
-    'name' => __( 'Stories' ),
-    'singular_name' => __( 'Story' )
-    ),
-    'public' => true,
-    'has_archive' => true,
-    'rewrite' => array('slug' => 'stories',
-        'with_front' => false),
-    )
-  );
+    register_post_type( 'fmag_story',
+        array(
+            'labels' => array(
+                'name' => __( 'Stories' ),
+                'singular_name' => __( 'Story' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'stories',
+                'with_front' => false),
+        )
+    );
 }
 
- 
+
 function people_init(){
 
 // Add new taxonomy, NOT hierarchical (like tags)
-  $labels = array(
-    'name'                       => _x( 'People', 'taxonomy general name' ),
-    'singular_name'              => _x( 'Person', 'taxonomy singular name' ),
-    'search_items'               => __( 'Search People' ),
-    'popular_items'              => __( 'Popular People' ),
-    'all_items'                  => __( 'All People' ),
-    'parent_item'                => null,
-    'parent_item_colon'          => null,
-    'edit_item'                  => __( 'Edit Person' ),
-    'update_item'                => __( 'Update Person' ),
-    'add_new_item'               => __( 'Add New Person' ),
-    'new_item_name'              => __( 'New Person Name' ),
-    'separate_items_with_commas' => __( 'Separate people with commas' ),
-    'add_or_remove_items'        => __( 'Add or remove people' ),
-    'choose_from_most_used'      => __( 'Choose from the most used people' ),
-    'not_found'                  => __( 'No people found.' ),
-    'menu_name'                  => __( 'People' ),
-  );
-
-  $args = array(
-    'hierarchival' => false,
-    'labels' => $labels,
-    'show_ui' => true,
-    'show_admin_column' => true,
-    'update_count_callback' => 'update_term_count',
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'people' ),
+    $labels = array(
+        'name'                       => _x( 'People', 'taxonomy general name' ),
+        'singular_name'              => _x( 'Person', 'taxonomy singular name' ),
+        'search_items'               => __( 'Search People' ),
+        'popular_items'              => __( 'Popular People' ),
+        'all_items'                  => __( 'All People' ),
+        'parent_item'                => null,
+        'parent_item_colon'          => null,
+        'edit_item'                  => __( 'Edit Person' ),
+        'update_item'                => __( 'Update Person' ),
+        'add_new_item'               => __( 'Add New Person' ),
+        'new_item_name'              => __( 'New Person Name' ),
+        'separate_items_with_commas' => __( 'Separate people with commas' ),
+        'add_or_remove_items'        => __( 'Add or remove people' ),
+        'choose_from_most_used'      => __( 'Choose from the most used people' ),
+        'not_found'                  => __( 'No people found.' ),
+        'menu_name'                  => __( 'People' ),
     );
 
-  register_taxonomy('person', 'fmag_story', $args);
+    $args = array(
+        'hierarchival' => false,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'update_count_callback' => 'update_term_count',
+        'query_var' => true,
+        'rewrite' => array( 'slug' => 'people' ),
+    );
+
+    register_taxonomy('person', 'fmag_story', $args);
 }
 add_action( 'init', 'people_init');
 
 function fashions_init(){
 
 // Add new taxonomy, NOT hierarchical (like tags)
-  $labels = array(
-    'name'                       => _x( 'Fashions', 'taxonomy general name' ),
-    'singular_name'              => _x( 'Fashion Brand', 'taxonomy singular name' ),
-    'search_items'               => __( 'Search Fashion Brands' ),
-    'popular_items'              => __( 'Popular Fashion Brands' ),
-    'all_items'                  => __( 'All Fashion Brands' ),
-    'parent_item'                => null,
-    'parent_item_colon'          => null,
-    'edit_item'                  => __( 'Edit Fashion Brand' ),
-    'update_item'                => __( 'Update Fashion Brand' ),
-    'add_new_item'               => __( 'Add New Fashion Brand' ),
-    'new_item_name'              => __( 'New Fashion Brand Name' ),
-    'separate_items_with_commas' => __( 'Separate brands with commas' ),
-    'add_or_remove_items'        => __( 'Add or remove brands' ),
-    'choose_from_most_used'      => __( 'Choose from the most used fashions' ),
-    'not_found'                  => __( 'No fashions found.' ),
-    'menu_name'                  => __( 'Fashions' ),
-  );
-
-  $args = array(
-    'hierarchival' => false,
-    'labels' => $labels,
-    'show_ui' => true,
-    'show_admin_column' => true,
-    'update_count_callback' => 'update_term_count',
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'fashions' ),
+    $labels = array(
+        'name'                       => _x( 'Fashions', 'taxonomy general name' ),
+        'singular_name'              => _x( 'Fashion Brand', 'taxonomy singular name' ),
+        'search_items'               => __( 'Search Fashion Brands' ),
+        'popular_items'              => __( 'Popular Fashion Brands' ),
+        'all_items'                  => __( 'All Fashion Brands' ),
+        'parent_item'                => null,
+        'parent_item_colon'          => null,
+        'edit_item'                  => __( 'Edit Fashion Brand' ),
+        'update_item'                => __( 'Update Fashion Brand' ),
+        'add_new_item'               => __( 'Add New Fashion Brand' ),
+        'new_item_name'              => __( 'New Fashion Brand Name' ),
+        'separate_items_with_commas' => __( 'Separate brands with commas' ),
+        'add_or_remove_items'        => __( 'Add or remove brands' ),
+        'choose_from_most_used'      => __( 'Choose from the most used fashions' ),
+        'not_found'                  => __( 'No fashions found.' ),
+        'menu_name'                  => __( 'Fashions' ),
     );
 
-  register_taxonomy('fashion', 'fmag_story', $args);
+    $args = array(
+        'hierarchival' => false,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'update_count_callback' => 'update_term_count',
+        'query_var' => true,
+        'rewrite' => array( 'slug' => 'fashions' ),
+    );
+
+    register_taxonomy('fashion', 'fmag_story', $args);
 }
 add_action( 'init', 'fashions_init');
 
 function editorial_terms_init(){
 
 // Add new taxonomy, NOT hierarchical (like tags)
-  $labels = array(
-    'name'                       => _x( 'Editorial Terms', 'taxonomy general name' ),
-    'singular_name'              => _x( 'Editorial Term', 'taxonomy singular name' ),
-    'search_items'               => __( 'Search Editorial Terms' ),
-    'popular_items'              => __( 'Popular Editorial Terms' ),
-    'all_items'                  => __( 'All Editorial Terms' ),
-    'parent_item'                => null,
-    'parent_item_colon'          => null,
-    'edit_item'                  => __( 'Edit Editorial Term' ),
-    'update_item'                => __( 'Update Editorial Term' ),
-    'add_new_item'               => __( 'Add New Editorial Term' ),
-    'new_item_name'              => __( 'New Editorial Term' ),
-    'separate_items_with_commas' => __( 'Separate terms with commas' ),
-    'add_or_remove_items'        => __( 'Add or remove terms' ),
-    'choose_from_most_used'      => __( 'Choose from the most used terms' ),
-    'not_found'                  => __( 'No terms found.' ),
-    'menu_name'                  => __( 'Editorial Terms' ),
-  );
-
-  $args = array(
-    'hierarchival' => false,
-    'labels' => $labels,
-    'show_ui' => true,
-    'show_admin_column' => true,
-    'update_count_callback' => 'update_term_count',
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'terms' ),
+    $labels = array(
+        'name'                       => _x( 'Editorial Terms', 'taxonomy general name' ),
+        'singular_name'              => _x( 'Editorial Term', 'taxonomy singular name' ),
+        'search_items'               => __( 'Search Editorial Terms' ),
+        'popular_items'              => __( 'Popular Editorial Terms' ),
+        'all_items'                  => __( 'All Editorial Terms' ),
+        'parent_item'                => null,
+        'parent_item_colon'          => null,
+        'edit_item'                  => __( 'Edit Editorial Term' ),
+        'update_item'                => __( 'Update Editorial Term' ),
+        'add_new_item'               => __( 'Add New Editorial Term' ),
+        'new_item_name'              => __( 'New Editorial Term' ),
+        'separate_items_with_commas' => __( 'Separate terms with commas' ),
+        'add_or_remove_items'        => __( 'Add or remove terms' ),
+        'choose_from_most_used'      => __( 'Choose from the most used terms' ),
+        'not_found'                  => __( 'No terms found.' ),
+        'menu_name'                  => __( 'Editorial Terms' ),
     );
 
-  register_taxonomy('term', 'fmag_story', $args);
+    $args = array(
+        'hierarchival' => false,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'update_count_callback' => 'update_term_count',
+        'query_var' => true,
+        'rewrite' => array( 'slug' => 'terms' ),
+    );
+
+    register_taxonomy('term', 'fmag_story', $args);
 }
 add_action( 'init', 'editorial_terms_init');
 
@@ -508,17 +513,17 @@ add_action( 'init', 'editorial_terms_init');
  */
 function fantasticsimport_add_meta_box() {
 
-  $screens = array( 'fmag_story' );
+    $screens = array( 'fmag_story' );
 
-  foreach ( $screens as $screen ) {
+    foreach ( $screens as $screen ) {
 
-    add_meta_box(
-      'fantasticsimport_sectionid',
-      __( 'Credits Block', 'fantasticsimport_textdomain' ),
-      'fantasticsimport_meta_box_callback',
-      $screen
-    );
-  }
+        add_meta_box(
+            'fantasticsimport_sectionid',
+            __( 'Credits Block', 'fantasticsimport_textdomain' ),
+            'fantasticsimport_meta_box_callback',
+            $screen
+        );
+    }
 }
 add_action( 'add_meta_boxes', 'fantasticsimport_add_meta_box' );
 
@@ -529,33 +534,33 @@ add_action( 'add_meta_boxes', 'fantasticsimport_add_meta_box' );
  */
 function fantasticsimport_meta_box_callback( $post ) {
 
-  // Add a nonce field so we can check for it later.
-  wp_nonce_field( 'fantasticsimport_save_meta_box_data', 'fantasticsimport_meta_box_nonce' );
+    // Add a nonce field so we can check for it later.
+    wp_nonce_field( 'fantasticsimport_save_meta_box_data', 'fantasticsimport_meta_box_nonce' );
 
-  /*
-   * Use get_post_meta() to retrieve an existing value
-   * from the database and use the value for the form.
-   */
-  $value = get_post_meta( $post->ID, '_my_meta_value_key', true );
+    /*
+     * Use get_post_meta() to retrieve an existing value
+     * from the database and use the value for the form.
+     */
+    $value = get_post_meta( $post->ID, '_my_meta_value_key', true );
 
-  /*echo '<label for="fantasticsimport_new_field">';
-  _e( 'Credits Block', 'fantasticsimport_textdomain' );
-  echo '</label><br />';
-  echo '<textarea id="fantasticsimport_new_field" name="fantasticsimport_new_field" rows="16" cols="64">' . esc_attr( $value ) . '</textarea>';
-*/
-  //so, dont ned to use esc_attr in front of get_post_meta
-      $valueeee2=  get_post_meta($_GET['post'], 'fmag_credits_block' , true ) ;
-      wp_editor( htmlspecialchars_decode($valueeee2), 'mettaabox_ID_stylee', $settings = array('textarea_name'=>'fmag_credits_block') );
+    /*echo '<label for="fantasticsimport_new_field">';
+    _e( 'Credits Block', 'fantasticsimport_textdomain' );
+    echo '</label><br />';
+    echo '<textarea id="fantasticsimport_new_field" name="fantasticsimport_new_field" rows="16" cols="64">' . esc_attr( $value ) . '</textarea>';
+  */
+    //so, dont ned to use esc_attr in front of get_post_meta
+    $valueeee2=  get_post_meta($_GET['post'], 'fmag_credits_block' , true ) ;
+    wp_editor( htmlspecialchars_decode($valueeee2), 'mettaabox_ID_stylee', $settings = array('textarea_name'=>'fmag_credits_block') );
 
 
 }
 function save_my_postdata( $post_id )
 {
     if (!empty($_POST['fmag_credits_block']))
-        {
+    {
         $datta=htmlspecialchars($_POST['fmag_credits_block']);
         update_post_meta($post_id, 'fmag_credits_block', $datta );
-        }
+    }
 }
 add_action( 'save_post', 'save_my_postdata' );
 
@@ -566,52 +571,52 @@ add_action( 'save_post', 'save_my_postdata' );
  */
 function fantasticsimport_save_meta_box_data( $post_id ) {
 
-  /*
-   * We need to verify this came from our screen and with proper authorization,
-   * because the save_post action can be triggered at other times.
-   */
+    /*
+     * We need to verify this came from our screen and with proper authorization,
+     * because the save_post action can be triggered at other times.
+     */
 
-  // Check if our nonce is set.
-  if ( ! isset( $_POST['fantasticsimport_meta_box_nonce'] ) ) {
-    return;
-  }
-
-  // Verify that the nonce is valid.
-  if ( ! wp_verify_nonce( $_POST['fantasticsimport_meta_box_nonce'], 'fantasticsimport_save_meta_box_data' ) ) {
-    return;
-  }
-
-  // If this is an autosave, our form has not been submitted, so we don't want to do anything.
-  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
-    return;
-  }
-
-  // Check the user's permissions.
-  if ( isset( $_POST['post_type'] ) && 'page' == $_POST['post_type'] ) {
-
-    if ( ! current_user_can( 'edit_page', $post_id ) ) {
-      return;
+    // Check if our nonce is set.
+    if ( ! isset( $_POST['fantasticsimport_meta_box_nonce'] ) ) {
+        return;
     }
 
-  } else {
-
-    if ( ! current_user_can( 'edit_post', $post_id ) ) {
-      return;
+    // Verify that the nonce is valid.
+    if ( ! wp_verify_nonce( $_POST['fantasticsimport_meta_box_nonce'], 'fantasticsimport_save_meta_box_data' ) ) {
+        return;
     }
-  }
 
-  /* OK, it's safe for us to save the data now. */
+    // If this is an autosave, our form has not been submitted, so we don't want to do anything.
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+        return;
+    }
 
-  // Make sure that it is set.
-  if ( ! isset( $_POST['fantasticsimport_new_field'] ) ) {
-    return;
-  }
+    // Check the user's permissions.
+    if ( isset( $_POST['post_type'] ) && 'page' == $_POST['post_type'] ) {
 
-  // Sanitize user input.
-  $my_data = sanitize_text_field( $_POST['fantasticsimport_new_field'] );
+        if ( ! current_user_can( 'edit_page', $post_id ) ) {
+            return;
+        }
 
-  // Update the meta field in the database.
-  update_post_meta( $post_id, '_my_meta_value_key', $my_data );
+    } else {
+
+        if ( ! current_user_can( 'edit_post', $post_id ) ) {
+            return;
+        }
+    }
+
+    /* OK, it's safe for us to save the data now. */
+
+    // Make sure that it is set.
+    if ( ! isset( $_POST['fantasticsimport_new_field'] ) ) {
+        return;
+    }
+
+    // Sanitize user input.
+    $my_data = sanitize_text_field( $_POST['fantasticsimport_new_field'] );
+
+    // Update the meta field in the database.
+    update_post_meta( $post_id, '_my_meta_value_key', $my_data );
 }
 
 add_action( 'save_post', 'fantasticsimport_save_meta_box_data' );
