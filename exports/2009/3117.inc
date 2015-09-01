@@ -1,0 +1,505 @@
+array(
+  array(
+    'nid' => '3117',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '0',
+    'created' => '1260819802',
+    'changed' => '1337805524',
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '3117',
+    'revision_uid' => '1',
+    'title' => 'Mr Hide',
+    'body' => '<p>
+	Hides in plain site.</p>
+<p>
+	<br />
+	Exclusive photography by Evan Taylor Gunville.</p>
+<p>
+	Models ~ Anthony Avila &amp; Shiva @&nbsp;<a href="http://www.theagencyaz.com/" target="_blank">THE AGENCY</a></p>
+',
+    'teaser' => '<p>
+	Hides in plain site.</p>
+<p>
+	<br />
+	Exclusive photography by Evan Taylor Gunville.</p>
+<p>
+	Models ~ Anthony Avila &amp; Shiva @&nbsp;<a href="http://www.theagencyaz.com/" target="_blank">THE AGENCY</a></p>
+',
+    'log' => '',
+    'revision_timestamp' => '1337805524',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHY<br />
+	EVAN TAYLOR GUNVILLE</p>
+<p>
+	MODELS<br />
+	ANTONY AVILA<br />
+	&amp; SHIVA @ <a href="http://www.theagencyaz.com/" target="_blank">THE AGENCY</a></p>
+<p>
+	&nbsp;</p>
+<p>
+	FEATURED FASHION</p>
+<ul>
+	<li>
+		<a href="http://rufskin.com/cart/" target="_blank">RUFSKIN</a></li>
+	<li>
+		<a href="http://www.heydayfootwear.com/" target="_self">HEYDAY</a></li>
+	<li>
+		<a href="http://www.yohjiyamamoto.co.jp/" target="_blank">YOHJI YAMAMOTO</a></li>
+	<li>
+		<a href="http://www.ashtonmichael.com/" target="_blank">ASHTON MICHAEL</a></li>
+</ul>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '6941',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '73808',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide_DEC09.jpg',
+      ),
+      '1' => array(
+        'fid' => '6942',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide2_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide2_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '79154',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide2_DEC09.jpg',
+      ),
+      '2' => array(
+        'fid' => '6943',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide3_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide3_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '81699',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide3_DEC09.jpg',
+      ),
+      '3' => array(
+        'fid' => '6944',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide4_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide4_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '97012',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide4_DEC09.jpg',
+      ),
+      '4' => array(
+        'fid' => '6945',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide5_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide5_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '144926',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide5_DEC09.jpg',
+      ),
+      '5' => array(
+        'fid' => '6946',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide6_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide6_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '226997',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide6_DEC09.jpg',
+      ),
+      '6' => array(
+        'fid' => '6947',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide7_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide7_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '26038',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide7_DEC09.jpg',
+      ),
+      '7' => array(
+        'fid' => '6948',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide8_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide8_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '89968',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide8_DEC09.jpg',
+      ),
+      '8' => array(
+        'fid' => '6949',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide9_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide9_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '50999',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide9_DEC09.jpg',
+      ),
+      '9' => array(
+        'fid' => '6950',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide10_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide10_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '38878',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide10_DEC09.jpg',
+      ),
+      '10' => array(
+        'fid' => '6951',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide11_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide11_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '106012',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide11_DEC09.jpg',
+      ),
+      '11' => array(
+        'fid' => '6952',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide12_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide12_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '17384',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide12_DEC09.jpg',
+      ),
+      '12' => array(
+        'fid' => '6953',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide13_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide13_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '53697',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide13_DEC09.jpg',
+      ),
+      '13' => array(
+        'fid' => '6954',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide14_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide14_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '77515',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide14_DEC09.jpg',
+      ),
+      '14' => array(
+        'fid' => '6955',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide15_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide15_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '64247',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide15_DEC09.jpg',
+      ),
+      '15' => array(
+        'fid' => '6956',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide16_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide16_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '16844',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide16_DEC09.jpg',
+      ),
+      '16' => array(
+        'fid' => '6957',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide17_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide17_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '92437',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide17_DEC09.jpg',
+      ),
+      '17' => array(
+        'fid' => '6958',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide18_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide18_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '59292',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide18_DEC09.jpg',
+      ),
+      '18' => array(
+        'fid' => '6959',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide19_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide19_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '195493',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide19_DEC09.jpg',
+      ),
+      '19' => array(
+        'fid' => '6960',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide20_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide20_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '64897',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide20_DEC09.jpg',
+      ),
+      '20' => array(
+        'fid' => '6961',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide21_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide21_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '71323',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide21_DEC09.jpg',
+      ),
+      '21' => array(
+        'fid' => '6962',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide22_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide22_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '22724',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide22_DEC09.jpg',
+      ),
+      '22' => array(
+        'fid' => '6963',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide23_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide23_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '53235',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide23_DEC09.jpg',
+      ),
+      '23' => array(
+        'fid' => '6964',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'hide24_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/hide24_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '92304',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'hide24_DEC09.jpg',
+      ),
+    ),
+    'path' => 'stories/mr-hide',
+    'tags' => array(
+      '5' => array(
+        '2536' => array(
+          'tid' => '2536',
+          'vid' => '5',
+          'name' => 'EVAN TAYLOR GUNVILLE',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '5' => 'EVAN TAYLOR GUNVILLE',
+      ),
+      '2' => array(
+        '1' => '1',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

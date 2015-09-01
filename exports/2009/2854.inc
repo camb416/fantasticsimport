@@ -1,0 +1,435 @@
+array(
+  array(
+    'nid' => '2854',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '0',
+    'created' => '1242061597',
+    'changed' => '1337806071',
+    'comment' => '2',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '2854',
+    'revision_uid' => '1',
+    'title' => 'Rise',
+    'body' => '<p>
+	May the road rise with you.</p>
+<p>
+	<br />
+	Exclusive photography by&nbsp;<a href="http://www.petertamlin.com/" target="_blank">peter tamlin</a><a href="http://www.dmwphoto.com/" target="_blank">.</a><http:> </http:></p>
+<p>
+	<br />
+	Models ~ Emanuel&nbsp; &amp; Justin @ <a href="http://www.elmerolsenmodels.com/" target="_blank">ELMER OLSEN</a></p>
+',
+    'teaser' => '<p>
+	May the road rise with you.</p>
+<p>
+	<br />
+	Exclusive photography by&nbsp;<a href="http://www.petertamlin.com/" target="_blank">peter tamlin</a><a href="http://www.dmwphoto.com/" target="_blank">.</a><http:> </http:></p>
+<p>
+	<br />
+	Models ~ Emanuel&nbsp; &amp; Justin @ <a href="http://www.elmerolsenmodels.com/" target="_blank">ELMER OLSEN</a></p>
+',
+    'log' => '',
+    'revision_timestamp' => '1337806071',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHY<br />
+	<a href="http://www.petertamlin.com/" target="_blank">peter tamlin</a></p>
+<p>
+	MODEL<br />
+	EMANUEL &amp; JUSTIN<br />
+	@&nbsp;<a href="http://www.elmerolsenmodels.com/" target="_blank">ELMER OLSEN</a></p>
+<p>
+	FEATURED FASHION</p>
+<ul>
+	<li>
+		<a href="http://www.g-sus.com/" target="_blank">GSUS</a></li>
+</ul>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '3893',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '79489',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise_MAY09.jpg',
+      ),
+      '1' => array(
+        'fid' => '3894',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise2_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise2_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '69687',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise2_MAY09.jpg',
+      ),
+      '2' => array(
+        'fid' => '3895',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise3_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise3_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '69994',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise3_MAY09.jpg',
+      ),
+      '3' => array(
+        'fid' => '3896',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise4_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise4_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '57172',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise4_MAY09.jpg',
+      ),
+      '4' => array(
+        'fid' => '3897',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise5_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise5_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '47920',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise5_MAY09.jpg',
+      ),
+      '5' => array(
+        'fid' => '3898',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise6_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise6_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '81229',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise6_MAY09.jpg',
+      ),
+      '6' => array(
+        'fid' => '3899',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise7_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise7_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '72353',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise7_MAY09.jpg',
+      ),
+      '7' => array(
+        'fid' => '3900',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise8_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise8_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '58866',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise8_MAY09.jpg',
+      ),
+      '8' => array(
+        'fid' => '3901',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise9_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise9_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '75831',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise9_MAY09.jpg',
+      ),
+      '9' => array(
+        'fid' => '3902',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise10_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise10_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '51776',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise10_MAY09.jpg',
+      ),
+      '10' => array(
+        'fid' => '3903',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise11_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise11_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '93398',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise11_MAY09.jpg',
+      ),
+      '11' => array(
+        'fid' => '3904',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise12_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise12_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '40936',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise12_MAY09.jpg',
+      ),
+      '12' => array(
+        'fid' => '3905',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise13_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise13_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '105650',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise13_MAY09.jpg',
+      ),
+      '13' => array(
+        'fid' => '3906',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise14_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise14_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '55167',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise14_MAY09.jpg',
+      ),
+      '14' => array(
+        'fid' => '3907',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise15_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise15_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '77149',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise15_MAY09.jpg',
+      ),
+      '15' => array(
+        'fid' => '3908',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise16_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise16_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '100771',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise16_MAY09.jpg',
+      ),
+      '16' => array(
+        'fid' => '3909',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise17_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise17_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '32719',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise17_MAY09.jpg',
+      ),
+      '17' => array(
+        'fid' => '3910',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise18_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise18_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '65437',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise18_MAY09.jpg',
+      ),
+      '18' => array(
+        'fid' => '3911',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise19_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise19_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '105608',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise19_MAY09.jpg',
+      ),
+      '19' => array(
+        'fid' => '3912',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'rise20_MAY09.jpg',
+        'filepath' => 'files/fmag_story/2009/May/rise20_MAY09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '88211',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'rise20_MAY09.jpg',
+      ),
+    ),
+    'path' => 'stories/rise',
+    'tags' => array(
+      '5' => array(
+        '2476' => array(
+          'tid' => '2476',
+          'vid' => '5',
+          'name' => 'peter tamlin',
+          'description' => 'http://www.petertamlin.com/',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '5' => 'peter tamlin',
+      ),
+      '2' => array(
+        '1' => '1',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

@@ -197,11 +197,11 @@ function process_the_post($s){
             for($i = 0; $i<count($pagesArray);$i++){
 
 
-                echo ("PAGE ".$i . " of " . count($pagesArray)."<br />");
+                echo ("PAGE ".$i . " of " . count($pagesArray)."\n");
                 flush();
 
                 $url =  $snip = str_replace("\r", '', $pagesArray[$i]); // remove carriage returns;
-                echo "\nURL: ".$url;
+                echo "URL: ".$url . "\n";
 
                 // let's sideload it...
 
@@ -239,6 +239,7 @@ function process_the_post($s){
                 }
 
                 $src = wp_get_attachment_url( $id );
+                echo $src."\n\n";
 
             }
 

@@ -1,0 +1,238 @@
+array(
+  array(
+    'nid' => '3132',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'created' => '1261834901',
+    'changed' => '1403919753',
+    'comment' => '2',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '3132',
+    'revision_uid' => '1',
+    'title' => 'My Jamaican Girl',
+    'body' => '<p>Island girl.</p>
+<p>Exclusive photography by <a href="http://www.billywinters.com/" target="_blank">BILLY WINTERS</a>.</p>
+<p>Model ~ Jordan @ <a href="http://www.elitemodel.com/" target="_blank">Elite</a>.</p>',
+    'teaser' => '<p>Island girl.</p>
+<p>Exclusive photography by <a href="http://www.billywinters.com/" target="_blank">BILLY WINTERS</a>.</p>
+<p>Model ~ Jordan @ <a href="http://www.elitemodel.com/" target="_blank">Elite</a>.</p>',
+    'log' => '',
+    'revision_timestamp' => '1403919753',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>PHOTOGRAPHY<br /><a href="http://www.billywinters.com/" target="_blank">BILLY WINTERS</a><br /><br />MODEL<br />JORDAN @ <a href="http://www.elitemodel.com/" target="_blank">Elite</a><br /><br /><br /><br />FEATURED FASHION</p>
+<ul>
+<li><a href="http://www.josephdomingo.com/" target="_blank">Joseph Domingo</a></li>
+</ul>
+<ul>
+<br /><br /> 
+</ul>
+<p> </p>',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '7091',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'jamaican_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/jamaican_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '175237',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'jamaican_DEC09.jpg',
+      ),
+      '1' => array(
+        'fid' => '7092',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'jamaican2_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/jamaican2_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '63346',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'jamaican2_DEC09.jpg',
+      ),
+      '2' => array(
+        'fid' => '7093',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'jamaican3_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/jamaican3_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '168687',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'jamaican3_DEC09.jpg',
+      ),
+      '3' => array(
+        'fid' => '7094',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'jamaican4_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/jamaican4_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '17280',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'jamaican4_DEC09.jpg',
+      ),
+      '4' => array(
+        'fid' => '7095',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'jamaican5_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/jamaican5_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '252753',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'jamaican5_DEC09.jpg',
+      ),
+      '5' => array(
+        'fid' => '7096',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'jamaican6_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/jamaican6_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '14890',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'jamaican6_DEC09.jpg',
+      ),
+      '6' => array(
+        'fid' => '7097',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'jamaican7_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/jamaican7_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '230228',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'jamaican7_DEC09.jpg',
+      ),
+      '7' => array(
+        'fid' => '7098',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'jamaican8_DEC09.jpg',
+        'filepath' => 'files/fmag_story/2009/Dec/jamaican8_DEC09.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '16306',
+        'status' => '1',
+        'timestamp' => '0',
+        'origname' => 'jamaican8_DEC09.jpg',
+      ),
+    ),
+    'path' => 'stories/my-jamaican-girl',
+    'tags' => array(
+      '5' => array(
+        '2519' => array(
+          'tid' => '2519',
+          'vid' => '5',
+          'name' => 'BILLY WINTERS',
+          'description' => 'http://www.billywinters.com/',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '4' => array(
+        '2056' => array(
+          'tid' => '2056',
+          'vid' => '4',
+          'name' => 'women',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '5' => 'BILLY WINTERS',
+        '4' => 'women',
+      ),
+      '2' => array(
+        '1' => '1',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)
