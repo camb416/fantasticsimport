@@ -1,0 +1,367 @@
+array(
+  array(
+    'nid' => '4161',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'created' => '1346427560',
+    'changed' => '1406002245',
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '4161',
+    'revision_uid' => '1',
+    'title' => 'Long Weekend',
+    'body' => '<p>
+	Holiday baby.<br />
+	Exclusive photography by Manny Roman.&nbsp;<br />
+	Model - &Aacute;gueda L&oacute;pez at CGM Miami.</p>
+',
+    'teaser' => '<p>
+	Holiday baby.<br />
+	Exclusive photography by Manny Roman.&nbsp;<br />
+	Model - &Aacute;gueda L&oacute;pez at CGM Miami.</p>
+',
+    'log' => '',
+    'revision_timestamp' => '1406002245',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHY<br />
+	MANNY ROMAN<br />
+	AT MAJESTIC</p>
+<p>
+	STYLING<br />
+	BRANDON FOGEL<br />
+	AT ARTISTS MANAGEMENT</p>
+<p>
+	HAIR &amp; MAKEUP<br />
+	FELIX LLAMOG</p>
+<p>
+	MODEL<br />
+	&Aacute;GUEDA L&Oacute;PEZ<br />
+	AT CGM MIAMI</p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '19901',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'LongWeekend_2.jpg',
+        'filepath' => 'files/fmag_story/2012/Aug/LongWeekend_2.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '243834',
+        'status' => '1',
+        'timestamp' => '1346428348',
+        'origname' => 'LongWeekend_2.jpg',
+      ),
+      '1' => array(
+        'fid' => '19878',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'LongWeekend_3.jpg',
+        'filepath' => 'files/fmag_story/2012/Aug/LongWeekend_3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '214885',
+        'status' => '1',
+        'timestamp' => '1346427511',
+        'origname' => 'LongWeekend_3.jpg',
+      ),
+      '2' => array(
+        'fid' => '19880',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'LongWeekend_4.jpg',
+        'filepath' => 'files/fmag_story/2012/Aug/LongWeekend_4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '311919',
+        'status' => '1',
+        'timestamp' => '1346427526',
+        'origname' => 'LongWeekend_4.jpg',
+      ),
+      '3' => array(
+        'fid' => '19883',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'LongWeekend_5.jpg',
+        'filepath' => 'files/fmag_story/2012/Aug/LongWeekend_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '26488',
+        'status' => '1',
+        'timestamp' => '1346427691',
+        'origname' => 'LongWeekend_5.jpg',
+      ),
+      '4' => array(
+        'fid' => '19885',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'LongWeekend_6.jpg',
+        'filepath' => 'files/fmag_story/2012/Aug/LongWeekend_6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '25134',
+        'status' => '1',
+        'timestamp' => '1346427700',
+        'origname' => 'LongWeekend_6.jpg',
+      ),
+      '5' => array(
+        'fid' => '19887',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'LongWeekend_7.jpg',
+        'filepath' => 'files/fmag_story/2012/Aug/LongWeekend_7.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '169360',
+        'status' => '1',
+        'timestamp' => '1346427710',
+        'origname' => 'LongWeekend_7.jpg',
+      ),
+      '6' => array(
+        'fid' => '19889',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'LongWeekend_8.jpg',
+        'filepath' => 'files/fmag_story/2012/Aug/LongWeekend_8.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '332148',
+        'status' => '1',
+        'timestamp' => '1346427723',
+        'origname' => 'LongWeekend_8.jpg',
+      ),
+      '7' => array(
+        'fid' => '19891',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'LongWeekend_9.jpg',
+        'filepath' => 'files/fmag_story/2012/Aug/LongWeekend_9.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '303198',
+        'status' => '1',
+        'timestamp' => '1346427737',
+        'origname' => 'LongWeekend_9.jpg',
+      ),
+      '8' => array(
+        'fid' => '19893',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'LongWeekend_10.jpg',
+        'filepath' => 'files/fmag_story/2012/Aug/LongWeekend_10.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '141228',
+        'status' => '1',
+        'timestamp' => '1346427747',
+        'origname' => 'LongWeekend_10.jpg',
+      ),
+      '9' => array(
+        'fid' => '19895',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'LongWeekend_11.jpg',
+        'filepath' => 'files/fmag_story/2012/Aug/LongWeekend_11.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '18779',
+        'status' => '1',
+        'timestamp' => '1346427754',
+        'origname' => 'LongWeekend_11.jpg',
+      ),
+      '10' => array(
+        'fid' => '19899',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'LongWeekend_12.jpg',
+        'filepath' => 'files/fmag_story/2012/Aug/LongWeekend_12.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '306872',
+        'status' => '1',
+        'timestamp' => '1346427895',
+        'origname' => 'LongWeekend_12.jpg',
+      ),
+      '11' => array(
+        'fid' => '19900',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'LongWeekend_13.jpg',
+        'filepath' => 'files/fmag_story/2012/Aug/LongWeekend_13.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '279501',
+        'status' => '1',
+        'timestamp' => '1346427904',
+        'origname' => 'LongWeekend_13.jpg',
+      ),
+    ),
+    'path' => 'stories/long-weekend',
+    'tags' => array(
+      '1' => array(
+        '879' => array(
+          'tid' => '879',
+          'vid' => '1',
+          'name' => 'erickson beamon',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '880' => array(
+          'tid' => '880',
+          'vid' => '1',
+          'name' => 'isabel marant',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '881' => array(
+          'tid' => '881',
+          'vid' => '1',
+          'name' => 'lady grey',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '878' => array(
+          'tid' => '878',
+          'vid' => '1',
+          'name' => 'rana rojo',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '5' => array(
+        '2577' => array(
+          'tid' => '2577',
+          'vid' => '5',
+          'name' => 'manny roman',
+          'description' => 'http://www.mannyromannewyork.blogspot.com/',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '4' => array(
+        '2129' => array(
+          'tid' => '2129',
+          'vid' => '4',
+          'name' => 'swimwear',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+        '2056' => array(
+          'tid' => '2056',
+          'vid' => '4',
+          'name' => 'women',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '1' => 'erickson beamon, isabel marant, lady grey, rana rojo',
+        '5' => 'manny roman',
+        '4' => 'swimwear, women',
+      ),
+      '2' => array(
+        '1' => '1',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

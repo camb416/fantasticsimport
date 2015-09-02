@@ -1,0 +1,380 @@
+array(
+  array(
+    'nid' => '3993',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'created' => '1332528271',
+    'changed' => '1403838944',
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '3993',
+    'revision_uid' => '1',
+    'title' => 'Texture',
+    'body' => '<p>
+	Visual or tactile? Whats your pleasure.<br />
+	Exclusive photography by <a href="http://joshmcgeephotography.com/">Josh McGee</a>.<br />
+	Models ~ AJ Ward at Fox.</p>
+',
+    'teaser' => '<p>
+	Visual or tactile? Whats your pleasure.<br />
+	Exclusive photography by <a href="http://joshmcgeephotography.com/">Josh McGee</a>.<br />
+	Models ~ AJ Ward at Fox.</p>
+',
+    'log' => '',
+    'revision_timestamp' => '1403838944',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHY<br />
+	<a href="http://joshmcgeephotography.com/">JOSH MCGEE</a></p>
+<p>
+	&nbsp;</p>
+<p>
+	STYLING<br />
+	REBECCA MCCLURE</p>
+<p>
+	&nbsp;</p>
+<p>
+	MODEL<br />
+	AJ WARD<br />
+	AT FOX</p>
+<p>
+	&nbsp;</p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '17131',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 2 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 2 copy_4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '298589',
+        'status' => '1',
+        'timestamp' => '1331145655',
+        'origname' => 'Layout 1_Page 2 copy.jpg',
+      ),
+      '1' => array(
+        'fid' => '17132',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 3 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 3 copy_4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '112943',
+        'status' => '1',
+        'timestamp' => '1331145667',
+        'origname' => 'Layout 1_Page 3 copy.jpg',
+      ),
+      '2' => array(
+        'fid' => '17134',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 4 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 4 copy_4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '83090',
+        'status' => '1',
+        'timestamp' => '1331145697',
+        'origname' => 'Layout 1_Page 4 copy.jpg',
+      ),
+      '3' => array(
+        'fid' => '17135',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 5 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 5 copy_4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '347060',
+        'status' => '1',
+        'timestamp' => '1331145712',
+        'origname' => 'Layout 1_Page 5 copy.jpg',
+      ),
+      '4' => array(
+        'fid' => '17137',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 6 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 6 copy_4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '320544',
+        'status' => '1',
+        'timestamp' => '1331145734',
+        'origname' => 'Layout 1_Page 6 copy.jpg',
+      ),
+      '5' => array(
+        'fid' => '17138',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 7 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 7 copy_3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '515825',
+        'status' => '1',
+        'timestamp' => '1331145744',
+        'origname' => 'Layout 1_Page 7 copy.jpg',
+      ),
+      '6' => array(
+        'fid' => '17139',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 8 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 8 copy_3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '367286',
+        'status' => '1',
+        'timestamp' => '1331145761',
+        'origname' => 'Layout 1_Page 8 copy.jpg',
+      ),
+      '7' => array(
+        'fid' => '17141',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 9 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 9 copy_4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '75238',
+        'status' => '1',
+        'timestamp' => '1331145781',
+        'origname' => 'Layout 1_Page 9 copy.jpg',
+      ),
+      '8' => array(
+        'fid' => '17143',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 10 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 10 copy_3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '78559',
+        'status' => '1',
+        'timestamp' => '1331145794',
+        'origname' => 'Layout 1_Page 10 copy.jpg',
+      ),
+      '9' => array(
+        'fid' => '17144',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 11 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 11 copy_2.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '311091',
+        'status' => '1',
+        'timestamp' => '1331145804',
+        'origname' => 'Layout 1_Page 11 copy.jpg',
+      ),
+      '10' => array(
+        'fid' => '17145',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 12 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 12 copy_2.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '485600',
+        'status' => '1',
+        'timestamp' => '1331145821',
+        'origname' => 'Layout 1_Page 12 copy.jpg',
+      ),
+      '11' => array(
+        'fid' => '17147',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 13 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 13 copy_2.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '564742',
+        'status' => '1',
+        'timestamp' => '1331145835',
+        'origname' => 'Layout 1_Page 13 copy.jpg',
+      ),
+      '12' => array(
+        'fid' => '17148',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 14 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 14 copy_2.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '78564',
+        'status' => '1',
+        'timestamp' => '1331145850',
+        'origname' => 'Layout 1_Page 14 copy.jpg',
+      ),
+      '13' => array(
+        'fid' => '17149',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 15 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Mar/Layout 1_Page 15 copy_3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '311908',
+        'status' => '1',
+        'timestamp' => '1331145863',
+        'origname' => 'Layout 1_Page 15 copy.jpg',
+      ),
+    ),
+    'path' => 'stories/texture',
+    'tags' => array(
+      '1' => array(
+        '729' => array(
+          'tid' => '729',
+          'vid' => '1',
+          'name' => 'Cameo',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '730' => array(
+          'tid' => '730',
+          'vid' => '1',
+          'name' => 'Finders Keepers',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '728' => array(
+          'tid' => '728',
+          'vid' => '1',
+          'name' => 'Jophiel',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '5' => array(
+        '2677' => array(
+          'tid' => '2677',
+          'vid' => '5',
+          'name' => 'JOSH MCGEE',
+          'description' => 'http://joshmcgeephotography.com/',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '4' => array(
+        '2056' => array(
+          'tid' => '2056',
+          'vid' => '4',
+          'name' => 'women',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '1' => 'Cameo, Finders Keepers, Jophiel',
+        '5' => 'JOSH MCGEE',
+        '4' => 'women',
+      ),
+      '2' => array(
+        '1' => '1',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

@@ -138,6 +138,9 @@ function createPostPost($nodeArray){
 
     if($node['status'] == '1'){
         $obj['ispublished'] = '1';
+        echo('IT IS PUBLISHED');
+    } else {
+        echo('IT IS NOT PUBLISEDH');
     }
 
     process_the_post($obj);
@@ -148,10 +151,10 @@ function createPostPost($nodeArray){
 
 function process_the_post($s){
     //$s is the post variable
-    var_dump($s);
+    //var_dump($s);
 
     $poststatus = 'private';
-    if($s['ispublished'] === 'on'){
+    if($s['ispublished'] === 'on' || $s['ispublished'] === '1'){
         $poststatus = 'publish';
     }
 
@@ -189,8 +192,8 @@ function process_the_post($s){
 
             $thisPost = get_post($err);
             $taxonomy_names = get_object_taxonomies( 'fmag_story' );
-            print_r( $taxonomy_names);
-            var_dump($returnVal);
+            //print_r( $taxonomy_names);
+            //var_dump($returnVal);
 
             $pagesArray = explode("\n",$s['pages']);
 
@@ -204,8 +207,9 @@ function process_the_post($s){
                 echo "URL: ".$url . "\n";
 
                 // let's sideload it...
+                $urlClean = str_replace(' ', '%20', html_entity_decode($url));
 
-                $tmp = download_url( $url );
+                $tmp = download_url( $urlClean );
                 if( is_wp_error( $tmp ) ){
                     // download failed, handle error
                     echo("error detected:");

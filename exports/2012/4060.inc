@@ -1,0 +1,378 @@
+array(
+  array(
+    'nid' => '4060',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'created' => '1338230028',
+    'changed' => '1403838729',
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '4060',
+    'revision_uid' => '1',
+    'title' => 'The Way of The Sword',
+    'body' => '<p>
+	Pursue the culivation of oneself.<br />
+	Exclusive photography by <a href="http://www.julien-bernard.net/">Julien Bernard</a>.<br />
+	Model - Julien Ferr&eacute; at City</p>
+<p>
+	&nbsp;</p>
+',
+    'teaser' => '<p>
+	Pursue the culivation of oneself.<br />
+	Exclusive photography by <a href="http://www.julien-bernard.net/">Julien Bernard</a>.<br />
+	Model - Julien Ferr&eacute; at City</p>
+<p>
+	&nbsp;</p>
+',
+    'log' => '',
+    'revision_timestamp' => '1403838729',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHY<br />
+	<a href="http://www.julien-bernard.net/">JULIEN BERNARD</a></p>
+<p>
+	&nbsp;</p>
+<p>
+	MODEL<br />
+	JULIEN FERR&Eacute;<br />
+	AT CITY</p>
+<p>
+	&nbsp;</p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '18130',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_2 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_2 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '560709',
+        'status' => '1',
+        'timestamp' => '1338231509',
+        'origname' => 'TheWayOfTheSword_2 copy.jpg',
+      ),
+      '1' => array(
+        'fid' => '18131',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_3 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_3 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '531417',
+        'status' => '1',
+        'timestamp' => '1338231524',
+        'origname' => 'TheWayOfTheSword_3 copy.jpg',
+      ),
+      '2' => array(
+        'fid' => '18107',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_4 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_4 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '744332',
+        'status' => '1',
+        'timestamp' => '1338230270',
+        'origname' => 'TheWayOfTheSword_4 copy.jpg',
+      ),
+      '3' => array(
+        'fid' => '18108',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_5 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_5 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '889865',
+        'status' => '1',
+        'timestamp' => '1338230281',
+        'origname' => 'TheWayOfTheSword_5 copy.jpg',
+      ),
+      '4' => array(
+        'fid' => '18110',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_6 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_6 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '693525',
+        'status' => '1',
+        'timestamp' => '1338230316',
+        'origname' => 'TheWayOfTheSword_6 copy.jpg',
+      ),
+      '5' => array(
+        'fid' => '18112',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_7 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_7 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '556329',
+        'status' => '1',
+        'timestamp' => '1338230328',
+        'origname' => 'TheWayOfTheSword_7 copy.jpg',
+      ),
+      '6' => array(
+        'fid' => '18113',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_8 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_8 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '698887',
+        'status' => '1',
+        'timestamp' => '1338230338',
+        'origname' => 'TheWayOfTheSword_8 copy.jpg',
+      ),
+      '7' => array(
+        'fid' => '18114',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_9 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_9 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '590759',
+        'status' => '1',
+        'timestamp' => '1338230350',
+        'origname' => 'TheWayOfTheSword_9 copy.jpg',
+      ),
+      '8' => array(
+        'fid' => '18116',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_10 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_10 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '386676',
+        'status' => '1',
+        'timestamp' => '1338230370',
+        'origname' => 'TheWayOfTheSword_10 copy.jpg',
+      ),
+      '9' => array(
+        'fid' => '18117',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_11 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_11 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '615535',
+        'status' => '1',
+        'timestamp' => '1338230380',
+        'origname' => 'TheWayOfTheSword_11 copy.jpg',
+      ),
+      '10' => array(
+        'fid' => '18119',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_12 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_12 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '711041',
+        'status' => '1',
+        'timestamp' => '1338230404',
+        'origname' => 'TheWayOfTheSword_12 copy.jpg',
+      ),
+      '11' => array(
+        'fid' => '18121',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_13 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_13 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '651034',
+        'status' => '1',
+        'timestamp' => '1338230420',
+        'origname' => 'TheWayOfTheSword_13 copy.jpg',
+      ),
+      '12' => array(
+        'fid' => '18122',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_14 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_14 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '826167',
+        'status' => '1',
+        'timestamp' => '1338230433',
+        'origname' => 'TheWayOfTheSword_14 copy.jpg',
+      ),
+      '13' => array(
+        'fid' => '18124',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_15 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_15 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '934372',
+        'status' => '1',
+        'timestamp' => '1338230460',
+        'origname' => 'TheWayOfTheSword_15 copy.jpg',
+      ),
+      '14' => array(
+        'fid' => '18126',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_16 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_16 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '488958',
+        'status' => '1',
+        'timestamp' => '1338230477',
+        'origname' => 'TheWayOfTheSword_16 copy.jpg',
+      ),
+      '15' => array(
+        'fid' => '18127',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'TheWayOfTheSword_17 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/May/TheWayOfTheSword_17 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '469336',
+        'status' => '1',
+        'timestamp' => '1338230485',
+        'origname' => 'TheWayOfTheSword_17 copy.jpg',
+      ),
+    ),
+    'path' => 'stories/way-sword',
+    'tags' => array(
+      '5' => array(
+        '2669' => array(
+          'tid' => '2669',
+          'vid' => '5',
+          'name' => 'JULIEN BERNARD',
+          'description' => 'http://www.julien-bernard.net/',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '4' => array(
+        '2053' => array(
+          'tid' => '2053',
+          'vid' => '4',
+          'name' => 'men',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '5' => 'JULIEN BERNARD',
+        '4' => 'men',
+      ),
+      '2' => array(
+        '1' => '1',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

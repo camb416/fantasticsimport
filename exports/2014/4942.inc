@@ -1,0 +1,396 @@
+array(
+  array(
+    'nid' => '4942',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'created' => '1414762245',
+    'changed' => '1414892482',
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '4942',
+    'revision_uid' => '1',
+    'title' => 'Parallel Lines',
+    'body' => '<p>
+	A recurring pattern of style.<br />
+	Exclusive photography by <a href="http://www.megansenior.com">Megan Senior</a>.<br />
+	Models - Lindsey B at Re:Direct &amp; Meng Meng at Fusion.</p>
+',
+    'teaser' => '<p>
+	A recurring pattern of style.<br />
+	Exclusive photography by <a href="http://www.megansenior.com">Megan Senior</a>.<br />
+	Models - Lindsey B at Re:Direct &amp; Meng Meng at Fusion.</p>
+',
+    'log' => '',
+    'revision_timestamp' => '1414892482',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => '<p>
+	Magnificent <a href="http://www.megansenior.com">Megan Senior</a> lines up Re:Direct\'s luscious Lindsey B and <a href="http://www.fusionmodelsnyc.com/">Fusion</a>&#39;s marvelous Meng Meng in a prints galore. Fashion editong by our man, the ravishing <a href="http://www.rodneyehall.com">Rodney E Hall</a>, includes <a href="http://www.chloe.com/">Chloe</a>, <a href="http://www.bellerose.be/">Bellerose</a> and <a href="http://www.isseymiyake.com/en/">Issey Miyake</a>. Killer hair by <a href="http://www.kirstenbode.com">Kirsten Bode</a>. Makeup genius by the wonderful <a href="http://www.jennishaw.com">Jenni Shaw.</a></p>
+',
+        'format' => '1',
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHY<br />
+	<a href="http://www.megansenior.com">Megan Senior</a><br />
+	<br />
+	FASHION EDITOR<br />
+	<a href="http://www.rodneyehall.com">Rodney E Hall</a></p>
+<p>
+	Hair<br />
+	<a href="http://www.kirstenbode.com">Kirsten Bode</a></p>
+<p>
+	MAKEUP<br />
+	<a href="http://www.jennishaw.com">Jenni Shaw</a></p>
+<p>
+	MODELS<br />
+	Lindsey B<br />
+	at Re:Direct<br />
+	Meng Meng<br />
+	at Fusion.</p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '33609',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'megan-senior-meng-meng2.jpg',
+        'filepath' => 'files/fmag_story/2014/Oct/megan-senior-meng-meng2.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '834375',
+        'status' => '1',
+        'timestamp' => '1414791569',
+        'origname' => 'megan-senior-meng-meng2.jpg',
+      ),
+      '1' => array(
+        'fid' => '33610',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'megan-senior-meng-meng3.jpg',
+        'filepath' => 'files/fmag_story/2014/Oct/megan-senior-meng-meng3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '611985',
+        'status' => '1',
+        'timestamp' => '1414791579',
+        'origname' => 'megan-senior-meng-meng3.jpg',
+      ),
+      '2' => array(
+        'fid' => '33611',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'megan-senior-meng-meng4.jpg',
+        'filepath' => 'files/fmag_story/2014/Oct/megan-senior-meng-meng4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '544121',
+        'status' => '1',
+        'timestamp' => '1414791590',
+        'origname' => 'megan-senior-meng-meng4.jpg',
+      ),
+      '3' => array(
+        'fid' => '33612',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'megan-senior-meng-meng5.jpg',
+        'filepath' => 'files/fmag_story/2014/Oct/megan-senior-meng-meng5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '504575',
+        'status' => '1',
+        'timestamp' => '1414791603',
+        'origname' => 'megan-senior-meng-meng5.jpg',
+      ),
+      '4' => array(
+        'fid' => '33613',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'megan-senior-meng-meng6.jpg',
+        'filepath' => 'files/fmag_story/2014/Oct/megan-senior-meng-meng6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '67414',
+        'status' => '1',
+        'timestamp' => '1414791617',
+        'origname' => 'megan-senior-meng-meng6.jpg',
+      ),
+      '5' => array(
+        'fid' => '33615',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'megan-senior-meng-meng7.jpg',
+        'filepath' => 'files/fmag_story/2014/Oct/megan-senior-meng-meng7.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '1163280',
+        'status' => '1',
+        'timestamp' => '1414791648',
+        'origname' => 'megan-senior-meng-meng7.jpg',
+      ),
+      '6' => array(
+        'fid' => '33616',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'megan-senior-meng-meng8.jpg',
+        'filepath' => 'files/fmag_story/2014/Oct/megan-senior-meng-meng8.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '1208048',
+        'status' => '1',
+        'timestamp' => '1414791657',
+        'origname' => 'megan-senior-meng-meng8.jpg',
+      ),
+      '7' => array(
+        'fid' => '33617',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'megan-senior-meng-meng9.jpg',
+        'filepath' => 'files/fmag_story/2014/Oct/megan-senior-meng-meng9.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '1069538',
+        'status' => '1',
+        'timestamp' => '1414791675',
+        'origname' => 'megan-senior-meng-meng9.jpg',
+      ),
+      '8' => array(
+        'fid' => '33618',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'megan-senior-meng-meng10.jpg',
+        'filepath' => 'files/fmag_story/2014/Oct/megan-senior-meng-meng10.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '66228',
+        'status' => '1',
+        'timestamp' => '1414791695',
+        'origname' => 'megan-senior-meng-meng10.jpg',
+      ),
+      '9' => array(
+        'fid' => '33619',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'megan-senior-meng-meng11.jpg',
+        'filepath' => 'files/fmag_story/2014/Oct/megan-senior-meng-meng11.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '926477',
+        'status' => '1',
+        'timestamp' => '1414791707',
+        'origname' => 'megan-senior-meng-meng11.jpg',
+      ),
+      '10' => array(
+        'fid' => '33620',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'megan-senior-meng-meng12.jpg',
+        'filepath' => 'files/fmag_story/2014/Oct/megan-senior-meng-meng12.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '661733',
+        'status' => '1',
+        'timestamp' => '1414791714',
+        'origname' => 'megan-senior-meng-meng12.jpg',
+      ),
+      '11' => array(
+        'fid' => '33621',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'megan-senior-meng-meng13.jpg',
+        'filepath' => 'files/fmag_story/2014/Oct/megan-senior-meng-meng13.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '67716',
+        'status' => '1',
+        'timestamp' => '1414791723',
+        'origname' => 'megan-senior-meng-meng13.jpg',
+      ),
+    ),
+    'path' => 'stories/parallel-lines-0',
+    'tags' => array(
+      '1' => array(
+        '1816' => array(
+          'tid' => '1816',
+          'vid' => '1',
+          'name' => 'ALICE ROI',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '2342' => array(
+          'tid' => '2342',
+          'vid' => '1',
+          'name' => 'baccurelli',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '1085' => array(
+          'tid' => '1085',
+          'vid' => '1',
+          'name' => 'Bellerose',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '1071' => array(
+          'tid' => '1071',
+          'vid' => '1',
+          'name' => 'chloe',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '270' => array(
+          'tid' => '270',
+          'vid' => '1',
+          'name' => 'issey miyake',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '1623' => array(
+          'tid' => '1623',
+          'vid' => '1',
+          'name' => 'Marimeko',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '762' => array(
+          'tid' => '762',
+          'vid' => '1',
+          'name' => 'marni',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '2341' => array(
+          'tid' => '2341',
+          'vid' => '1',
+          'name' => 'raf simons for dr martens',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '2033' => array(
+          'tid' => '2033',
+          'vid' => '1',
+          'name' => 'schai',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '5' => array(
+        '2800' => array(
+          'tid' => '2800',
+          'vid' => '5',
+          'name' => 'MEGAN SENIOR',
+          'description' => 'http://megansenior.com/',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '1' => 'ALICE ROI, baccurelli, Bellerose, chloe, issey miyake, Marimeko, marni, raf simons for dr martens, schai',
+        '5' => 'MEGAN SENIOR',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

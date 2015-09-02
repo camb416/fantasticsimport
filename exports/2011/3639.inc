@@ -1,0 +1,285 @@
+array(
+  array(
+    'nid' => '3639',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'created' => '1299359837',
+    'changed' => '1406008829',
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '3639',
+    'revision_uid' => '1',
+    'title' => 'Ellen',
+    'body' => '<p>
+	Ellen&#39;s awesome.<br />
+	Exclusive photography by Joel Esposito.</p>
+',
+    'teaser' => '<p>
+	Ellen&#39;s awesome.<br />
+	Exclusive photography by Joel Esposito.</p>
+',
+    'log' => '',
+    'revision_timestamp' => '1406008829',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	ELLEN<br />
+	@ NEXT</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	PHOTOGRAPHY<br />
+	<a href="http://www.joelesposito.com/">JOEL ESPOSITO</a></p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '12512',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'ellen_MAR11.jpg',
+        'filepath' => 'files/fmag_story/2011/Mar/ellen_MAR11.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '132097',
+        'status' => '1',
+        'timestamp' => '1298841557',
+        'origname' => 'ellen_MAR11.jpg',
+      ),
+      '1' => array(
+        'fid' => '12558',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-3.jpg',
+        'filepath' => 'files/fmag_story/2011/Mar/Layout-1_Page-3_2.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '266273',
+        'status' => '1',
+        'timestamp' => '1299439470',
+        'origname' => 'Layout-1_Page-3.jpg',
+      ),
+      '2' => array(
+        'fid' => '12514',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'ellen3_MAR11.jpg',
+        'filepath' => 'files/fmag_story/2011/Mar/ellen3_MAR11.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '125758',
+        'status' => '1',
+        'timestamp' => '1298841577',
+        'origname' => 'ellen3_MAR11.jpg',
+      ),
+      '3' => array(
+        'fid' => '12515',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'ellen4_MAR11.jpg',
+        'filepath' => 'files/fmag_story/2011/Mar/ellen4_MAR11.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '11378',
+        'status' => '1',
+        'timestamp' => '1298841587',
+        'origname' => 'ellen4_MAR11.jpg',
+      ),
+      '4' => array(
+        'fid' => '12516',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'ellen5_MAR11.jpg',
+        'filepath' => 'files/fmag_story/2011/Mar/ellen5_MAR11.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '11377',
+        'status' => '1',
+        'timestamp' => '1298841596',
+        'origname' => 'ellen5_MAR11.jpg',
+      ),
+      '5' => array(
+        'fid' => '12517',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'ellen6_MAR11.jpg',
+        'filepath' => 'files/fmag_story/2011/Mar/ellen6_MAR11.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '77056',
+        'status' => '1',
+        'timestamp' => '1298841606',
+        'origname' => 'ellen6_MAR11.jpg',
+      ),
+      '6' => array(
+        'fid' => '12559',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-8.jpg',
+        'filepath' => 'files/fmag_story/2011/Mar/Layout-1_Page-8_1.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '136217',
+        'status' => '1',
+        'timestamp' => '1299439493',
+        'origname' => 'Layout-1_Page-8.jpg',
+      ),
+      '7' => array(
+        'fid' => '12560',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-9.jpg',
+        'filepath' => 'files/fmag_story/2011/Mar/Layout-1_Page-9_1.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '115153',
+        'status' => '1',
+        'timestamp' => '1299439503',
+        'origname' => 'Layout-1_Page-9.jpg',
+      ),
+      '8' => array(
+        'fid' => '12562',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-10.jpg',
+        'filepath' => 'files/fmag_story/2011/Mar/Layout-1_Page-10_1.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '85347',
+        'status' => '1',
+        'timestamp' => '1299439630',
+        'origname' => 'Layout-1_Page-10.jpg',
+      ),
+      '9' => array(
+        'fid' => '12522',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'ellen10_MAR11.jpg',
+        'filepath' => 'files/fmag_story/2011/Mar/ellen10_MAR11.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '171482',
+        'status' => '1',
+        'timestamp' => '1298841664',
+        'origname' => 'ellen10_MAR11.jpg',
+      ),
+    ),
+    'path' => 'stories/ellen',
+    'tags' => array(
+      '5' => array(
+        '2621' => array(
+          'tid' => '2621',
+          'vid' => '5',
+          'name' => 'ANNA THIESSEN',
+          'description' => 'http://www.annathiessen.com/',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '4' => array(
+        '2139' => array(
+          'tid' => '2139',
+          'vid' => '4',
+          'name' => 'profile',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+        '2056' => array(
+          'tid' => '2056',
+          'vid' => '4',
+          'name' => 'women',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '5' => 'ANNA THIESSEN',
+        '4' => 'profile, women',
+      ),
+      '2' => array(
+        '354' => '354',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

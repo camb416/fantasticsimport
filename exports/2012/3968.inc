@@ -1,0 +1,460 @@
+array(
+  array(
+    'nid' => '3968',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'created' => '1329417648',
+    'changed' => '1403838946',
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '3968',
+    'revision_uid' => '1',
+    'title' => 'Night Moves',
+    'body' => '<p>
+	Into the evening.<br />
+	Exclusive photography by <a href="http://www.kailasphotography.com/">Kailas</a>.<br />
+	Model ~ Julianne Steege at Wilhelmina.</p>
+',
+    'teaser' => '<p>
+	Into the evening.<br />
+	Exclusive photography by <a href="http://www.kailasphotography.com/">Kailas</a>.<br />
+	Model ~ Julianne Steege at Wilhelmina.</p>
+',
+    'log' => '',
+    'revision_timestamp' => '1403838946',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHY<br />
+	<a href="http://www.kailasphotography.com/">KAILAS</a></p>
+<p>
+	&nbsp;</p>
+<p>
+	STYLING<br />
+	ALLI KAY</p>
+<p>
+	<br />
+	<br />
+	MAKEUP<br />
+	JOURDAN DUDGEON</p>
+<p>
+	&nbsp;</p>
+<p>
+	HAIR<br />
+	SAMANTHA LANDIS</p>
+<p>
+	&nbsp;</p>
+<p>
+	MODEL<br />
+	JULIANNE STEEGE<br />
+	AT WILHELMINA</p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '16768',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 2 copySM.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 2 copySM.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '792251',
+        'status' => '1',
+        'timestamp' => '1329534248',
+        'origname' => 'Layout 1_Page 2 copySM.jpg',
+      ),
+      '1' => array(
+        'fid' => '16744',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 3 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 3 copy_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '107683',
+        'status' => '1',
+        'timestamp' => '1329417547',
+        'origname' => 'Layout 1_Page 3 copy.jpg',
+      ),
+      '2' => array(
+        'fid' => '16746',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 4 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 4 copy_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '91849',
+        'status' => '1',
+        'timestamp' => '1329417555',
+        'origname' => 'Layout 1_Page 4 copy.jpg',
+      ),
+      '3' => array(
+        'fid' => '16748',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 5 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 5 copy_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '1020739',
+        'status' => '1',
+        'timestamp' => '1329417564',
+        'origname' => 'Layout 1_Page 5 copy.jpg',
+      ),
+      '4' => array(
+        'fid' => '16750',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 6 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 6 copy_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '88243',
+        'status' => '1',
+        'timestamp' => '1329417573',
+        'origname' => 'Layout 1_Page 6 copy.jpg',
+      ),
+      '5' => array(
+        'fid' => '16752',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 7 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 7 copy_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '586168',
+        'status' => '1',
+        'timestamp' => '1329417583',
+        'origname' => 'Layout 1_Page 7 copy.jpg',
+      ),
+      '6' => array(
+        'fid' => '16754',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 8 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 8 copy_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '732769',
+        'status' => '1',
+        'timestamp' => '1329417593',
+        'origname' => 'Layout 1_Page 8 copy.jpg',
+      ),
+      '7' => array(
+        'fid' => '16755',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 9 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 9 copy_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '653492',
+        'status' => '1',
+        'timestamp' => '1329417605',
+        'origname' => 'Layout 1_Page 9 copy.jpg',
+      ),
+      '8' => array(
+        'fid' => '16756',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 10 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 10 copy_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '947458',
+        'status' => '1',
+        'timestamp' => '1329417621',
+        'origname' => 'Layout 1_Page 10 copy.jpg',
+      ),
+      '9' => array(
+        'fid' => '16757',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 11 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 11 copy_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '79660',
+        'status' => '1',
+        'timestamp' => '1329417638',
+        'origname' => 'Layout 1_Page 11 copy.jpg',
+      ),
+      '10' => array(
+        'fid' => '16758',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 12 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 12 copy_4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '86298',
+        'status' => '1',
+        'timestamp' => '1329417689',
+        'origname' => 'Layout 1_Page 12 copy.jpg',
+      ),
+      '11' => array(
+        'fid' => '16759',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 13 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 13 copy_3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '530994',
+        'status' => '1',
+        'timestamp' => '1329417702',
+        'origname' => 'Layout 1_Page 13 copy.jpg',
+      ),
+      '12' => array(
+        'fid' => '16762',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 14 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 14 copy_3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '695821',
+        'status' => '1',
+        'timestamp' => '1329417746',
+        'origname' => 'Layout 1_Page 14 copy.jpg',
+      ),
+      '13' => array(
+        'fid' => '16764',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 15 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 15 copy_2.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '835375',
+        'status' => '1',
+        'timestamp' => '1329417760',
+        'origname' => 'Layout 1_Page 15 copy.jpg',
+      ),
+      '14' => array(
+        'fid' => '16765',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 16 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 16 copy_1.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '75378',
+        'status' => '1',
+        'timestamp' => '1329417770',
+        'origname' => 'Layout 1_Page 16 copy.jpg',
+      ),
+      '15' => array(
+        'fid' => '16766',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 17 copy.jpg',
+        'filepath' => 'files/fmag_story/2012/Feb/Layout 1_Page 17 copy_1.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '1185656',
+        'status' => '1',
+        'timestamp' => '1329417792',
+        'origname' => 'Layout 1_Page 17 copy.jpg',
+      ),
+    ),
+    'path' => 'stories/night-moves-1',
+    'tags' => array(
+      '1' => array(
+        '700' => array(
+          'tid' => '700',
+          'vid' => '1',
+          'name' => 'BCBG',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '698' => array(
+          'tid' => '698',
+          'vid' => '1',
+          'name' => 'burberry porsum',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '695' => array(
+          'tid' => '695',
+          'vid' => '1',
+          'name' => 'Pins & needles',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '697' => array(
+          'tid' => '697',
+          'vid' => '1',
+          'name' => 'silence and noise',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '696' => array(
+          'tid' => '696',
+          'vid' => '1',
+          'name' => 'staring at stars',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '200' => array(
+          'tid' => '200',
+          'vid' => '1',
+          'name' => 'TOPSHOP',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '699' => array(
+          'tid' => '699',
+          'vid' => '1',
+          'name' => 'velvet',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '5' => array(
+        '2670' => array(
+          'tid' => '2670',
+          'vid' => '5',
+          'name' => 'KAILAS',
+          'description' => 'http://www.kailasphotography.com/',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '4' => array(
+        '2056' => array(
+          'tid' => '2056',
+          'vid' => '4',
+          'name' => 'women',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '1' => 'BCBG, burberry porsum, Pins & needles, silence and noise, staring at stars, TOPSHOP, velvet',
+        '5' => 'KAILAS',
+        '4' => 'women',
+      ),
+      '2' => array(
+        '1' => '1',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

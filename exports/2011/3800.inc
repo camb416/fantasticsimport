@@ -1,0 +1,331 @@
+array(
+  array(
+    'nid' => '3800',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'created' => '1314892914',
+    'changed' => '1406008486',
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '3800',
+    'revision_uid' => '1',
+    'title' => 'Elena Kurnosova',
+    'body' => '<p>
+	Kurnosova Supernova.<br />
+	Exclusive photography by <a href="http://www.mannyromannewyork.blogspot.com/">Manny Roman</a>.</p>
+',
+    'teaser' => '<p>
+	Kurnosova Supernova.<br />
+	Exclusive photography by <a href="http://www.mannyromannewyork.blogspot.com/">Manny Roman</a>.</p>
+',
+    'log' => '',
+    'revision_timestamp' => '1406008486',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	ELENA KURNOSOVA<br />
+	@ FRONT MIAMI<br />
+	&amp; MUSE NYC<br />
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	PHOTOGRAPHY<br />
+	<a href="http://www.mannyromannewyork.blogspot.com/">MANNY ROMAN</a></p>
+<p>
+	&nbsp;</p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '14200',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-2.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout-1_Page-2.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '44913',
+        'status' => '1',
+        'timestamp' => '1314979107',
+        'origname' => 'Layout-1_Page-2.jpg',
+      ),
+      '1' => array(
+        'fid' => '14201',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-3.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout-1_Page-3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '105732',
+        'status' => '1',
+        'timestamp' => '1314979120',
+        'origname' => 'Layout-1_Page-3.jpg',
+      ),
+      '2' => array(
+        'fid' => '14202',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-4.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout-1_Page-4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '171162',
+        'status' => '1',
+        'timestamp' => '1314979134',
+        'origname' => 'Layout-1_Page-4.jpg',
+      ),
+      '3' => array(
+        'fid' => '14203',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-5.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout-1_Page-5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '157105',
+        'status' => '1',
+        'timestamp' => '1314979147',
+        'origname' => 'Layout-1_Page-5.jpg',
+      ),
+      '4' => array(
+        'fid' => '14204',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-6.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout-1_Page-6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '157309',
+        'status' => '1',
+        'timestamp' => '1314979166',
+        'origname' => 'Layout-1_Page-6.jpg',
+      ),
+      '5' => array(
+        'fid' => '14205',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-7.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout-1_Page-7.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '152369',
+        'status' => '1',
+        'timestamp' => '1314979181',
+        'origname' => 'Layout-1_Page-7.jpg',
+      ),
+      '6' => array(
+        'fid' => '14206',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-8.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout-1_Page-8.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '173875',
+        'status' => '1',
+        'timestamp' => '1314979196',
+        'origname' => 'Layout-1_Page-8.jpg',
+      ),
+      '7' => array(
+        'fid' => '14207',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-9.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout-1_Page-9.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '161648',
+        'status' => '1',
+        'timestamp' => '1314979224',
+        'origname' => 'Layout-1_Page-9.jpg',
+      ),
+      '8' => array(
+        'fid' => '14208',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-10.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout-1_Page-10.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '269585',
+        'status' => '1',
+        'timestamp' => '1314979246',
+        'origname' => 'Layout-1_Page-10.jpg',
+      ),
+      '9' => array(
+        'fid' => '14209',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-11.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout-1_Page-11.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '120319',
+        'status' => '1',
+        'timestamp' => '1314979261',
+        'origname' => 'Layout-1_Page-11.jpg',
+      ),
+      '10' => array(
+        'fid' => '14210',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-12.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout-1_Page-12.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '132454',
+        'status' => '1',
+        'timestamp' => '1314979274',
+        'origname' => 'Layout-1_Page-12.jpg',
+      ),
+      '11' => array(
+        'fid' => '14211',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-13.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout-1_Page-13.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '65307',
+        'status' => '1',
+        'timestamp' => '1314979286',
+        'origname' => 'Layout-1_Page-13.jpg',
+      ),
+    ),
+    'path' => 'stories/elena-kurnosova',
+    'tags' => array(
+      '4' => array(
+        '2134' => array(
+          'tid' => '2134',
+          'vid' => '4',
+          'name' => 'bikini',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+        '2129' => array(
+          'tid' => '2129',
+          'vid' => '4',
+          'name' => 'swimwear',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+        '2056' => array(
+          'tid' => '2056',
+          'vid' => '4',
+          'name' => 'women',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '5' => array(
+        '2461' => array(
+          'tid' => '2461',
+          'vid' => '5',
+          'name' => 'Kristiina Wilson',
+          'description' => 'http://www.kristiinawilson.com',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '4' => 'bikini, swimwear, women',
+        '5' => 'Kristiina Wilson',
+      ),
+      '2' => array(
+        '354' => '354',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

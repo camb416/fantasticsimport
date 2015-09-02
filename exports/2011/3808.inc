@@ -1,0 +1,436 @@
+array(
+  array(
+    'nid' => '3808',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '0',
+    'created' => '1315501591',
+    'changed' => '1337804064',
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '3808',
+    'revision_uid' => '1',
+    'title' => 'Leather Weather',
+    'body' => '<p>
+	Hides to seek.<br />
+	Exclusive photography by Lakani Lao.<br />
+	Models ~ Evan Gomez at Smart &amp; Michael Glenn at Posh.</p>
+',
+    'teaser' => '<p>
+	Hides to seek.<br />
+	Exclusive photography by Lakani Lao.<br />
+	Models ~ Evan Gomez at Smart &amp; Michael Glenn at Posh.</p>
+',
+    'log' => '',
+    'revision_timestamp' => '1337804064',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHY<br />
+	LAKANI LAO<br />
+	AT PHOTOSPHERE</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	FASHION EDITOR<br />
+	DERRIC LOWE</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	MODELS<br />
+	EVAN GOMEZ<br />
+	AT SMART<br />
+	MICHAEL GLENN<br />
+	AT POSH</p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '14356',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 2 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 2 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '177355',
+        'status' => '1',
+        'timestamp' => '1315501254',
+        'origname' => 'Layout 1_Page 2 copy.jpg',
+      ),
+      '1' => array(
+        'fid' => '14357',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 3 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 3 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '635334',
+        'status' => '1',
+        'timestamp' => '1315501280',
+        'origname' => 'Layout 1_Page 3 copy.jpg',
+      ),
+      '2' => array(
+        'fid' => '14359',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 4 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 4 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '638298',
+        'status' => '1',
+        'timestamp' => '1315501307',
+        'origname' => 'Layout 1_Page 4 copy.jpg',
+      ),
+      '3' => array(
+        'fid' => '14360',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 5 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 5 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '557021',
+        'status' => '1',
+        'timestamp' => '1315501315',
+        'origname' => 'Layout 1_Page 5 copy.jpg',
+      ),
+      '4' => array(
+        'fid' => '14361',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 6 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 6 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '82889',
+        'status' => '1',
+        'timestamp' => '1315501325',
+        'origname' => 'Layout 1_Page 6 copy.jpg',
+      ),
+      '5' => array(
+        'fid' => '14362',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 7 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 7 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '664757',
+        'status' => '1',
+        'timestamp' => '1315501345',
+        'origname' => 'Layout 1_Page 7 copy.jpg',
+      ),
+      '6' => array(
+        'fid' => '14363',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 8 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 8 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '609565',
+        'status' => '1',
+        'timestamp' => '1315501361',
+        'origname' => 'Layout 1_Page 8 copy.jpg',
+      ),
+      '7' => array(
+        'fid' => '14364',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 9 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 9 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '536482',
+        'status' => '1',
+        'timestamp' => '1315501377',
+        'origname' => 'Layout 1_Page 9 copy.jpg',
+      ),
+      '8' => array(
+        'fid' => '14366',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 10 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 10 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '836957',
+        'status' => '1',
+        'timestamp' => '1315501397',
+        'origname' => 'Layout 1_Page 10 copy.jpg',
+      ),
+      '9' => array(
+        'fid' => '14367',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 11 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 11 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '82541',
+        'status' => '1',
+        'timestamp' => '1315501406',
+        'origname' => 'Layout 1_Page 11 copy.jpg',
+      ),
+      '10' => array(
+        'fid' => '14368',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 12 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 12 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '689995',
+        'status' => '1',
+        'timestamp' => '1315501424',
+        'origname' => 'Layout 1_Page 12 copy.jpg',
+      ),
+      '11' => array(
+        'fid' => '14369',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 13 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 13 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '778097',
+        'status' => '1',
+        'timestamp' => '1315501442',
+        'origname' => 'Layout 1_Page 13 copy.jpg',
+      ),
+      '12' => array(
+        'fid' => '14370',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 14 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 14 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '762326',
+        'status' => '1',
+        'timestamp' => '1315501464',
+        'origname' => 'Layout 1_Page 14 copy.jpg',
+      ),
+      '13' => array(
+        'fid' => '14371',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 15 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 15 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '82527',
+        'status' => '1',
+        'timestamp' => '1315501484',
+        'origname' => 'Layout 1_Page 15 copy.jpg',
+      ),
+      '14' => array(
+        'fid' => '14372',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 16 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 16 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '652714',
+        'status' => '1',
+        'timestamp' => '1315501500',
+        'origname' => 'Layout 1_Page 16 copy.jpg',
+      ),
+      '15' => array(
+        'fid' => '14375',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 17 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 17 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '429704',
+        'status' => '1',
+        'timestamp' => '1315501699',
+        'origname' => 'Layout 1_Page 17 copy.jpg',
+      ),
+      '16' => array(
+        'fid' => '14373',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 18 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 18 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '821278',
+        'status' => '1',
+        'timestamp' => '1315501559',
+        'origname' => 'Layout 1_Page 18 copy.jpg',
+      ),
+      '17' => array(
+        'fid' => '14374',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout 1_Page 19 copy.jpg',
+        'filepath' => 'files/fmag_story/2011/Sep/Layout 1_Page 19 copy.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '836215',
+        'status' => '1',
+        'timestamp' => '1315501580',
+        'origname' => 'Layout 1_Page 19 copy.jpg',
+      ),
+    ),
+    'path' => 'stories/leather-weather',
+    'tags' => array(
+      '1' => array(
+        '215' => array(
+          'tid' => '215',
+          'vid' => '1',
+          'name' => 'GUCCI',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '398' => array(
+          'tid' => '398',
+          'vid' => '1',
+          'name' => 'Rodrigo Otazu',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '436' => array(
+          'tid' => '436',
+          'vid' => '1',
+          'name' => 'skingraft',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '5' => array(
+        '2645' => array(
+          'tid' => '2645',
+          'vid' => '5',
+          'name' => 'LAKANI LAO',
+          'description' => 'https://www.facebook.com/lakanilaomen',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '1' => 'GUCCI, Rodrigo Otazu, skingraft',
+        '5' => 'LAKANI LAO',
+      ),
+      '2' => array(
+        '1' => '1',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

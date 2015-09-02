@@ -1,0 +1,402 @@
+array(
+  array(
+    'nid' => '3797',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'created' => '1315353489',
+    'changed' => '1403918093',
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '3797',
+    'revision_uid' => '1',
+    'title' => 'Red Is The New Black',
+    'body' => '<p>
+	Higher red-ucation.<br />
+	Exclusive photography by <a href="http://www.kristiinawilson.com/">Kristiina Wilson</a>.<br />
+	Model ~ Dallas at Major.</p>
+',
+    'teaser' => '<p>
+	Higher red-ucation.<br />
+	Exclusive photography by <a href="http://www.kristiinawilson.com/">Kristiina Wilson</a>.<br />
+	Model ~ Dallas at Major.</p>
+',
+    'log' => '',
+    'revision_timestamp' => '1403918093',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHY<br />
+	<a href="http://www.kristiinawilson.com/">KRISTIINA WILSON</a></p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	STYLING BY<br />
+	CLAUDIA CIFU</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	MODEL<br />
+	DALLAS<br />
+	AT MAJOR</p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '14185',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-2.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-2_7.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '188971',
+        'status' => '1',
+        'timestamp' => '1313970914',
+        'origname' => 'Layout-1_Page-2.jpg',
+      ),
+      '1' => array(
+        'fid' => '14186',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-3.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-3_7.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '49900',
+        'status' => '1',
+        'timestamp' => '1313970923',
+        'origname' => 'Layout-1_Page-3.jpg',
+      ),
+      '2' => array(
+        'fid' => '14187',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-4.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-4_6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '272002',
+        'status' => '1',
+        'timestamp' => '1313970937',
+        'origname' => 'Layout-1_Page-4.jpg',
+      ),
+      '3' => array(
+        'fid' => '14188',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-5.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-5_6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '20917',
+        'status' => '1',
+        'timestamp' => '1313970948',
+        'origname' => 'Layout-1_Page-5.jpg',
+      ),
+      '4' => array(
+        'fid' => '14189',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-6.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-6_6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '142362',
+        'status' => '1',
+        'timestamp' => '1313970960',
+        'origname' => 'Layout-1_Page-6.jpg',
+      ),
+      '5' => array(
+        'fid' => '14190',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-7.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-7_6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '118318',
+        'status' => '1',
+        'timestamp' => '1313970974',
+        'origname' => 'Layout-1_Page-7.jpg',
+      ),
+      '6' => array(
+        'fid' => '14191',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-8.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-8_6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '17529',
+        'status' => '1',
+        'timestamp' => '1313970987',
+        'origname' => 'Layout-1_Page-8.jpg',
+      ),
+      '7' => array(
+        'fid' => '14192',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-9.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-9_6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '240134',
+        'status' => '1',
+        'timestamp' => '1313970999',
+        'origname' => 'Layout-1_Page-9.jpg',
+      ),
+      '8' => array(
+        'fid' => '14193',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-10.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-10_6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '161465',
+        'status' => '1',
+        'timestamp' => '1313971011',
+        'origname' => 'Layout-1_Page-10.jpg',
+      ),
+      '9' => array(
+        'fid' => '14194',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-11.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-11_6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '130118',
+        'status' => '1',
+        'timestamp' => '1313971027',
+        'origname' => 'Layout-1_Page-11.jpg',
+      ),
+      '10' => array(
+        'fid' => '14195',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-12.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-12_6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '145897',
+        'status' => '1',
+        'timestamp' => '1313971041',
+        'origname' => 'Layout-1_Page-12.jpg',
+      ),
+      '11' => array(
+        'fid' => '14196',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-13.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-13_6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '140705',
+        'status' => '1',
+        'timestamp' => '1313971054',
+        'origname' => 'Layout-1_Page-13.jpg',
+      ),
+      '12' => array(
+        'fid' => '14197',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-14.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-14_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '18206',
+        'status' => '1',
+        'timestamp' => '1313971065',
+        'origname' => 'Layout-1_Page-14.jpg',
+      ),
+      '13' => array(
+        'fid' => '14198',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-15.jpg',
+        'filepath' => 'files/fmag_story/2011/Aug/Layout-1_Page-15_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '185069',
+        'status' => '1',
+        'timestamp' => '1313971077',
+        'origname' => 'Layout-1_Page-15.jpg',
+      ),
+    ),
+    'path' => 'stories/red-new-black',
+    'tags' => array(
+      '1' => array(
+        '434' => array(
+          'tid' => '434',
+          'vid' => '1',
+          'name' => 'chromat',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '431' => array(
+          'tid' => '431',
+          'vid' => '1',
+          'name' => 'Daniel Palillo',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '432' => array(
+          'tid' => '432',
+          'vid' => '1',
+          'name' => 'harley davidson',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '433' => array(
+          'tid' => '433',
+          'vid' => '1',
+          'name' => 'mary meyer',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '435' => array(
+          'tid' => '435',
+          'vid' => '1',
+          'name' => 'upstate',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '5' => array(
+        '2461' => array(
+          'tid' => '2461',
+          'vid' => '5',
+          'name' => 'Kristiina Wilson',
+          'description' => 'http://www.kristiinawilson.com',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '4' => array(
+        '2056' => array(
+          'tid' => '2056',
+          'vid' => '4',
+          'name' => 'women',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '1' => 'chromat, Daniel Palillo, harley davidson, mary meyer, upstate',
+        '5' => 'Kristiina Wilson',
+        '4' => 'women',
+      ),
+      '2' => array(
+        '1' => '1',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

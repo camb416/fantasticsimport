@@ -1,0 +1,308 @@
+array(
+  array(
+    'nid' => '4024',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'created' => '1335479815',
+    'changed' => '1403838942',
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '4024',
+    'revision_uid' => '1',
+    'title' => 'Classic/Cool',
+    'body' => '<p>
+	Classically cool.<br />
+	Exclusive photography by <a href="http://www.toddanthonytyler.com/">Todd Anthony Tyler</a>.<br />
+	Model - Micheala</p>
+',
+    'teaser' => '<p>
+	Classically cool.<br />
+	Exclusive photography by <a href="http://www.toddanthonytyler.com/">Todd Anthony Tyler</a>.<br />
+	Model - Micheala</p>
+',
+    'log' => '',
+    'revision_timestamp' => '1403838942',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHY<br />
+	<a href="http://www.toddanthonytyler.com/">TODD ANTHONY TYLER</a><br />
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	MODEL<br />
+	MICHAELA</p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '17535',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-2.jpg',
+        'filepath' => 'files/fmag_story/2012/Apr/Layout-1_Page-2_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '35720',
+        'status' => '1',
+        'timestamp' => '1334961252',
+        'origname' => 'Layout-1_Page-2.jpg',
+      ),
+      '1' => array(
+        'fid' => '17536',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-3.jpg',
+        'filepath' => 'files/fmag_story/2012/Apr/Layout-1_Page-3_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '82855',
+        'status' => '1',
+        'timestamp' => '1334961261',
+        'origname' => 'Layout-1_Page-3.jpg',
+      ),
+      '2' => array(
+        'fid' => '17538',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-4.jpg',
+        'filepath' => 'files/fmag_story/2012/Apr/Layout-1_Page-4_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '163830',
+        'status' => '1',
+        'timestamp' => '1334961277',
+        'origname' => 'Layout-1_Page-4.jpg',
+      ),
+      '3' => array(
+        'fid' => '17540',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-5.jpg',
+        'filepath' => 'files/fmag_story/2012/Apr/Layout-1_Page-5_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '16431',
+        'status' => '1',
+        'timestamp' => '1334961286',
+        'origname' => 'Layout-1_Page-5.jpg',
+      ),
+      '4' => array(
+        'fid' => '17542',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-6.jpg',
+        'filepath' => 'files/fmag_story/2012/Apr/Layout-1_Page-6_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '12200',
+        'status' => '1',
+        'timestamp' => '1334961295',
+        'origname' => 'Layout-1_Page-6.jpg',
+      ),
+      '5' => array(
+        'fid' => '17544',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-7.jpg',
+        'filepath' => 'files/fmag_story/2012/Apr/Layout-1_Page-7_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '80496',
+        'status' => '1',
+        'timestamp' => '1334961310',
+        'origname' => 'Layout-1_Page-7.jpg',
+      ),
+      '6' => array(
+        'fid' => '17546',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-8.jpg',
+        'filepath' => 'files/fmag_story/2012/Apr/Layout-1_Page-8_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '65259',
+        'status' => '1',
+        'timestamp' => '1334961319',
+        'origname' => 'Layout-1_Page-8.jpg',
+      ),
+      '7' => array(
+        'fid' => '17548',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-9.jpg',
+        'filepath' => 'files/fmag_story/2012/Apr/Layout-1_Page-9_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '87857',
+        'status' => '1',
+        'timestamp' => '1334961332',
+        'origname' => 'Layout-1_Page-9.jpg',
+      ),
+      '8' => array(
+        'fid' => '17549',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-10.jpg',
+        'filepath' => 'files/fmag_story/2012/Apr/Layout-1_Page-10_4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '17047',
+        'status' => '1',
+        'timestamp' => '1334961344',
+        'origname' => 'Layout-1_Page-10.jpg',
+      ),
+      '9' => array(
+        'fid' => '17550',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-11.jpg',
+        'filepath' => 'files/fmag_story/2012/Apr/Layout-1_Page-11_4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '79166',
+        'status' => '1',
+        'timestamp' => '1334961361',
+        'origname' => 'Layout-1_Page-11.jpg',
+      ),
+      '10' => array(
+        'fid' => '17551',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-12.jpg',
+        'filepath' => 'files/fmag_story/2012/Apr/Layout-1_Page-12_3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '15670',
+        'status' => '1',
+        'timestamp' => '1334961390',
+        'origname' => 'Layout-1_Page-12.jpg',
+      ),
+      '11' => array(
+        'fid' => '17552',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Layout-1_Page-13.jpg',
+        'filepath' => 'files/fmag_story/2012/Apr/Layout-1_Page-13_3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '139581',
+        'status' => '1',
+        'timestamp' => '1334961403',
+        'origname' => 'Layout-1_Page-13.jpg',
+      ),
+    ),
+    'path' => 'stories/classiccool',
+    'tags' => array(
+      '5' => array(
+        '2493' => array(
+          'tid' => '2493',
+          'vid' => '5',
+          'name' => 'Todd ANTHONY TYLER',
+          'description' => 'http://www.toddanthonytyler.com/',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '4' => array(
+        '2056' => array(
+          'tid' => '2056',
+          'vid' => '4',
+          'name' => 'women',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      '2' => array(
+        '1' => '1',
+      ),
+      'tags' => array(
+        '5' => 'Todd ANTHONY TYLER',
+        '4' => 'women',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

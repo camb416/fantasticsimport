@@ -1,0 +1,505 @@
+array(
+  array(
+    'nid' => '4534',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'created' => '1378330324',
+    'changed' => '1380549550',
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '4534',
+    'revision_uid' => '1',
+    'title' => 'Post Chaste',
+    'body' => '<p>
+	Nun of the above.<br />
+	Exclusive photography by <a href="http://fashion-advertising-photographer.com/">Lyall Aston</a>.<br />
+	Models - Chrissy W &amp; Alexander S at Wilhelmina,<br />
+	Jade Perkins at Next.</p>
+',
+    'teaser' => '<p>
+	Nun of the above.<br />
+	Exclusive photography by <a href="http://fashion-advertising-photographer.com/">Lyall Aston</a>.<br />
+	Models - Chrissy W &amp; Alexander S at Wilhelmina,<br />
+	Jade Perkins at Next.</p>
+',
+    'log' => '',
+    'revision_timestamp' => '1380549550',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHY<br />
+	&amp; DRIECTION<br />
+	<a href="http://fashion-advertising-photographer.com/">LYALL ASTON</a><br />
+	AT ABTP</p>
+<p>
+	STYLING<br />
+	ANA BRILLEMBOURG<br />
+	AT ABTP</p>
+<p>
+	HAIR &amp; MAKEUP<br />
+	STEVEN HOEPPNER<br />
+	AT ABTP</p>
+<p>
+	MANICURIST<br />
+	ISIS ANTELO<br />
+	AT ABTP</p>
+<p>
+	&nbsp;</p>
+<p>
+	MODELS<br />
+	CHRISSY W&nbsp;<br />
+	&amp; ALEXANDER S<br />
+	AT WILHELMINA<br />
+	JADE PERKINS<br />
+	AT NEXT</p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '27000',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_2.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_2.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '38588',
+        'status' => '1',
+        'timestamp' => '1378070994',
+        'origname' => 'PostChaste_2.jpg',
+      ),
+      '1' => array(
+        'fid' => '27001',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_3.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '221633',
+        'status' => '1',
+        'timestamp' => '1378071002',
+        'origname' => 'PostChaste_3.jpg',
+      ),
+      '2' => array(
+        'fid' => '27003',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_4.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '19399',
+        'status' => '1',
+        'timestamp' => '1378071009',
+        'origname' => 'PostChaste_4.jpg',
+      ),
+      '3' => array(
+        'fid' => '27005',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_5.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '217439',
+        'status' => '1',
+        'timestamp' => '1378071015',
+        'origname' => 'PostChaste_5.jpg',
+      ),
+      '4' => array(
+        'fid' => '27007',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_6.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '14944',
+        'status' => '1',
+        'timestamp' => '1378071023',
+        'origname' => 'PostChaste_6.jpg',
+      ),
+      '5' => array(
+        'fid' => '27009',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_7.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_7.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '161291',
+        'status' => '1',
+        'timestamp' => '1378071031',
+        'origname' => 'PostChaste_7.jpg',
+      ),
+      '6' => array(
+        'fid' => '27011',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_8.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_8.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '79781',
+        'status' => '1',
+        'timestamp' => '1378071037',
+        'origname' => 'PostChaste_8.jpg',
+      ),
+      '7' => array(
+        'fid' => '27013',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_9.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_9.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '127070',
+        'status' => '1',
+        'timestamp' => '1378071043',
+        'origname' => 'PostChaste_9.jpg',
+      ),
+      '8' => array(
+        'fid' => '27014',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_10.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_10.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '17050',
+        'status' => '1',
+        'timestamp' => '1378071047',
+        'origname' => 'PostChaste_10.jpg',
+      ),
+      '9' => array(
+        'fid' => '27016',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_11.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_11.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '211270',
+        'status' => '1',
+        'timestamp' => '1378071060',
+        'origname' => 'PostChaste_11.jpg',
+      ),
+      '10' => array(
+        'fid' => '27018',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_12.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_12.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '160995',
+        'status' => '1',
+        'timestamp' => '1378071066',
+        'origname' => 'PostChaste_12.jpg',
+      ),
+      '11' => array(
+        'fid' => '27020',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_13.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_13.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '138616',
+        'status' => '1',
+        'timestamp' => '1378071074',
+        'origname' => 'PostChaste_13.jpg',
+      ),
+      '12' => array(
+        'fid' => '27022',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_14.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_14.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '15064',
+        'status' => '1',
+        'timestamp' => '1378071079',
+        'origname' => 'PostChaste_14.jpg',
+      ),
+      '13' => array(
+        'fid' => '27024',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_15.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_15.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '180967',
+        'status' => '1',
+        'timestamp' => '1378071085',
+        'origname' => 'PostChaste_15.jpg',
+      ),
+      '14' => array(
+        'fid' => '27026',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_16.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_16.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '15635',
+        'status' => '1',
+        'timestamp' => '1378071090',
+        'origname' => 'PostChaste_16.jpg',
+      ),
+      '15' => array(
+        'fid' => '27028',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_17.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_17.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '126248',
+        'status' => '1',
+        'timestamp' => '1378071096',
+        'origname' => 'PostChaste_17.jpg',
+      ),
+      '16' => array(
+        'fid' => '27030',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_18.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_18.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '18002',
+        'status' => '1',
+        'timestamp' => '1378071100',
+        'origname' => 'PostChaste_18.jpg',
+      ),
+      '17' => array(
+        'fid' => '27032',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_19.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_19.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '189145',
+        'status' => '1',
+        'timestamp' => '1378071107',
+        'origname' => 'PostChaste_19.jpg',
+      ),
+      '18' => array(
+        'fid' => '27034',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_20.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_20.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '16344',
+        'status' => '1',
+        'timestamp' => '1378071114',
+        'origname' => 'PostChaste_20.jpg',
+      ),
+      '19' => array(
+        'fid' => '27035',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'PostChaste_21.jpg',
+        'filepath' => 'files/fmag_story/2013/Sep/PostChaste_21.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '163481',
+        'status' => '1',
+        'timestamp' => '1378071118',
+        'origname' => 'PostChaste_21.jpg',
+      ),
+    ),
+    'path' => 'stories/post-chaste',
+    'tags' => array(
+      '5' => array(
+        '2775' => array(
+          'tid' => '2775',
+          'vid' => '5',
+          'name' => '& DRIECTION',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '1' => array(
+        '1530' => array(
+          'tid' => '1530',
+          'vid' => '1',
+          'name' => 'C Madeleine\'s',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '52' => array(
+          'tid' => '52',
+          'vid' => '1',
+          'name' => 'calvin Klein',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '77' => array(
+          'tid' => '77',
+          'vid' => '1',
+          'name' => 'chanel',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '215' => array(
+          'tid' => '215',
+          'vid' => '1',
+          'name' => 'GUCCI',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '191' => array(
+          'tid' => '191',
+          'vid' => '1',
+          'name' => 'LA PERLA',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+        '759' => array(
+          'tid' => '759',
+          'vid' => '1',
+          'name' => 'ysl',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => FALSE,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '5' => '& DRIECTION',
+        '1' => 'C Madeleine\'s, calvin Klein, chanel, GUCCI, LA PERLA, ysl',
+      ),
+      '2' => array(
+        '1' => '1',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)

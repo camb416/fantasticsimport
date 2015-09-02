@@ -1,0 +1,635 @@
+array(
+  array(
+    'nid' => '4738',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'created' => '1398902217',
+    'changed' => '1406004942',
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '4738',
+    'revision_uid' => '1',
+    'title' => '7s Calm In Silence',
+    'body' => '<p>
+	Variations on the man of today.<br />
+	Exclusive photography by <a href="http://www.akikohiguchi.com/">Akiko Higuchi</a>.<br />
+	Models - Keith at Adam, Efrain at Be Natural, Jordan at Major, Nick at New York Models, Charlie &amp; Roan at Re:quest, Oriion at Red Citizen.</p>
+',
+    'teaser' => '<p>
+	Variations on the man of today.<br />
+	Exclusive photography by <a href="http://www.akikohiguchi.com/">Akiko Higuchi</a>.<br />
+	Models - Keith at Adam, Efrain at Be Natural, Jordan at Major, Nick at New York Models, Charlie &amp; Roan at Re:quest, Oriion at Red Citizen.</p>
+',
+    'log' => '',
+    'revision_timestamp' => '1406004942',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHY<br />
+	<a href="http://www.akikohiguchi.com/">AKIKO HIGUCHI</a></p>
+<p>
+	STYLING<br />
+	<a href="http://www.yuikoikebata.com/#/">YUIKO IKEBATA</a><br />
+	<a href="http://www.rickypartner.com/"> </a></p>
+<p>
+	HAIR<br />
+	<a href="http://www.yuhikim.com/">YUHI KIM</a><br />
+	AMI CHIBANA</p>
+<p>
+	&nbsp;</p>
+<p>
+	MAKEUP<br />
+	MINAKO KIUCHI<br />
+	<a href="http://www.yucoaoki.com/">YUCO_AOKI</a></p>
+<p>
+	MODELS</p>
+<p>
+	CHARKIE HIMMELSTEIN<br />
+	ROAN LOUCH<br />
+	AT RE:QUEST</p>
+<p>
+	JORDAN KUTCHMA<br />
+	AT MAJOR</p>
+<p>
+	KEITH AT ADAM</p>
+<p>
+	ORION KLEIN<br />
+	AT RED CITIZEN</p>
+<p>
+	EFRAIN<br />
+	AT BE NATURAL<br />
+	BNM EVA MGMT</p>
+<p>
+	NICK REA<br />
+	NEW YORK MODELS</p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '30129',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_10.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_10.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '164618',
+        'status' => '1',
+        'timestamp' => '1398902085',
+        'origname' => 'Akiko-Higuchi_10.jpg',
+      ),
+      '1' => array(
+        'fid' => '30131',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_11.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_11.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '54895',
+        'status' => '1',
+        'timestamp' => '1398902093',
+        'origname' => 'Akiko-Higuchi_11.jpg',
+      ),
+      '2' => array(
+        'fid' => '30133',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_12.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_12.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '17575',
+        'status' => '1',
+        'timestamp' => '1398902098',
+        'origname' => 'Akiko-Higuchi_12.jpg',
+      ),
+      '3' => array(
+        'fid' => '30135',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_13.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_13.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '102768',
+        'status' => '1',
+        'timestamp' => '1398902104',
+        'origname' => 'Akiko-Higuchi_13.jpg',
+      ),
+      '4' => array(
+        'fid' => '30137',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_14.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_14.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '12200',
+        'status' => '1',
+        'timestamp' => '1398902112',
+        'origname' => 'Akiko-Higuchi_14.jpg',
+      ),
+      '5' => array(
+        'fid' => '30139',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_15.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_15.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '118257',
+        'status' => '1',
+        'timestamp' => '1398902120',
+        'origname' => 'Akiko-Higuchi_15.jpg',
+      ),
+      '6' => array(
+        'fid' => '30141',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_16.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_16.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '16134',
+        'status' => '1',
+        'timestamp' => '1398902129',
+        'origname' => 'Akiko-Higuchi_16.jpg',
+      ),
+      '7' => array(
+        'fid' => '30142',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_17.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_17.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '63030',
+        'status' => '1',
+        'timestamp' => '1398902136',
+        'origname' => 'Akiko-Higuchi_17.jpg',
+      ),
+      '8' => array(
+        'fid' => '30144',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_18.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_18.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '94430',
+        'status' => '1',
+        'timestamp' => '1398902154',
+        'origname' => 'Akiko-Higuchi_18.jpg',
+      ),
+      '9' => array(
+        'fid' => '30146',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_19.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_19.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '98421',
+        'status' => '1',
+        'timestamp' => '1398902161',
+        'origname' => 'Akiko-Higuchi_19.jpg',
+      ),
+      '10' => array(
+        'fid' => '30148',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_20.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_20.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '18575',
+        'status' => '1',
+        'timestamp' => '1398902170',
+        'origname' => 'Akiko-Higuchi_20.jpg',
+      ),
+      '11' => array(
+        'fid' => '30150',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_21.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_21.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '127955',
+        'status' => '1',
+        'timestamp' => '1398902183',
+        'origname' => 'Akiko-Higuchi_21.jpg',
+      ),
+      '12' => array(
+        'fid' => '30152',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_22.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_22.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '111552',
+        'status' => '1',
+        'timestamp' => '1398903151',
+        'origname' => 'Akiko-Higuchi_22.jpg',
+      ),
+      '13' => array(
+        'fid' => '30154',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_23.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_23.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '136133',
+        'status' => '1',
+        'timestamp' => '1398903161',
+        'origname' => 'Akiko-Higuchi_23.jpg',
+      ),
+      '14' => array(
+        'fid' => '30191',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => '  Akiko-Higuch_24B.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/  Akiko-Higuch_24B.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '60033',
+        'status' => '1',
+        'timestamp' => '1399336349',
+        'origname' => '  Akiko-Higuch_24B.jpg',
+      ),
+      '15' => array(
+        'fid' => '30158',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_25.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_25.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '99234',
+        'status' => '1',
+        'timestamp' => '1398903179',
+        'origname' => 'Akiko-Higuchi_25.jpg',
+      ),
+      '16' => array(
+        'fid' => '30160',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_26.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_26.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '74134',
+        'status' => '1',
+        'timestamp' => '1398903187',
+        'origname' => 'Akiko-Higuchi_26.jpg',
+      ),
+      '17' => array(
+        'fid' => '30162',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_27.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_27.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '114102',
+        'status' => '1',
+        'timestamp' => '1398903201',
+        'origname' => 'Akiko-Higuchi_27.jpg',
+      ),
+      '18' => array(
+        'fid' => '30164',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_28.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_28.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '174007',
+        'status' => '1',
+        'timestamp' => '1398903212',
+        'origname' => 'Akiko-Higuchi_28.jpg',
+      ),
+      '19' => array(
+        'fid' => '30166',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_29.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_29.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '103621',
+        'status' => '1',
+        'timestamp' => '1398903219',
+        'origname' => 'Akiko-Higuchi_29.jpg',
+      ),
+      '20' => array(
+        'fid' => '30168',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_30.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_30.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '87005',
+        'status' => '1',
+        'timestamp' => '1398903229',
+        'origname' => 'Akiko-Higuchi_30.jpg',
+      ),
+      '21' => array(
+        'fid' => '30170',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_31.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_31.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '78015',
+        'status' => '1',
+        'timestamp' => '1398903236',
+        'origname' => 'Akiko-Higuchi_31.jpg',
+      ),
+      '22' => array(
+        'fid' => '30172',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_32.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_32.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '18250',
+        'status' => '1',
+        'timestamp' => '1398903245',
+        'origname' => 'Akiko-Higuchi_32.jpg',
+      ),
+      '23' => array(
+        'fid' => '30174',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_33.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_33.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '47042',
+        'status' => '1',
+        'timestamp' => '1398903254',
+        'origname' => 'Akiko-Higuchi_33.jpg',
+      ),
+      '24' => array(
+        'fid' => '30176',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_34.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_34.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '58814',
+        'status' => '1',
+        'timestamp' => '1398903262',
+        'origname' => 'Akiko-Higuchi_34.jpg',
+      ),
+      '25' => array(
+        'fid' => '30178',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_35.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_35.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '29878',
+        'status' => '1',
+        'timestamp' => '1398903272',
+        'origname' => 'Akiko-Higuchi_35.jpg',
+      ),
+      '26' => array(
+        'fid' => '30179',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_36.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_36.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '146527',
+        'status' => '1',
+        'timestamp' => '1398903281',
+        'origname' => 'Akiko-Higuchi_36.jpg',
+      ),
+      '27' => array(
+        'fid' => '30180',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_37.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_37.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '144649',
+        'status' => '1',
+        'timestamp' => '1398903292',
+        'origname' => 'Akiko-Higuchi_37.jpg',
+      ),
+      '28' => array(
+        'fid' => '30182',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_38.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_38.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '122970',
+        'status' => '1',
+        'timestamp' => '1398903308',
+        'origname' => 'Akiko-Higuchi_38.jpg',
+      ),
+      '29' => array(
+        'fid' => '30183',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'Akiko-Higuchi_39.jpg',
+        'filepath' => 'files/fmag_story/2014/Apr/Akiko-Higuchi_39.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '124963',
+        'status' => '1',
+        'timestamp' => '1398903314',
+        'origname' => 'Akiko-Higuchi_39.jpg',
+      ),
+    ),
+    'path' => 'stories/7s-calm-silence',
+    'tags' => array(
+      '5' => array(
+        '2809' => array(
+          'tid' => '2809',
+          'vid' => '5',
+          'name' => 'AKIKO HIGUCHI',
+          'description' => 'http://www.akikohiguchi.com/',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+      '4' => array(
+        '2054' => array(
+          'tid' => '2054',
+          'vid' => '4',
+          'name' => 'blackandwhite',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+        '2053' => array(
+          'tid' => '2053',
+          'vid' => '4',
+          'name' => 'men',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          'fields' => NULL,
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '5' => 'AKIKO HIGUCHI',
+        '4' => 'blackandwhite, men',
+      ),
+      '2' => array(
+        '1' => '1',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)
