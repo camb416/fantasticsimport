@@ -397,6 +397,7 @@ function create_post_type() {
             'has_archive' => true,
             'rewrite' => array('slug' => 'stories',
                 'with_front' => false),
+           // 'supports' => array('title', 'editor', 'post-formats')
         )
     );
 }
