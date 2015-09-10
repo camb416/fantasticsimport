@@ -135,6 +135,7 @@ function createPostPost($nodeArray){
     $obj['sidebar'] = $node['field_sidebar'][0]['value'];
     $obj['pages'] = $pages_csv;
     $obj['alias'] = $node['path'];
+    $obj['legacy_id'] = $node['nid'];
 
     if($node['status'] == '1'){
         $obj['ispublished'] = '1';
@@ -183,6 +184,8 @@ function process_the_post($s){
             //// lets do the attachments now
             // The ID of the post this attachment is for.
             $parent_post_id = $err;
+
+            add_post_meta($parent_post_id, 'legacy_id', $s['legacy_id']);
 
             $returnVal =  wp_set_object_terms( $err, str_getcsv ($s['fashions_csv'],',' ), "fashion" );
             $returnVal2 =  wp_set_object_terms( $err, str_getcsv ($s['people_csv'],',' ), "person" );
