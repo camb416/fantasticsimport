@@ -1,0 +1,1 @@
+wp post delete $(wp post list --post_type='fmag_cover' --format=ids)
