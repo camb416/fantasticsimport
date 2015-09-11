@@ -26,10 +26,10 @@ class FmagImport_CLI extends WP_CLI_Command {
      *
      */
     public function stats( ) {
-        WP_CLI::success( __( 'Successfully imported an FMAG post.', 'fmagimport' ) );
+        WP_CLI::success( __( 'Successfully imported.', 'fmagimport' ) );
     }
 
-    public function test( $args, $assoc_args  ) {
+    public function story( $args, $assoc_args  ) {
         if(isset($args[0])){
            // print_r($args[0]);
             $safe_filename = Helper::sanitizeFileName($args[0], 'linux');
@@ -44,7 +44,25 @@ class FmagImport_CLI extends WP_CLI_Command {
             WP_CLI::error( sprintf( 'you need to type a filename' ) );
         }
 
-        WP_CLI::success( 'testing' );
+        WP_CLI::success( 'imported a story.' );
+    }
+
+    public function cover( $args, $assoc_args  ) {
+        if(isset($args[0])){
+            // print_r($args[0]);
+            $safe_filename = Helper::sanitizeFileName($args[0], 'linux');
+            // print_r($safe_filename);
+            $file = file_get_contents($safe_filename);
+            // print_r($file);
+
+            eval("\$nodes = $file;");
+            print_r(createCoverPost($nodes));
+            //print_r(file_get_contents( $args[0] ));
+        } else {
+            WP_CLI::error( sprintf( 'you need to type a filename' ) );
+        }
+
+        WP_CLI::success( 'imported a cover.' );
     }
 
     /**

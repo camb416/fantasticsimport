@@ -137,6 +137,7 @@ function createPostPost($nodeArray){
     $obj['alias'] = $node['path'];
     $obj['legacy_id'] = $node['nid'];
 
+
     if($node['status'] == '1'){
         $obj['ispublished'] = '1';
         echo('IT IS PUBLISHED');
@@ -148,6 +149,174 @@ function createPostPost($nodeArray){
     //print_r($obj);
     return "Hello, World.";
 }
+
+/**
+ * @param $nodeArray
+ * @return string
+ */
+function createCoverPost($nodeArray){
+    $node = $nodeArray[0];
+
+    $images_csv = "";
+
+    for($i=0;$i<count($node['field_image']);$i++){
+
+        $thisimg = $node['field_image'][$i];
+        //print_r($thispage);
+        $prefix = "";
+        if(0!==$i){
+            $prefix = "\n";
+        }
+        $images_csv .= $prefix. "http://fantasticsmag.com/" . $thisimg['filepath'];
+        // echo("http://fantasticsmag.com/".$thispage['filepath'].",");
+    }
+
+    //featured fashions
+    $fashion_csv = $node['taxonomy']['tags']['1'];
+    $editorial_tags = $node['taxonomy']['tags']['4'];
+
+    $obj = array();
+    $obj['postid'] = $node['nid'];
+    $obj['title'] = $node['title'];
+    $obj['created'] = $node['created'];
+    $obj['fashions_csv'] = $fashion_csv;
+    $obj['people_csv'] = $node['people_csv'];
+    $obj['tags_csv'] = $editorial_tags;
+    $obj['body'] = $node['body'];
+    //$obj['description'] = $node['field_description'][0]['value'];
+    //$obj['sidebar'] = $node['field_sidebar'][0]['value'];
+    $obj['images'] = $images_csv;
+    $obj['alias'] = $node['path'];
+    $obj['legacy_id'] = $node['nid'];
+    $obj['legacy_storyref_id'] = $node['field_cover_story'][0]['nid'];
+
+
+    if($node['status'] == '1'){
+        $obj['ispublished'] = '1';
+        echo('IT IS PUBLISHED');
+    } else {
+        echo('IT IS NOT PUBLISEDH');
+    }
+
+    process_the_cover($obj);
+    //print_r($obj);
+    return "Hello, World.";
+}
+
+function process_the_cover($s){
+    //$s is the post variable
+    //var_dump($s);
+
+    $poststatus = 'private';
+    if($s['ispublished'] === 'on' || $s['ispublished'] === '1'){
+        $poststatus = 'publish';
+    }
+
+    $post = array(
+
+        'post_content'   => $s['body'].'<!-- more -->'.$s['description'],
+        'post_name'      => $s['alias'],
+        'post_title'     => $s['title'],
+        'post_status'    => $poststatus,
+        'post_type'      => 'fmag_cover',
+        'ping_status'    => 'closed',
+        'post_date'      => date( "Y-m-d H:i:s" ,intval($s['created'])),
+        'comment_status' => 'closed',
+    );
+
+
+
+    $err = wp_insert_post($post,true);
+    if($err){
+        var_dump($err);
+    }
+    if(is_int($err)){
+        if($err>0){
+
+
+            //// lets do the attachments now
+            // The ID of the post this attachment is for.
+            $parent_post_id = $err;
+
+            add_post_meta($parent_post_id, 'legacy_id', $s['legacy_id']);
+            add_post_meta($parent_post_id, 'legacy_storyref_id', $s['legacy_storyref_id']);
+
+            $returnVal =  wp_set_object_terms( $err, str_getcsv ($s['people_csv'],',' ), "person" );
+            $returnVal2 =  wp_set_object_terms( $err, str_getcsv ($s['tags_csv'],',' ), "term" );
+
+
+
+          //  print_r($s);
+          //  exit();
+
+
+            $thisPost = get_post($err);
+            $taxonomy_names = get_object_taxonomies( 'fmag_cover' );
+            //print_r( $taxonomy_names);
+            //var_dump($returnVal);
+
+            $imagesArray = explode("\n",$s['images']);
+
+            for($i = 0; $i<count($imagesArray);$i++){
+
+
+                echo ("IMAGE ".$i . " of " . count($imagesArray)."\n");
+                flush();
+
+                $url =  $snip = str_replace("\r", '', $imagesArray[$i]); // remove carriage returns;
+                echo "URL: ".$url . "\n";
+
+                // let's sideload it...
+                $urlClean = str_replace(' ', '%20', html_entity_decode($url));
+
+                $tmp = download_url( $urlClean );
+                if( is_wp_error( $tmp ) ){
+                    // download failed, handle error
+                    echo("error detected:");
+                    var_dump($tmp);
+                }
+                $post_id = $parent_post_id;
+                $desc = "";
+                $file_array = array();
+
+                // Set variables for storage
+                // fix file filename for query strings
+                preg_match('/[^\?]+\.(jpg|jpe|jpeg|gif|png)/i', $url, $matches);
+                $file_array['name'] = basename($matches[0]);
+                $file_array['tmp_name'] = $tmp;
+
+                // If error storing temporarily, unlink
+                if ( is_wp_error( $tmp ) ) {
+                    echo("error 2");
+                    @unlink($file_array['tmp_name']);
+                    $file_array['tmp_name'] = '';
+                }
+
+                // do the validation and storage stuff
+                $id = media_handle_sideload( $file_array, $post_id, $desc );
+
+                // If error storing permanently, unlink
+                if ( is_wp_error($id) ) {
+                    echo("error 3");
+                    @unlink($file_array['tmp_name']);
+                    return $id;
+                }
+
+                $src = wp_get_attachment_url( $id );
+                echo $src."\n\n";
+
+            }
+
+
+
+        }
+    }
+
+
+
+
+}
+
 
 
 function process_the_post($s){
@@ -388,8 +557,8 @@ function test_handle_post(){
     }
 }
 
-add_action( 'init', 'create_post_type' );
-function create_post_type() {
+add_action( 'init', 'create_post_type_story' );
+function create_post_type_story() {
     register_post_type( 'fmag_story',
         array(
             'labels' => array(
@@ -401,6 +570,22 @@ function create_post_type() {
             'rewrite' => array('slug' => 'stories',
                 'with_front' => false),
            // 'supports' => array('title', 'editor', 'post-formats')
+        )
+    );
+}
+add_action( 'init', 'create_post_type_cover' );
+function create_post_type_cover() {
+    register_post_type( 'fmag_cover',
+        array(
+            'labels' => array(
+                'name' => __( 'Covers' ),
+                'singular_name' => __( 'Cover' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'covers',
+                'with_front' => false),
+            // 'supports' => array('title', 'editor', 'post-formats')
         )
     );
 }
@@ -438,7 +623,8 @@ function people_init(){
         'rewrite' => array( 'slug' => 'people' ),
     );
 
-    register_taxonomy('person', 'fmag_story', $args);
+    register_taxonomy('person', array('fmag_story', 'fmag_cover'), $args);
+
 }
 add_action( 'init', 'people_init');
 
@@ -474,7 +660,9 @@ function fashions_init(){
         'rewrite' => array( 'slug' => 'fashions' ),
     );
 
-    register_taxonomy('fashion', 'fmag_story', $args);
+    register_taxonomy('fashion', array('fmag_story','fmag_cover'), $args);
+
+
 }
 add_action( 'init', 'fashions_init');
 
@@ -510,7 +698,7 @@ function editorial_terms_init(){
         'rewrite' => array( 'slug' => 'terms' ),
     );
 
-    register_taxonomy('term', 'fmag_story', $args);
+    register_taxonomy('term', array('fmag_story', 'fmag_cover'), $args);
 }
 add_action( 'init', 'editorial_terms_init');
 
