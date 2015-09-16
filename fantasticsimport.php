@@ -214,7 +214,7 @@ function process_the_cover($s){
 
     $post = array(
 
-        'post_content'   => $s['body'].'<!-- more -->'.$s['description'],
+        'post_content'   => $s['body'].'<!--more-->'.$s['description'],
         'post_name'      => $s['alias'],
         'post_title'     => $s['title'],
         'post_status'    => $poststatus,
