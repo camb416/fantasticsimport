@@ -29,6 +29,45 @@ class FmagImport_CLI extends WP_CLI_Command {
         WP_CLI::success( __( 'Successfully imported.', 'fmagimport' ) );
     }
 
+    public function node($args, $assoc_args){
+        if(isset($args[0])){
+            $safe_filename = Helper::sanitizeFileName($args[0], 'linux');
+            $file = file_get_contents($safe_filename);
+            $nodes = array();
+            eval("\$nodes = $file;");
+
+
+
+            if(count($nodes)>0){
+                //$nodes[0]['type'];
+
+                if($nodes[0]['type'] === "fmag_story"){
+                    // it's a story
+                    createPostPost($nodes);
+
+                } else if($nodes[0]['type'] === "cover"){
+                    // it's a cover
+                    createCoverPost($nodes);
+                } else {
+                    WP_CLI::error( sprintf( 'unrecognized post type' ) );
+                }
+
+            } else {
+                WP_CLI::error( sprintf( 'no node found in file' ) );
+            }
+            exit();
+
+
+
+
+        } else {
+            WP_CLI::error( sprintf( 'you need to type a filename' ) );
+        }
+
+        WP_CLI::success( 'imported a node.' );
+    }
+
+
     public function story( $args, $assoc_args  ) {
         if(isset($args[0])){
            // print_r($args[0]);
@@ -38,7 +77,7 @@ class FmagImport_CLI extends WP_CLI_Command {
            // print_r($file);
 
             eval("\$nodes = $file;");
-            print_r(createPostPost($nodes));
+            createPostPost($nodes);
             //print_r(file_get_contents( $args[0] ));
         } else {
             WP_CLI::error( sprintf( 'you need to type a filename' ) );
@@ -56,7 +95,7 @@ class FmagImport_CLI extends WP_CLI_Command {
             // print_r($file);
 
             eval("\$nodes = $file;");
-            print_r(createCoverPost($nodes));
+            createCoverPost($nodes);
             //print_r(file_get_contents( $args[0] ));
         } else {
             WP_CLI::error( sprintf( 'you need to type a filename' ) );
