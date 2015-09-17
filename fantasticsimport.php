@@ -110,7 +110,7 @@ function createPostPost($nodeArray){
     for($i=0;$i<count($node['field_page']);$i++){
 
         $thispage = $node['field_page'][$i];
-        print_r($thispage);
+        //print_r($thispage);
         $prefix = "";
         if(0!==$i){
             $prefix = "\n";
@@ -128,7 +128,9 @@ function createPostPost($nodeArray){
     $obj['title'] = $node['title'];
     $obj['created'] = $node['created'];
     $obj['fashions_csv'] = $fashion_csv;
-    $obj['people_csv'] = $node['people_csv'];
+
+    if(isset($node['people_csv'])) $obj['people_csv'] = $node['people_csv'];
+
     $obj['tags_csv'] = $editorial_tags;
     $obj['body'] = $node['body'];
     $obj['description'] = $node['field_description'][0]['value'];
@@ -357,7 +359,9 @@ function process_the_post($s){
             add_post_meta($parent_post_id, 'legacy_id', $s['legacy_id']);
 
             $returnVal =  wp_set_object_terms( $err, str_getcsv ($s['fashions_csv'],',' ), "fashion" );
-            $returnVal2 =  wp_set_object_terms( $err, str_getcsv ($s['people_csv'],',' ), "person" );
+
+            if(isset($s['people_csv']))  $returnVal2 =  wp_set_object_terms( $err, str_getcsv ($s['people_csv'],',' ), "person" );
+
             $returnVal3 =  wp_set_object_terms( $err, str_getcsv ($s['tags_csv'],',' ), "term" );
 
 
@@ -372,7 +376,7 @@ function process_the_post($s){
             for($i = 0; $i<count($pagesArray);$i++){
 
 
-                echo ("PAGE ".$i . " of " . count($pagesArray)."\n");
+                echo ("PAGE ". ($i+1) . " of " . count($pagesArray)."\n");
                 flush();
 
                 $url =  $snip = str_replace("\r", '', $pagesArray[$i]); // remove carriage returns;
@@ -618,7 +622,6 @@ function people_init(){
         'labels' => $labels,
         'show_ui' => true,
         'show_admin_column' => true,
-        'update_count_callback' => 'update_term_count',
         'query_var' => true,
         'rewrite' => array( 'slug' => 'people' ),
     );
@@ -655,7 +658,6 @@ function fashions_init(){
         'labels' => $labels,
         'show_ui' => true,
         'show_admin_column' => true,
-        'update_count_callback' => 'update_term_count',
         'query_var' => true,
         'rewrite' => array( 'slug' => 'fashions' ),
     );
@@ -693,7 +695,6 @@ function editorial_terms_init(){
         'labels' => $labels,
         'show_ui' => true,
         'show_admin_column' => true,
-        'update_count_callback' => 'update_term_count',
         'query_var' => true,
         'rewrite' => array( 'slug' => 'terms' ),
     );
