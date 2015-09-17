@@ -1,0 +1,372 @@
+array(
+  array(
+    'nid' => '5130',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'created' => '1433099076',
+    'changed' => 1442513865,
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '5130',
+    'revision_uid' => '1',
+    'title' => 'The Bottom Line',
+    'body' => '<p>
+	Below the belt.<br />
+	Exclusive photography by James N.<br />
+	Model. Coleman at <a href="http://www.plutinogroup.com/">Plutino</a> &amp; <a href="http://www.boomtheagency.it/">Boom</a>.</p>
+',
+    'teaser' => '<p>
+	Below the belt.<br />
+	Exclusive photography by James N.<br />
+	Model. Coleman at <a href="http://www.plutinogroup.com/">Plutino</a> &amp; <a href="http://www.boomtheagency.it/">Boom</a>.</p>
+',
+    'revision_timestamp' => '1433099468',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => '<p>
+	James shoots <a href="http://www.plutinogroup.com/">Plutino</a> &amp; <a href="http://www.boomtheagency.it/">Boom</a> model Coleman in the best looks in pants. Styling includes <a href="http://www.agjeans.com/">AG Jeans</a>, <a href="http://www.brax.com/">Brax</a> and <a href="http://www.jackvictor.com/">Jack Victor</a>.</p>
+',
+        'format' => '1',
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHY<br />
+	James N</p>
+<p>
+	<br />
+	FASHION EDITOR<br />
+	James Nixon</p>
+<p>
+	&nbsp;</p>
+<p>
+	MODEL<br />
+	Coleman<br />
+	at <a href="http://www.plutinogroup.com/">Plutino </a><br />
+	&amp; <a href="http://www.boomtheagency.it/">Boom</a><br />
+	&nbsp;</p>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '36837',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman2.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman2.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '543656',
+        'status' => '1',
+        'timestamp' => '1433098920',
+        'origname' => 'bottom-line-nick-coleman2.jpg',
+      ),
+      '1' => array(
+        'fid' => '36839',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman3.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '114714',
+        'status' => '1',
+        'timestamp' => '1433098930',
+        'origname' => 'bottom-line-nick-coleman3.jpg',
+      ),
+      '2' => array(
+        'fid' => '36840',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman4.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '63377',
+        'status' => '1',
+        'timestamp' => '1433098939',
+        'origname' => 'bottom-line-nick-coleman4.jpg',
+      ),
+      '3' => array(
+        'fid' => '36842',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman5.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '524732',
+        'status' => '1',
+        'timestamp' => '1433098966',
+        'origname' => 'bottom-line-nick-coleman5.jpg',
+      ),
+      '4' => array(
+        'fid' => '36844',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman6.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '553713',
+        'status' => '1',
+        'timestamp' => '1433098982',
+        'origname' => 'bottom-line-nick-coleman6.jpg',
+      ),
+      '5' => array(
+        'fid' => '36846',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman7.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman7.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '62501',
+        'status' => '1',
+        'timestamp' => '1433098991',
+        'origname' => 'bottom-line-nick-coleman7.jpg',
+      ),
+      '6' => array(
+        'fid' => '36848',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman8.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman8.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '485039',
+        'status' => '1',
+        'timestamp' => '1433099001',
+        'origname' => 'bottom-line-nick-coleman8.jpg',
+      ),
+      '7' => array(
+        'fid' => '36850',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman9.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman9.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '62750',
+        'status' => '1',
+        'timestamp' => '1433099009',
+        'origname' => 'bottom-line-nick-coleman9.jpg',
+      ),
+      '8' => array(
+        'fid' => '36852',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman10.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman10.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '63716',
+        'status' => '1',
+        'timestamp' => '1433099018',
+        'origname' => 'bottom-line-nick-coleman10.jpg',
+      ),
+      '9' => array(
+        'fid' => '36854',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman11.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman11.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '572557',
+        'status' => '1',
+        'timestamp' => '1433099028',
+        'origname' => 'bottom-line-nick-coleman11.jpg',
+      ),
+      '10' => array(
+        'fid' => '36856',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman12.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman12.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '450191',
+        'status' => '1',
+        'timestamp' => '1433099038',
+        'origname' => 'bottom-line-nick-coleman12.jpg',
+      ),
+      '11' => array(
+        'fid' => '36858',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman13.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman13.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '63098',
+        'status' => '1',
+        'timestamp' => '1433099050',
+        'origname' => 'bottom-line-nick-coleman13.jpg',
+      ),
+      '12' => array(
+        'fid' => '36860',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman14.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman14.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '63364',
+        'status' => '1',
+        'timestamp' => '1433099060',
+        'origname' => 'bottom-line-nick-coleman14.jpg',
+      ),
+      '13' => array(
+        'fid' => '36861',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'bottom-line-nick-coleman15.jpg',
+        'filepath' => 'files/fmag_story/2015/May/bottom-line-nick-coleman15.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '488470',
+        'status' => '1',
+        'timestamp' => '1433099069',
+        'origname' => 'bottom-line-nick-coleman15.jpg',
+      ),
+    ),
+    'path' => 'stories/bottom-line',
+    'tags' => array(
+      '4' => array(
+        '2053' => array(
+          'tid' => '2053',
+          'vid' => '4',
+          'name' => 'men',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          '#_export_node_encode_object' => '1',
+        ),
+        '2302' => array(
+          'tid' => '2302',
+          'vid' => '4',
+          'name' => 'menswear',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          '#_export_node_encode_object' => '1',
+        ),
+        '3084' => array(
+          'tid' => '3084',
+          'vid' => '4',
+          'name' => 'plutino',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '4' => 'men, menswear, plutino',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'uuid' => '64be0940-5d68-11e5-9f74-8e17caaf1146',
+    'is_new' => FALSE,
+    'timestamp' => 1442513865,
+    'xmlsitemap' => array(
+      'id' => '5130',
+      'type' => 'node',
+      'subtype' => 'fmag_story',
+      'loc' => 'node/5130',
+      'language' => '',
+      'access' => TRUE,
+      'status' => '1',
+      'status_override' => '0',
+      'lastmod' => '1442513865',
+      'priority' => '0.5',
+      'priority_override' => '0',
+      'changefreq' => 0,
+      'changecount' => 0,
+      'status_default' => '1',
+      'priority_default' => '0.5',
+    ),
+    'uri' => array(
+      'path' => 'node/5130',
+      'options' => array(),
+    ),
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)
