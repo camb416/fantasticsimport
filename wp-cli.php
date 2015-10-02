@@ -29,6 +29,45 @@ class FmagImport_CLI extends WP_CLI_Command {
         WP_CLI::success( __( 'Successfully imported.', 'fmagimport' ) );
     }
 
+
+    public function legacylist($args, $assoc_args){
+
+       if(count($args)==0){
+            $verbose = false;
+       } else {
+           $verbose = true;
+       }
+
+
+        $args = array(
+          'post_type' => ['fmag_cover','fmag_story'],
+            'orderby' => 'title menu_order',
+            'order' => 'ASC',
+            'posts_per_page' => -1,
+
+        );
+        $the_query = new WP_Query($args);
+        $listCount = 0;
+        if ( $the_query->have_posts() ){
+            while ( $the_query->have_posts() ) {
+                $the_query->the_post();
+                $theLegacyArr = get_post_meta( get_the_ID(), 'legacy_id' );
+                if(count($theLegacyArr)>0){
+                    $theLegacy = $theLegacyArr[0];
+                } else {
+                    $theLegacy = -1;
+                }
+                if($theLegacy==-1 || $verbose){
+                    echo get_the_ID() . "\t" . get_post_type(get_the_ID()) . "\t" . get_the_title() . "\t" . $theLegacy . " \n";
+                    $listCount++;
+                }
+
+            }
+        }
+        echo $listCount . " items.\n";
+    }
+
+
     public function node($args, $assoc_args){
         if(isset($args[0])){
             $safe_filename = Helper::sanitizeFileName($args[0], 'linux');
