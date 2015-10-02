@@ -148,9 +148,26 @@ function updateNodes($nodeArray){
                         $theCreditsArr = get_post_meta(intval(get_the_ID()), 'fmag_credits_block');
 
                         if(count($theCreditsArr) == 0){
-                            $theCredits = "no credits found";
+                            //$theCredits = "no credits found";
+                            // no credits found
+
+                            update_post_meta(get_the_ID(), 'fmag_credits_block', $node['field_sidebar'][0]["value"] ,true);
+
+
+
                         } else {
+
+
+
                             $theCredits = $theCreditsArr[0];
+echo strlen($theCredits);
+                            if(strlen($theCredits)<10){
+                                echo get_the_ID() . 'fmag_credits_block' . $node['field_sidebar'][0]["value"]  . true . "\n";
+
+                                update_post_meta(get_the_ID(), 'fmag_credits_block', $node['field_sidebar'][0]["value"]);
+                            }
+
+
                         }
 
                         echo the_title() . "\t"  . $theCredits .  " \n";
@@ -824,15 +841,15 @@ function fantasticsimport_meta_box_callback( $post ) {
 
 
 }
-function save_my_postdata( $post_id )
+function fantasticsimport_save_credits( $post_id )
 {
-    if (!empty($_POST['fmag_credits_block']))
-    {
-        $datta=htmlspecialchars($_POST['fmag_credits_block']);
-        update_post_meta($post_id, 'fmag_credits_block', $datta );
-    }
+    //if (!empty($_POST['fmag_credits_block']))
+    //{
+        $data=htmlspecialchars($_POST['fmag_credits_block']);
+        update_post_meta($post_id, 'fmag_credits_block', $data );
+    //}
 }
-add_action( 'save_post', 'save_my_postdata' );
+add_action( 'save_post', 'fantasticsimport_save_credits' );
 
 /**
  * When the post is saved, saves our custom data.
