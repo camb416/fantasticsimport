@@ -102,6 +102,78 @@ function render_second_form(){
     echo "ok.";
 }
 
+function updateNodes($nodeArray){
+
+ var_dump($nodeArray);
+
+    // most important bit is the nid
+    if(count($nodeArray)>0){
+        $node = $nodeArray[0];
+
+        echo "the nid is: " . $node['nid'] . ". Is it being used in the DB???\n";
+
+        echo "wait. the type is: " . $node['type'] . "\n";
+
+        $desiredType = "fmag_story";
+        if($node['type'] === "cover"){
+            $desiredType = "fmag_cover";    // Fmag drupal to wp type name discrepancy.
+        }
+
+
+
+        $queryArgs = array(
+            'post_type' => $desiredType,
+            'meta_query' => array(
+                array(
+                    'key' => 'legacy_id',
+                    'value' => array($node['nid']),
+                    'compare' => 'IN'
+                )
+            )
+        );
+
+        $the_query = new WP_Query($queryArgs);
+
+        if ( $the_query->have_posts() ){
+            while ( $the_query->have_posts() ) {
+                $the_query->the_post();
+                echo "found: " . get_the_ID() . "\t" . get_post_type(get_the_ID()) . "\t" . get_the_title() . "\t" . " \n";
+
+                // is it a story?
+
+                if($desiredType === "fmag_story"){
+                    if(count($node['field_sidebar']>0)){
+                        echo $node['field_sidebar'][0]["value"];
+
+                        $theCreditsArr = get_post_meta(intval(get_the_ID()), 'fmag_credits_block');
+
+                        if(count($theCreditsArr) == 0){
+                            $theCredits = "no credits found";
+                        } else {
+                            $theCredits = $theCreditsArr[0];
+                        }
+
+                        echo the_title() . "\t"  . $theCredits .  " \n";
+
+
+                    }
+
+                }
+
+            }
+        } else {
+            echo "nothing found. \n";
+        }
+
+
+
+
+    }
+
+
+}
+
+
 function createPostPost($nodeArray){
     $node = $nodeArray[0];
 

@@ -29,6 +29,57 @@ class FmagImport_CLI extends WP_CLI_Command {
         WP_CLI::success( __( 'Successfully imported.', 'fmagimport' ) );
     }
 
+    public function creditslist($args, $assoc_args){
+        if(count($args)<1){
+            echo "please provide a post id.\n";
+            return;
+        } else {
+
+
+            $mypost = get_post(intval($args[0]));
+            $theCreditsArr = get_post_meta(intval($args[0]), 'fmag_credits_block');
+
+if(count($theCreditsArr) == 0){
+    $theCredits = "no credits found";
+} else {
+    $theCredits = $theCreditsArr[0];
+}
+
+            echo $mypost->post_title . "\t"  . $theCredits .  " \n";
+
+
+        }
+
+
+    }
+
+    public function postbydrupalid($args, $assoc_args){
+
+        $queryArgs = array(
+            'post_type' => array("fmag_story","fmag_cover"),
+            'meta_query' => array(
+                array(
+                    'key' => 'legacy_id',
+                    'value' => array(5246),
+                    'compare' => 'IN'
+                )
+            )
+        );
+
+       $the_query = new WP_Query($queryArgs);
+
+        if ( $the_query->have_posts() ){
+            while ( $the_query->have_posts() ) {
+                $the_query->the_post();
+                echo get_the_ID() . "\t" . get_post_type(get_the_ID()) . "\t" . get_the_title() . "\t" . " \n";
+            }
+        } else {
+            echo "nothing found. \n";
+        }
+
+
+    }
+
 
     public function legacylist($args, $assoc_args){
 
@@ -37,7 +88,6 @@ class FmagImport_CLI extends WP_CLI_Command {
        } else {
            $verbose = true;
        }
-
 
         $args = array(
           'post_type' => array('fmag_story', 'fmag_cover'),
@@ -70,42 +120,87 @@ class FmagImport_CLI extends WP_CLI_Command {
 
 
     public function node($args, $assoc_args){
-        if(isset($args[0])){
-            $safe_filename = Helper::sanitizeFileName($args[0], 'linux');
-            $file = file_get_contents($safe_filename);
-            $nodes = array();
-            eval("\$nodes = $file;");
+
+      if(count($args)>=2){
+          // update or create?
+          if($args[0] === "create"){
+              // create
+
+              if(isset($args[0])){
+                  $safe_filename = Helper::sanitizeFileName($args[0], 'linux');
+                  $file = file_get_contents($safe_filename);
+                  $nodes = array();
+                  eval("\$nodes = $file;");
 
 
 
-            if(count($nodes)>0){
-                //$nodes[0]['type'];
+                  if(count($nodes)>0){
+                      //$nodes[0]['type'];
 
-                if($nodes[0]['type'] === "fmag_story"){
-                    // it's a story
-                    createPostPost($nodes);
+                      if($nodes[0]['type'] === "fmag_story"){
+                          // it's a story
+                          createPostPost($nodes);
 
-                } else if($nodes[0]['type'] === "cover"){
-                    // it's a cover
-                    createCoverPost($nodes);
-                } else {
-                    WP_CLI::error( sprintf( 'unrecognized post type' ) );
-                }
+                      } else if($nodes[0]['type'] === "cover"){
+                          // it's a cover
+                          createCoverPost($nodes);
+                      } else {
+                          WP_CLI::error( sprintf( 'unrecognized post type' ) );
+                      }
 
-            } else {
-                WP_CLI::error( sprintf( 'no node found in file' ) );
-            }
-            exit();
-
-
+                  } else {
+                      WP_CLI::error( sprintf( 'no node found in file' ) );
+                  }
+                  exit();
 
 
-        } else {
-            WP_CLI::error( sprintf( 'you need to type a filename' ) );
-        }
 
-        WP_CLI::success( 'imported a node.' );
+
+              } else {
+                  WP_CLI::error( sprintf( 'you need to type a filename' ) );
+              }
+
+              WP_CLI::success( 'imported a node.' );
+
+
+          } else if($args[0] === "update"){
+              // update
+
+
+                  if(isset($args[1])){
+
+                      $safe_filename = Helper::sanitizeFileName($args[1], 'linux');
+
+                      $file = file_get_contents($safe_filename);
+
+
+                      $nodes = array();
+
+                      eval("\$nodes = $file;");
+
+
+                      updateNodes($nodes);
+
+                  } else {
+                      WP_CLI::error( sprintf( 'you need to type a filename' ) );
+                  }
+
+                  WP_CLI::success( 'updating nodes...' );
+
+
+
+
+              // do something
+                return;
+              //exit
+          }
+      }
+
+
+
     }
+
+
 
 
     public function story( $args, $assoc_args  ) {
