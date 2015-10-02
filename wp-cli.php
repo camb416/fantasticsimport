@@ -40,7 +40,7 @@ class FmagImport_CLI extends WP_CLI_Command {
 
 
         $args = array(
-          'post_type' => ['fmag_cover','fmag_story'],
+          'post_type' => array('fmag_cover','fmag_story'),
             'orderby' => 'title menu_order',
             'order' => 'ASC',
             'posts_per_page' => -1,
