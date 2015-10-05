@@ -771,7 +771,7 @@ function editorial_terms_init(){
 // Add new taxonomy, NOT hierarchical (like tags)
     $labels = array(
         'name'                       => _x( 'Editorial Terms', 'taxonomy general name' ),
-        'singular_name'              => _x( 'Editorial Term', 'taxonomy singular name' ),
+        'singular_name'              => _x( 'Tagged with', 'taxonomy singular name' ),
         'search_items'               => __( 'Search Editorial Terms' ),
         'popular_items'              => __( 'Popular Editorial Terms' ),
         'all_items'                  => __( 'All Editorial Terms' ),
