@@ -39,11 +39,11 @@ class FmagImport_CLI extends WP_CLI_Command {
             $mypost = get_post(intval($args[0]));
             $theCreditsArr = get_post_meta(intval($args[0]), 'fmag_credits_block');
 
-if(count($theCreditsArr) == 0){
-    $theCredits = "no credits found";
-} else {
-    $theCredits = $theCreditsArr[0];
-}
+            if(count($theCreditsArr) == 0){
+                $theCredits = "no credits found";
+            } else {
+                $theCredits = $theCreditsArr[0];
+            }
 
             echo $mypost->post_title . "\t"  . $theCredits .  " \n";
 
@@ -66,7 +66,7 @@ if(count($theCreditsArr) == 0){
             )
         );
 
-       $the_query = new WP_Query($queryArgs);
+        $the_query = new WP_Query($queryArgs);
 
         if ( $the_query->have_posts() ){
             while ( $the_query->have_posts() ) {
@@ -83,14 +83,14 @@ if(count($theCreditsArr) == 0){
 
     public function legacylist($args, $assoc_args){
 
-       if(count($args)==0){
+        if(count($args)==0){
             $verbose = false;
-       } else {
-           $verbose = true;
-       }
+        } else {
+            $verbose = true;
+        }
 
         $args = array(
-          'post_type' => array('fmag_story', 'fmag_cover'),
+            'post_type' => array('fmag_story', 'fmag_cover'),
             'orderby' => 'title menu_order',
             'post_status' => 'any',
             'order' => 'ASC',
@@ -121,80 +121,80 @@ if(count($theCreditsArr) == 0){
 
     public function node($args, $assoc_args){
 
-      if(count($args)>=2){
-          // update or create?
-          if($args[0] === "create"){
-              // create
+        if(count($args)>=2){
+            // update or create?
+            if($args[0] === "create"){
+                // create
 
-              if(isset($args[0])){
-                  $safe_filename = Helper::sanitizeFileName($args[0], 'linux');
-                  $file = file_get_contents($safe_filename);
-                  $nodes = array();
-                  eval("\$nodes = $file;");
-
-
-
-                  if(count($nodes)>0){
-                      //$nodes[0]['type'];
-
-                      if($nodes[0]['type'] === "fmag_story"){
-                          // it's a story
-                          createPostPost($nodes);
-
-                      } else if($nodes[0]['type'] === "cover"){
-                          // it's a cover
-                          createCoverPost($nodes);
-                      } else {
-                          WP_CLI::error( sprintf( 'unrecognized post type' ) );
-                      }
-
-                  } else {
-                      WP_CLI::error( sprintf( 'no node found in file' ) );
-                  }
-                  exit();
+                if(isset($args[1])){
+                    $safe_filename = Helper::sanitizeFileName($args[1], 'linux');
+                    $file = file_get_contents($safe_filename);
+                    $nodes = array();
+                    eval("\$nodes = $file;");
 
 
 
+                    if(count($nodes)>0){
+                        //$nodes[0]['type'];
 
-              } else {
-                  WP_CLI::error( sprintf( 'you need to type a filename' ) );
-              }
+                        if($nodes[0]['type'] === "fmag_story"){
+                            // it's a story
+                            createPostPost($nodes);
 
-              WP_CLI::success( 'imported a node.' );
+                        } else if($nodes[0]['type'] === "cover"){
+                            // it's a cover
+                            createCoverPost($nodes);
+                        } else {
+                            WP_CLI::error( sprintf( 'unrecognized post type' ) );
+                        }
 
-
-          } else if($args[0] === "update"){
-              // update
-
-
-                  if(isset($args[1])){
-
-                      $safe_filename = Helper::sanitizeFileName($args[1], 'linux');
-
-                      $file = file_get_contents($safe_filename);
-
-
-                      $nodes = array();
-
-                      eval("\$nodes = $file;");
-
-
-                      updateNodes($nodes);
-
-                  } else {
-                      WP_CLI::error( sprintf( 'you need to type a filename' ) );
-                  }
-
-                  WP_CLI::success( 'updating nodes...' );
+                    } else {
+                        WP_CLI::error( sprintf( 'no node found in file' ) );
+                    }
+                    // exit();
 
 
 
 
-              // do something
+                } else {
+                    WP_CLI::error( sprintf( 'you need to type a filename' ) );
+                }
+
+                WP_CLI::success( 'imported a node.' );
+
+
+            } else if($args[0] === "update"){
+                // update
+
+
+                if(isset($args[1])){
+
+                    $safe_filename = Helper::sanitizeFileName($args[1], 'linux');
+
+                    $file = file_get_contents($safe_filename);
+
+
+                    $nodes = array();
+
+                    eval("\$nodes = $file;");
+
+
+                    updateNodes($nodes);
+
+                } else {
+                    WP_CLI::error( sprintf( 'you need to type a filename' ) );
+                }
+
+                WP_CLI::success( 'updating nodes...' );
+
+
+
+
+                // do something
                 return;
-              //exit
-          }
-      }
+                //exit
+            }
+        }
 
 
 
@@ -205,11 +205,11 @@ if(count($theCreditsArr) == 0){
 
     public function story( $args, $assoc_args  ) {
         if(isset($args[0])){
-           // print_r($args[0]);
+            // print_r($args[0]);
             $safe_filename = Helper::sanitizeFileName($args[0], 'linux');
-           // print_r($safe_filename);
+            // print_r($safe_filename);
             $file = file_get_contents($safe_filename);
-           // print_r($file);
+            // print_r($file);
 
             eval("\$nodes = $file;");
             createPostPost($nodes);
@@ -281,13 +281,13 @@ class Helper {
      * @return Boolean string A safe version of the input filename
      */
     public static function sanitizeFileName($dangerous_filename, $platform = 'Unix') {
-       // if (in_array(strtolower($platform), array('unix', 'linux')) {
-            // our list of "dangerous characters", add/remove characters if necessary
+        // if (in_array(strtolower($platform), array('unix', 'linux')) {
+        // our list of "dangerous characters", add/remove characters if necessary
         $dangerous_characters = array(" ", '"', "'", "&", "/", "\\", "?", "#");
-    //} else {
+        //} else {
         // no OS matched? return the original filename then...
         return $dangerous_filename;
-    //}
+        //}
 
         // every forbidden character is replace by an underscore
         return str_replace($dangerous_characters, '_', $dangerous_filename);

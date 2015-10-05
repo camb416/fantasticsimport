@@ -47,7 +47,7 @@ function render_first_form(){
         Post ID: <input type="Text" name="storyid" value=""><br>
         <?php submit_button('Submit Story'); ?>
     </form>
-<?php
+    <?php
 }
 function render_second_form(){
     global $nodes;
@@ -104,19 +104,19 @@ function render_second_form(){
 
 function updateNodes($nodeArray){
 
- var_dump($nodeArray);
+    // var_dump($nodeArray);
 
     // most important bit is the nid
     if(count($nodeArray)>0){
         $node = $nodeArray[0];
 
-        echo "the nid is: " . $node['nid'] . ". Is it being used in the DB???\n";
 
-        echo "wait. the type is: " . $node['type'] . "\n";
+
+        //echo "wait. the type is: " . $node['type'] . "\n";
 
         $desiredType = "fmag_story";
         if($node['type'] === "cover"){
-            $desiredType = "fmag_cover";    // Fmag drupal to wp type name discrepancy.
+            $desiredType = "fmag_cover";    // Fmag drupal to wp type name discrepancy
         }
 
 
@@ -137,13 +137,13 @@ function updateNodes($nodeArray){
         if ( $the_query->have_posts() ){
             while ( $the_query->have_posts() ) {
                 $the_query->the_post();
-                echo "found: " . get_the_ID() . "\t" . get_post_type(get_the_ID()) . "\t" . get_the_title() . "\t" . " \n";
+                echo "nid " . $node['nid'] . " found at post id " . get_the_ID() . "\t" . get_post_type(get_the_ID()) . "\t" . get_the_title() . "\t" . " \n";
 
                 // is it a story?
 
                 if($desiredType === "fmag_story"){
                     if(count($node['field_sidebar']>0)){
-                        echo $node['field_sidebar'][0]["value"];
+                        //echo $node['field_sidebar'][0]["value"];
 
                         $theCreditsArr = get_post_meta(intval(get_the_ID()), 'fmag_credits_block');
 
@@ -151,7 +151,7 @@ function updateNodes($nodeArray){
                             //$theCredits = "no credits found";
                             // no credits found
 
-                            update_post_meta(get_the_ID(), 'fmag_credits_block', $node['field_sidebar'][0]["value"] ,true);
+                            add_post_meta(get_the_ID(), 'fmag_credits_block', $node['field_sidebar'][0]["value"] ,true);
 
 
 
@@ -160,9 +160,9 @@ function updateNodes($nodeArray){
 
 
                             $theCredits = $theCreditsArr[0];
-echo strlen($theCredits);
+                           // echo strlen($theCredits);
                             if(strlen($theCredits)<10){
-                                echo get_the_ID() . 'fmag_credits_block' . $node['field_sidebar'][0]["value"]  . true . "\n";
+                             //   echo get_the_ID() . 'fmag_credits_block' . $node['field_sidebar'][0]["value"]  . true . "\n";
 
                                 update_post_meta(get_the_ID(), 'fmag_credits_block', $node['field_sidebar'][0]["value"]);
                             }
@@ -170,7 +170,7 @@ echo strlen($theCredits);
 
                         }
 
-                        echo the_title() . "\t"  . $theCredits .  " \n";
+                        // echo the_title() . "\t"  . $theCredits .  " \n";
 
 
                     }
@@ -179,7 +179,8 @@ echo strlen($theCredits);
 
             }
         } else {
-            echo "nothing found. \n";
+            echo "nid " . $node['nid'] . " not found.\n";
+            //echo "nothing found. \n";
         }
 
 
@@ -237,8 +238,8 @@ function createPostPost($nodeArray){
     }
 
     process_the_post($obj);
-    //print_r($obj);
-    return "Hello, World.";
+
+    return 0;
 }
 
 /**
@@ -337,8 +338,8 @@ function process_the_cover($s){
 
 
 
-          //  print_r($s);
-          //  exit();
+            //  print_r($s);
+            //  exit();
 
 
             $thisPost = get_post($err);
@@ -414,6 +415,9 @@ function process_the_post($s){
     //$s is the post variable
     //var_dump($s);
 
+   // echo $s['sidebar'];
+
+
     $poststatus = 'private';
     if($s['ispublished'] === 'on' || $s['ispublished'] === '1'){
         $poststatus = 'publish';
@@ -446,6 +450,11 @@ function process_the_post($s){
             $parent_post_id = $err;
 
             add_post_meta($parent_post_id, 'legacy_id', $s['legacy_id']);
+
+            //add the credits
+            if ( ! add_post_meta( $parent_post_id, 'fmag_credits_block', $s['sidebar'], true ) ) {
+                update_post_meta ( $parent_post_id,  'fmag_credits_block', $s['sidebar'] );
+            }
 
             $returnVal =  wp_set_object_terms( $err, str_getcsv ($s['fashions_csv'],',' ), "fashion" );
 
@@ -558,7 +567,7 @@ function test_init(){
 
     ?>
     <h1>Upload a Fantasticsmag Story</h1>
-<?php
+    <?php
 
 //////////////////////////////////////
 // just for testing...
@@ -598,7 +607,7 @@ function test_init(){
     ?>
 
 
-<?php
+    <?php
 }
 
 function test_handle_post(){
@@ -662,7 +671,7 @@ function create_post_type_story() {
             'has_archive' => true,
             'rewrite' => array('slug' => 'stories',
                 'with_front' => false),
-           // 'supports' => array('title', 'editor', 'post-formats')
+            // 'supports' => array('title', 'editor', 'post-formats')
         )
     );
 }
@@ -845,8 +854,8 @@ function fantasticsimport_save_credits( $post_id )
 {
     //if (!empty($_POST['fmag_credits_block']))
     //{
-        $data=htmlspecialchars($_POST['fmag_credits_block']);
-        update_post_meta($post_id, 'fmag_credits_block', $data );
+    $data=htmlspecialchars($_POST['fmag_credits_block']);
+    update_post_meta($post_id, 'fmag_credits_block', $data );
     //}
 }
 add_action( 'save_post', 'fantasticsimport_save_credits' );
