@@ -1,0 +1,26 @@
+#!/bin/bash
+wp fmagimport node update 5013.inc
+wp fmagimport node update 5014.inc
+wp fmagimport node update 5015.inc
+wp fmagimport node update 5016.inc
+wp fmagimport node update 5017.inc
+wp fmagimport node update 5018.inc
+wp fmagimport node update 5019.inc
+wp fmagimport node update 5020.inc
+wp fmagimport node update 5021.inc
+wp fmagimport node update 5022.inc
+wp fmagimport node update 5023.inc
+wp fmagimport node update 5025.inc
+wp fmagimport node update 5026.inc
+wp fmagimport node update 5027.inc
+wp fmagimport node update 5028.inc
+wp fmagimport node update 5029.inc
+wp fmagimport node update 5030.inc
+wp fmagimport node update 5031.inc
+wp fmagimport node update 5032.inc
+wp fmagimport node update 5033.inc
+wp fmagimport node update 5034.inc
+wp fmagimport node update 5035.inc
+wp fmagimport node update 5036.inc
+wp fmagimport node update 5037.inc
+wp fmagimport node update 5038.inc
