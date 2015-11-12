@@ -734,7 +734,7 @@ function fashions_init(){
 // Add new taxonomy, NOT hierarchical (like tags)
     $labels = array(
         'name'                       => _x( 'Fashions', 'taxonomy general name' ),
-        'singular_name'              => _x( 'Fashion Brand', 'taxonomy singular name' ),
+        'singular_name'              => _x( 'Fashion', 'taxonomy singular name' ),
         'search_items'               => __( 'Search Fashion Brands' ),
         'popular_items'              => __( 'Popular Fashion Brands' ),
         'all_items'                  => __( 'All Fashion Brands' ),
