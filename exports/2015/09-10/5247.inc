@@ -1,0 +1,372 @@
+array(
+  array(
+    'nid' => '5247',
+    'type' => 'fmag_story',
+    'language' => '',
+    'uid' => '1',
+    'status' => '0',
+    'created' => '1441117402',
+    'changed' => 1447887848,
+    'comment' => '0',
+    'promote' => '1',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'vid' => '5247',
+    'revision_uid' => '1',
+    'title' => 'Focus: Jazmin Katz by Brian Jamie',
+    'body' => '<p>
+	The focus is on model Jazmin Katz.<br />
+	Exclusive photography by <a href="http://www.brianjamie.com/">Brian Jamie</a>.</p>
+',
+    'teaser' => '<p>
+	The focus is on model Jazmin Katz.<br />
+	Exclusive photography by <a href="http://www.brianjamie.com/">Brian Jamie</a>.</p>
+',
+    'revision_timestamp' => '1441998250',
+    'format' => '1',
+    'name' => 'fantasticsmag',
+    'picture' => 'files/userpics/picture-1.jpg',
+    'data' => 'a:2:{s:14:"picture_delete";s:0:"";s:14:"picture_upload";s:0:"";}',
+    'field_description' => array(
+      '0' => array(
+        'value' => '<p>
+	Photographer <a href="http://www.brianjamie.com/">Brian Jamie</a> essays <a href="http://www.womenmanagement.com/">Women Mangement</a> model Jazmin Katz.</p>
+',
+        'format' => '1',
+      ),
+    ),
+    'field_sidebar' => array(
+      '0' => array(
+        'value' => '<p>
+	PHOTOGRAPHER<br />
+	<a href="http://www.brianjamie.com/">Brian Jamie</a></p>
+<p>
+	SUBJECT<br />
+	Jazmin Katz</p>
+<p>
+	&nbsp;</p>
+<p>
+	AGENCY<br />
+	<a href="http://www.womenmanagement.com/">Women Mangement</a></p>
+<p>
+	MAKEUP<br />
+	Alexander James</p>
+<div>
+	HAIR<br />
+	Michael Fernandez</div>
+',
+      ),
+    ),
+    'field_contributor' => array(
+      '0' => array(
+        'uid' => NULL,
+      ),
+    ),
+    'field_page' => array(
+      '0' => array(
+        'fid' => '38956',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE2.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE2.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '646923',
+        'status' => '1',
+        'timestamp' => '1441117266',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE2.jpg',
+      ),
+      '1' => array(
+        'fid' => '38958',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE3.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE3.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '148347',
+        'status' => '1',
+        'timestamp' => '1441117274',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE3.jpg',
+      ),
+      '2' => array(
+        'fid' => '38960',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE4.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE4.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '61062',
+        'status' => '1',
+        'timestamp' => '1441117283',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE4.jpg',
+      ),
+      '3' => array(
+        'fid' => '38962',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE5.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE5.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '595035',
+        'status' => '1',
+        'timestamp' => '1441117293',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE5.jpg',
+      ),
+      '4' => array(
+        'fid' => '38964',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE6.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE6.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '736069',
+        'status' => '1',
+        'timestamp' => '1441117301',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE6.jpg',
+      ),
+      '5' => array(
+        'fid' => '38966',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE7.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE7.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '419949',
+        'status' => '1',
+        'timestamp' => '1441117312',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE7.jpg',
+      ),
+      '6' => array(
+        'fid' => '38968',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE8.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE8.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '555101',
+        'status' => '1',
+        'timestamp' => '1441117322',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE8.jpg',
+      ),
+      '7' => array(
+        'fid' => '38970',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE9.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE9.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '61062',
+        'status' => '1',
+        'timestamp' => '1441117333',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE9.jpg',
+      ),
+      '8' => array(
+        'fid' => '38972',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE10.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE10.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '61062',
+        'status' => '1',
+        'timestamp' => '1441117342',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE10.jpg',
+      ),
+      '9' => array(
+        'fid' => '38974',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE11.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE11.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '579148',
+        'status' => '1',
+        'timestamp' => '1441117353',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE11.jpg',
+      ),
+      '10' => array(
+        'fid' => '38975',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE12.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE12.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '61062',
+        'status' => '1',
+        'timestamp' => '1441117360',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE12.jpg',
+      ),
+      '11' => array(
+        'fid' => '38977',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE13.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE13.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '372513',
+        'status' => '1',
+        'timestamp' => '1441117375',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE13.jpg',
+      ),
+      '12' => array(
+        'fid' => '38979',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE14.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE14.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '369279',
+        'status' => '1',
+        'timestamp' => '1441117386',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE14.jpg',
+      ),
+      '13' => array(
+        'fid' => '38980',
+        'list' => '1',
+        'data' => array(
+          'alt' => '',
+          'title' => '',
+        ),
+        'uid' => '1',
+        'filename' => 'JAZMIN-KATZ-BRIAN-JAMIE15.jpg',
+        'filepath' => 'files/fmag_story/2015/Sep/JAZMIN-KATZ-BRIAN-JAMIE15.jpg',
+        'filemime' => 'image/jpeg',
+        'filesize' => '61062',
+        'status' => '1',
+        'timestamp' => '1441117395',
+        'origname' => 'JAZMIN-KATZ-BRIAN-JAMIE15.jpg',
+      ),
+    ),
+    'path' => 'stories/focus-jazmin-katz-brian-jamie',
+    'tags' => array(
+      '1' => array(
+        '52' => array(
+          'tid' => '52',
+          'vid' => '1',
+          'name' => 'calvin Klein',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          '#_export_node_encode_object' => '1',
+        ),
+        '3249' => array(
+          'tid' => '3249',
+          'vid' => '1',
+          'name' => 'Denim & Supply',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          '#_export_node_encode_object' => '1',
+        ),
+        '3250' => array(
+          'tid' => '3250',
+          'vid' => '1',
+          'name' => 'Madewell',
+          'description' => '',
+          'weight' => '0',
+          'v_weight_unused' => '0',
+          '#_export_node_encode_object' => '1',
+        ),
+      ),
+    ),
+    'taxonomy' => array(
+      'tags' => array(
+        '1' => 'calvin Klein, Denim & Supply, Madewell',
+      ),
+    ),
+    'files' => array(),
+    'page_title' => '',
+    'uuid' => 'ac888460-8e48-11e5-859f-234f24c98333',
+    'is_new' => FALSE,
+    'timestamp' => 1447887848,
+    'xmlsitemap' => array(
+      'id' => '5247',
+      'type' => 'node',
+      'subtype' => 'fmag_story',
+      'loc' => 'node/5247',
+      'language' => '',
+      'access' => FALSE,
+      'status' => '1',
+      'status_override' => '0',
+      'lastmod' => '1447887848',
+      'priority' => '0.5',
+      'priority_override' => '0',
+      'changefreq' => 0,
+      'changecount' => 0,
+      'status_default' => '1',
+      'priority_default' => '0.5',
+    ),
+    'uri' => array(
+      'path' => 'node/5247',
+      'options' => array(),
+    ),
+    'menu' => array(
+      'link_title' => '',
+      'mlid' => 0,
+      'plid' => 0,
+      'menu_name' => 'navigation',
+      'weight' => 0,
+      'options' => array(),
+      'module' => 'menu',
+      'expanded' => 0,
+      'hidden' => 0,
+      'has_children' => 0,
+      'customized' => 0,
+      'parent_depth_limit' => 8,
+    ),
+    '#_export_node_encode_object' => '1',
+  ),
+)
