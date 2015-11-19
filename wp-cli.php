@@ -194,6 +194,10 @@ class FmagImport_CLI extends WP_CLI_Command {
                 return;
                 //exit
             }
+        } else {
+
+            WP_CLI::error( sprintf( 'you need at least two args' ) );
+
         }
 
 
