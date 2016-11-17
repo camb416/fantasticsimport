@@ -854,7 +854,9 @@ function fantasticsimport_save_credits( $post_id )
 {
     //if (!empty($_POST['fmag_credits_block']))
     //{
-    $data=htmlspecialchars($_POST['fmag_credits_block']);
+    //$data=htmlspecialchars($_POST['fmag_credits_block']);
+    $data=$_POST['fmag_credits_block'];
+
     update_post_meta($post_id, 'fmag_credits_block', $data );
     //}
 }
