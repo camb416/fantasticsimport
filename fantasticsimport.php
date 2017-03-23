@@ -12,7 +12,7 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
     require_once( 'wp-cli.php' );
 }
 
-add_action('admin_menu', 'fantasticsimport_setup_menu');
+// add_action('admin_menu', 'fantasticsimport_setup_menu'); // don't create the menu
 
 $nodes = array();
 
