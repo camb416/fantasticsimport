@@ -46,7 +46,3 @@ wp fmagimport node create 5592.inc
 wp fmagimport node create 5593.inc
 wp fmagimport node create 5594.inc
 wp fmagimport node create 5595.inc
-wp fmagimport node create 5596.inc
-wp fmagimport node create 5597.inc
-wp fmagimport node create exportAll.sh
-wp fmagimport node create importAll.sh

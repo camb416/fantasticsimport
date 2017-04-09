@@ -47,5 +47,3 @@ drush ne-export 5592 > 5592.inc
 drush ne-export 5593 > 5593.inc
 drush ne-export 5594 > 5594.inc
 drush ne-export 5595 > 5595.inc
-drush ne-export 5596 > 5596.inc
-drush ne-export 5597 > 5597.inc
