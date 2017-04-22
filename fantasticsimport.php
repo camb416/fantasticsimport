@@ -668,6 +668,7 @@ function create_post_type_story() {
                 'singular_name' => __( 'Story' )
             ),
             'public' => true,
+            'show_in_rest' => true,
             'has_archive' => true,
             'rewrite' => array('slug' => 'stories',
                 'with_front' => false),
@@ -684,6 +685,7 @@ function create_post_type_cover() {
                 'singular_name' => __( 'Cover' )
             ),
             'public' => true,
+            'show_in_rest' => true,
             'has_archive' => true,
             'rewrite' => array('slug' => 'covers',
                 'with_front' => false),
